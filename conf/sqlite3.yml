@@ -1,0 +1,5 @@
+sqlite3:
+    dbs:
+        radar:
+            path: radar.db
+            sql: PRAGMA synchronous = OFF

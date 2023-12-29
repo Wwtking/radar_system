@@ -1,0 +1,115 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>验证</title>
+        <link rel="stylesheet" class="ui" href="../css/semantic.min.css"/>
+        <link rel="stylesheet" class="ui" href="../css/body.css"/>
+        <link rel="stylesheet" class="ui" href="../css/chat.css"/>
+
+        <script type="text/javascript">
+            function submitForm() {
+                var auth_id = document.forms["activeForm"]["auth_id"].value;
+                var auth_code = document.forms["activeForm"]["auth_code"].value;
+                if (auth_id == null || auth_id == "") {
+                    alert("账号/邮箱不能为空");
+                    return;
+                }
+                if (auth_code == null || auth_code == "") {
+                    alert("验证码不能为空");
+                    return;
+                }
+                
+                var req = new XMLHttpRequest();
+                uri = "http://172.18.25.130:8091/user/active?auth_id=" + auth_id + "&auth_code=" + auth_code;
+                req.open('GET', uri, true);
+                req.setRequestHeader("Host", "172.18.25.130:8091");
+                // Set a function to be called when the request is complete
+                req.onload = function () {
+                    if (req.status === 200) {
+                        // 成功收到http响应
+                        var response = JSON.parse(req.responseText);
+                        if(response.code == "200") {
+                            alert("验证成功，请前往登录");
+                            document.querySelector('form').submit();
+                        }
+                        else if(response.code == "402") {
+                            alert("账号/邮箱格式有误，请重新输入");
+                        }
+                        else if(response.code == "403") {
+                            alert("注册账号/邮箱与验证账号/邮箱输入不同，请重新输入");
+                        }
+                        else if(response.code == "410") {
+                            alert("账号/邮箱已激活，已通过邮件验证码");
+                        }
+                        else if(response.code == "411") {
+                            alert("验证码输入有误，请重新输入");
+                        }
+                        else if(response.code == "500") {
+                            alert("数据库操作失败，请重试");
+                        }
+                        else {
+                            alert(JSON.stringify(response));
+                        }
+                    } 
+                    else {
+                        alert("An error occurred: " + req.status);
+                    }
+                };
+                req.send(null);
+            }
+
+            function reset() {
+                $('#auth_id').val('');
+                $('#auth_code').val('');
+            }
+        </script>
+    </head>
+
+    <body>
+    <body class="Grid">
+        <div class="ui fixed transparent inverted main menu">
+            <div class="container">
+                <div class="title item">
+                    <b>ChatRoom</b> 在线聊天系统
+                </div>
+                <div class="right menu">
+                    <div class="title item">
+                        <b>
+                        <a  href="./login.html" title="返回登录">
+                            返回登录
+                        </a>
+                        </b>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="wrapper" style="display: block; z-index: 998;">
+            <div class="container">
+                <div id="login" class="ui two column relaxed grid">
+                    <div class="column">
+                        <div class="ui fluid form segment">
+                            <h3 class="ui header">验证</h3>
+                            <form name="activeForm" action="./login.html" onsubmit="return false;" onreset="reset()" method="post">
+                                <div class="field">
+                                    <label>账号/邮箱</label>
+                                    <input name="auth_id" id="auth_id" placeholder="请重新输入账号或邮箱..." type="text">
+                                </div>
+                                <div class="field">
+                                    <label>验证码</label>
+                                    <input name="auth_code" id="auth_code" placeholder="验证码" type="text">
+                                </div>
+                                
+                                <button type="button" onclick="submitForm()" class="ui blue login_submit button">提交</button>
+                                &nbsp &nbsp &nbsp
+                                <input type="reset"  value="重置" id="reset" class="ui blue login_submit button">
+                                &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+                                <a href="./register.html">返回</a>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+<html>

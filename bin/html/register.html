@@ -1,0 +1,180 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>注册</title>
+        <link rel="stylesheet" class="ui" href="../css/semantic.min.css"/>
+        <link rel="stylesheet" class="ui" href="../css/body.css"/>
+        <link rel="stylesheet" class="ui" href="../css/chat.css"/>
+
+        <script type="text/javascript">
+            function submitForm() {
+                var username = document.forms["registerForm"]["username"].value;
+                var email = document.forms["registerForm"]["email"].value;
+                var password = document.forms["registerForm"]["password"].value;
+                var rep_password = document.forms["registerForm"]["rep_password"].value;
+                if (username == null || username == "") {
+                    alert("账号不能为空");
+                    return;
+                }
+                if (email == null || email == "") {
+                    alert("邮箱不能为空");
+                    return;
+                }
+                if (password == null || password == "") {
+                    alert("密码不能为空");
+                    return;
+                }
+                if (rep_password == null || rep_password == "") {
+                    alert("重复密码不能为空");
+                    return;
+                }
+                var reg_filter=/^s*[.A-Za-z0-9_-]{4,15}s*$/;
+                if (!reg_filter.test(username)) {
+                    alert("账号填写不正确,请重新填写！可使用的字符为(A-Z a-z 0-9 _ - .)长度不小于4个字符，不超过15个字符，注意不要使用空格");
+                    return;
+                }
+                var atpos=email.indexOf("@");
+                var dotpos=email.lastIndexOf(".");
+                if (atpos<1 || dotpos<atpos+2 || dotpos+2>=email.length) {
+                    alert("请输入有效的邮箱地址");
+                    return;
+                }
+                if (!reg_filter.test(password)) {
+                    alert("密码填写不正确,请重新填写！可使用的字符为(A-Z a-z 0-9 _ - .)长度不小于4个字符，不超过15个字符，注意不要使用空格");
+                    return;	
+                }
+                if (password != rep_password) {
+                    alert("密码不匹配");
+                    return;
+                }
+                
+                var req = new XMLHttpRequest();
+                uri = "http://172.18.25.130:8091/user/create?account=" + username + "&email=" + email + "&passwd=" + password;
+                req.open('GET', uri, true);
+                req.setRequestHeader("Host", "172.18.25.130:8091");
+                // Set a function to be called when the request is complete
+                req.onload = function () {
+                    if (req.status == 200) {
+                        // 成功收到http响应
+                        var response = JSON.parse(req.responseText);
+                        if(response.code == "200") {
+                            alert("注册成功，请前往验证");
+                            document.querySelector('form').submit();
+                        }
+                        else if(response.code == "401") {
+                            if(response.msg == "account exists") {
+                                alert("账号已存在，请更换");
+                            } 
+                            else {
+                                alert("邮箱已注册，请更换");
+                            }
+                        }
+                        else if(response.code == "402") {
+                            if(response.msg == "invalid account") {
+                                alert("账号格式有误，请重新输入");
+                            } 
+                            else {
+                                alert("邮箱格式有误，请重新输入");
+                            }
+                        }
+                        else if(response.code == "500") {
+                            alert("数据库操作失败，请重试");
+                        }
+                        else if(response.code == "501") {
+                            alert("邮件验证码发送失败，请重试");
+                        }
+                        else {
+                            alert(JSON.stringify(response));
+                        }
+                    } 
+                    else {
+                        alert("An error occurred: " + req.status);
+                    }
+                };
+                req.send(null);
+            }
+
+            function reset() {
+                $('#username').val('');
+                $('#email').val('');
+                $('#password').val('');
+                $('#rep_password').val('');
+            }
+        </script>
+    </head>
+
+    <body>
+    <body class="Grid">
+        <div class="ui fixed transparent inverted main menu">
+            <div class="container">
+                <div class="title item">
+                    <b>ChatRoom</b> 在线聊天系统
+                </div>
+                <div class="right menu">
+                    <div class="title item">
+                        <b>
+                        <a  href="./login.html" title="返回登录">
+                            返回登录
+                        </a>
+                        </b>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- {%if not Error%} -->
+        <div id="wrapper" style="display: block; z-index: 998;">
+            <div class="container">
+                <div id="login" class="ui two column relaxed grid">
+                    <div class="column">
+                        <div class="ui fluid form segment">
+                            <h3 class="ui header">注册</h3>
+                            <form name="registerForm" action="./active.html" onsubmit="return false;" onreset="reset()" method="post">
+                                <div class="field">
+                                    <label>账号</label>
+                                    <input name="username" id="username" placeholder="账号" type="text">
+                                </div>
+                                <div class="field">
+                                    <label>邮箱</label>
+                                    <input name="email" id="email" placeholder="邮箱" type="text">
+                                </div>
+                                <div class="field">
+                                    <label>密码</label>
+                                    <input name="password" id="password" type="password">
+                                </div>
+                                <div class="field">
+                                    <label>重复密码</label>
+                                    <input name="rep_password" id="rep_password" type="password">
+                                </div>
+                                <div class="inline field">
+                                    <div class="ui checkbox">
+                                        <input type="checkbox" id="terms">
+                                        <label for="terms">我同意ChatRoom的服务条款。</label>
+                                    </div>
+                                </div>
+                                <button type="button" onclick="submitForm()" class="ui blue login_submit button">注册</button>
+                                &nbsp &nbsp &nbsp
+                                <input type="reset"  value="重置" id="reset" class="ui blue login_submit button">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- {%else%}
+        <div id="wrapper" style="display: block; z-index: 998;">
+            <div class="container">
+                <div id="login" class="ui two column relaxed grid">
+                    <div class="column">
+                        <div class="ui fluid form segment">
+                            <h3 class="ui header" color="red" style="color: red;">注册失败</h3>
+                                <h3><b>账号重复</b></h3>
+                                <a href='./register.html'> 重新注册 </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {%end%} -->
+    </body>
+<html>

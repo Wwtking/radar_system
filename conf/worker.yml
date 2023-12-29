@@ -1,5 +1,5 @@
 workers:
     io:
-        thread_num: 4
+        thread_num: 10
     accept:
-        thread_num: 1
+        thread_num: 2

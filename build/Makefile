@@ -191,6 +191,46 @@ sylar/fast:
 	$(MAKE) -f WebServer_sylar/CMakeFiles/sylar.dir/build.make WebServer_sylar/CMakeFiles/sylar.dir/build
 .PHONY : sylar/fast
 
+#=============================================================================
+# Target rules for targets named orm_data
+
+# Build rule for target.
+orm_data: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 orm_data
+.PHONY : orm_data
+
+# fast build rule for target.
+orm_data/fast:
+	$(MAKE) -f orm_out/CMakeFiles/orm_data.dir/build.make orm_out/CMakeFiles/orm_data.dir/build
+.PHONY : orm_data/fast
+
+radar/manager/user_manager.o: radar/manager/user_manager.cpp.o
+
+.PHONY : radar/manager/user_manager.o
+
+# target to build an object file
+radar/manager/user_manager.cpp.o:
+	$(MAKE) -f CMakeFiles/radar_system.dir/build.make CMakeFiles/radar_system.dir/radar/manager/user_manager.cpp.o
+.PHONY : radar/manager/user_manager.cpp.o
+
+radar/manager/user_manager.i: radar/manager/user_manager.cpp.i
+
+.PHONY : radar/manager/user_manager.i
+
+# target to preprocess a source file
+radar/manager/user_manager.cpp.i:
+	$(MAKE) -f CMakeFiles/radar_system.dir/build.make CMakeFiles/radar_system.dir/radar/manager/user_manager.cpp.i
+.PHONY : radar/manager/user_manager.cpp.i
+
+radar/manager/user_manager.s: radar/manager/user_manager.cpp.s
+
+.PHONY : radar/manager/user_manager.s
+
+# target to generate assembly for a file
+radar/manager/user_manager.cpp.s:
+	$(MAKE) -f CMakeFiles/radar_system.dir/build.make CMakeFiles/radar_system.dir/radar/manager/user_manager.cpp.s
+.PHONY : radar/manager/user_manager.cpp.s
+
 radar/my_module.o: radar/my_module.cpp.o
 
 .PHONY : radar/my_module.o
@@ -218,6 +258,303 @@ radar/my_module.cpp.s:
 	$(MAKE) -f CMakeFiles/radar_system.dir/build.make CMakeFiles/radar_system.dir/radar/my_module.cpp.s
 .PHONY : radar/my_module.cpp.s
 
+radar/radar_util.o: radar/radar_util.cpp.o
+
+.PHONY : radar/radar_util.o
+
+# target to build an object file
+radar/radar_util.cpp.o:
+	$(MAKE) -f CMakeFiles/radar_system.dir/build.make CMakeFiles/radar_system.dir/radar/radar_util.cpp.o
+.PHONY : radar/radar_util.cpp.o
+
+radar/radar_util.i: radar/radar_util.cpp.i
+
+.PHONY : radar/radar_util.i
+
+# target to preprocess a source file
+radar/radar_util.cpp.i:
+	$(MAKE) -f CMakeFiles/radar_system.dir/build.make CMakeFiles/radar_system.dir/radar/radar_util.cpp.i
+.PHONY : radar/radar_util.cpp.i
+
+radar/radar_util.s: radar/radar_util.cpp.s
+
+.PHONY : radar/radar_util.s
+
+# target to generate assembly for a file
+radar/radar_util.cpp.s:
+	$(MAKE) -f CMakeFiles/radar_system.dir/build.make CMakeFiles/radar_system.dir/radar/radar_util.cpp.s
+.PHONY : radar/radar_util.cpp.s
+
+radar/resource_servlet.o: radar/resource_servlet.cpp.o
+
+.PHONY : radar/resource_servlet.o
+
+# target to build an object file
+radar/resource_servlet.cpp.o:
+	$(MAKE) -f CMakeFiles/radar_system.dir/build.make CMakeFiles/radar_system.dir/radar/resource_servlet.cpp.o
+.PHONY : radar/resource_servlet.cpp.o
+
+radar/resource_servlet.i: radar/resource_servlet.cpp.i
+
+.PHONY : radar/resource_servlet.i
+
+# target to preprocess a source file
+radar/resource_servlet.cpp.i:
+	$(MAKE) -f CMakeFiles/radar_system.dir/build.make CMakeFiles/radar_system.dir/radar/resource_servlet.cpp.i
+.PHONY : radar/resource_servlet.cpp.i
+
+radar/resource_servlet.s: radar/resource_servlet.cpp.s
+
+.PHONY : radar/resource_servlet.s
+
+# target to generate assembly for a file
+radar/resource_servlet.cpp.s:
+	$(MAKE) -f CMakeFiles/radar_system.dir/build.make CMakeFiles/radar_system.dir/radar/resource_servlet.cpp.s
+.PHONY : radar/resource_servlet.cpp.s
+
+radar/servlets/user_active_servlet.o: radar/servlets/user_active_servlet.cpp.o
+
+.PHONY : radar/servlets/user_active_servlet.o
+
+# target to build an object file
+radar/servlets/user_active_servlet.cpp.o:
+	$(MAKE) -f CMakeFiles/radar_system.dir/build.make CMakeFiles/radar_system.dir/radar/servlets/user_active_servlet.cpp.o
+.PHONY : radar/servlets/user_active_servlet.cpp.o
+
+radar/servlets/user_active_servlet.i: radar/servlets/user_active_servlet.cpp.i
+
+.PHONY : radar/servlets/user_active_servlet.i
+
+# target to preprocess a source file
+radar/servlets/user_active_servlet.cpp.i:
+	$(MAKE) -f CMakeFiles/radar_system.dir/build.make CMakeFiles/radar_system.dir/radar/servlets/user_active_servlet.cpp.i
+.PHONY : radar/servlets/user_active_servlet.cpp.i
+
+radar/servlets/user_active_servlet.s: radar/servlets/user_active_servlet.cpp.s
+
+.PHONY : radar/servlets/user_active_servlet.s
+
+# target to generate assembly for a file
+radar/servlets/user_active_servlet.cpp.s:
+	$(MAKE) -f CMakeFiles/radar_system.dir/build.make CMakeFiles/radar_system.dir/radar/servlets/user_active_servlet.cpp.s
+.PHONY : radar/servlets/user_active_servlet.cpp.s
+
+radar/servlets/user_change_passwd_servlet.o: radar/servlets/user_change_passwd_servlet.cpp.o
+
+.PHONY : radar/servlets/user_change_passwd_servlet.o
+
+# target to build an object file
+radar/servlets/user_change_passwd_servlet.cpp.o:
+	$(MAKE) -f CMakeFiles/radar_system.dir/build.make CMakeFiles/radar_system.dir/radar/servlets/user_change_passwd_servlet.cpp.o
+.PHONY : radar/servlets/user_change_passwd_servlet.cpp.o
+
+radar/servlets/user_change_passwd_servlet.i: radar/servlets/user_change_passwd_servlet.cpp.i
+
+.PHONY : radar/servlets/user_change_passwd_servlet.i
+
+# target to preprocess a source file
+radar/servlets/user_change_passwd_servlet.cpp.i:
+	$(MAKE) -f CMakeFiles/radar_system.dir/build.make CMakeFiles/radar_system.dir/radar/servlets/user_change_passwd_servlet.cpp.i
+.PHONY : radar/servlets/user_change_passwd_servlet.cpp.i
+
+radar/servlets/user_change_passwd_servlet.s: radar/servlets/user_change_passwd_servlet.cpp.s
+
+.PHONY : radar/servlets/user_change_passwd_servlet.s
+
+# target to generate assembly for a file
+radar/servlets/user_change_passwd_servlet.cpp.s:
+	$(MAKE) -f CMakeFiles/radar_system.dir/build.make CMakeFiles/radar_system.dir/radar/servlets/user_change_passwd_servlet.cpp.s
+.PHONY : radar/servlets/user_change_passwd_servlet.cpp.s
+
+radar/servlets/user_clear_servlet.o: radar/servlets/user_clear_servlet.cpp.o
+
+.PHONY : radar/servlets/user_clear_servlet.o
+
+# target to build an object file
+radar/servlets/user_clear_servlet.cpp.o:
+	$(MAKE) -f CMakeFiles/radar_system.dir/build.make CMakeFiles/radar_system.dir/radar/servlets/user_clear_servlet.cpp.o
+.PHONY : radar/servlets/user_clear_servlet.cpp.o
+
+radar/servlets/user_clear_servlet.i: radar/servlets/user_clear_servlet.cpp.i
+
+.PHONY : radar/servlets/user_clear_servlet.i
+
+# target to preprocess a source file
+radar/servlets/user_clear_servlet.cpp.i:
+	$(MAKE) -f CMakeFiles/radar_system.dir/build.make CMakeFiles/radar_system.dir/radar/servlets/user_clear_servlet.cpp.i
+.PHONY : radar/servlets/user_clear_servlet.cpp.i
+
+radar/servlets/user_clear_servlet.s: radar/servlets/user_clear_servlet.cpp.s
+
+.PHONY : radar/servlets/user_clear_servlet.s
+
+# target to generate assembly for a file
+radar/servlets/user_clear_servlet.cpp.s:
+	$(MAKE) -f CMakeFiles/radar_system.dir/build.make CMakeFiles/radar_system.dir/radar/servlets/user_clear_servlet.cpp.s
+.PHONY : radar/servlets/user_clear_servlet.cpp.s
+
+radar/servlets/user_create_servlet.o: radar/servlets/user_create_servlet.cpp.o
+
+.PHONY : radar/servlets/user_create_servlet.o
+
+# target to build an object file
+radar/servlets/user_create_servlet.cpp.o:
+	$(MAKE) -f CMakeFiles/radar_system.dir/build.make CMakeFiles/radar_system.dir/radar/servlets/user_create_servlet.cpp.o
+.PHONY : radar/servlets/user_create_servlet.cpp.o
+
+radar/servlets/user_create_servlet.i: radar/servlets/user_create_servlet.cpp.i
+
+.PHONY : radar/servlets/user_create_servlet.i
+
+# target to preprocess a source file
+radar/servlets/user_create_servlet.cpp.i:
+	$(MAKE) -f CMakeFiles/radar_system.dir/build.make CMakeFiles/radar_system.dir/radar/servlets/user_create_servlet.cpp.i
+.PHONY : radar/servlets/user_create_servlet.cpp.i
+
+radar/servlets/user_create_servlet.s: radar/servlets/user_create_servlet.cpp.s
+
+.PHONY : radar/servlets/user_create_servlet.s
+
+# target to generate assembly for a file
+radar/servlets/user_create_servlet.cpp.s:
+	$(MAKE) -f CMakeFiles/radar_system.dir/build.make CMakeFiles/radar_system.dir/radar/servlets/user_create_servlet.cpp.s
+.PHONY : radar/servlets/user_create_servlet.cpp.s
+
+radar/servlets/user_forget_passwd_servlet.o: radar/servlets/user_forget_passwd_servlet.cpp.o
+
+.PHONY : radar/servlets/user_forget_passwd_servlet.o
+
+# target to build an object file
+radar/servlets/user_forget_passwd_servlet.cpp.o:
+	$(MAKE) -f CMakeFiles/radar_system.dir/build.make CMakeFiles/radar_system.dir/radar/servlets/user_forget_passwd_servlet.cpp.o
+.PHONY : radar/servlets/user_forget_passwd_servlet.cpp.o
+
+radar/servlets/user_forget_passwd_servlet.i: radar/servlets/user_forget_passwd_servlet.cpp.i
+
+.PHONY : radar/servlets/user_forget_passwd_servlet.i
+
+# target to preprocess a source file
+radar/servlets/user_forget_passwd_servlet.cpp.i:
+	$(MAKE) -f CMakeFiles/radar_system.dir/build.make CMakeFiles/radar_system.dir/radar/servlets/user_forget_passwd_servlet.cpp.i
+.PHONY : radar/servlets/user_forget_passwd_servlet.cpp.i
+
+radar/servlets/user_forget_passwd_servlet.s: radar/servlets/user_forget_passwd_servlet.cpp.s
+
+.PHONY : radar/servlets/user_forget_passwd_servlet.s
+
+# target to generate assembly for a file
+radar/servlets/user_forget_passwd_servlet.cpp.s:
+	$(MAKE) -f CMakeFiles/radar_system.dir/build.make CMakeFiles/radar_system.dir/radar/servlets/user_forget_passwd_servlet.cpp.s
+.PHONY : radar/servlets/user_forget_passwd_servlet.cpp.s
+
+radar/servlets/user_login_servlet.o: radar/servlets/user_login_servlet.cpp.o
+
+.PHONY : radar/servlets/user_login_servlet.o
+
+# target to build an object file
+radar/servlets/user_login_servlet.cpp.o:
+	$(MAKE) -f CMakeFiles/radar_system.dir/build.make CMakeFiles/radar_system.dir/radar/servlets/user_login_servlet.cpp.o
+.PHONY : radar/servlets/user_login_servlet.cpp.o
+
+radar/servlets/user_login_servlet.i: radar/servlets/user_login_servlet.cpp.i
+
+.PHONY : radar/servlets/user_login_servlet.i
+
+# target to preprocess a source file
+radar/servlets/user_login_servlet.cpp.i:
+	$(MAKE) -f CMakeFiles/radar_system.dir/build.make CMakeFiles/radar_system.dir/radar/servlets/user_login_servlet.cpp.i
+.PHONY : radar/servlets/user_login_servlet.cpp.i
+
+radar/servlets/user_login_servlet.s: radar/servlets/user_login_servlet.cpp.s
+
+.PHONY : radar/servlets/user_login_servlet.s
+
+# target to generate assembly for a file
+radar/servlets/user_login_servlet.cpp.s:
+	$(MAKE) -f CMakeFiles/radar_system.dir/build.make CMakeFiles/radar_system.dir/radar/servlets/user_login_servlet.cpp.s
+.PHONY : radar/servlets/user_login_servlet.cpp.s
+
+radar/servlets/user_logout_servlet.o: radar/servlets/user_logout_servlet.cpp.o
+
+.PHONY : radar/servlets/user_logout_servlet.o
+
+# target to build an object file
+radar/servlets/user_logout_servlet.cpp.o:
+	$(MAKE) -f CMakeFiles/radar_system.dir/build.make CMakeFiles/radar_system.dir/radar/servlets/user_logout_servlet.cpp.o
+.PHONY : radar/servlets/user_logout_servlet.cpp.o
+
+radar/servlets/user_logout_servlet.i: radar/servlets/user_logout_servlet.cpp.i
+
+.PHONY : radar/servlets/user_logout_servlet.i
+
+# target to preprocess a source file
+radar/servlets/user_logout_servlet.cpp.i:
+	$(MAKE) -f CMakeFiles/radar_system.dir/build.make CMakeFiles/radar_system.dir/radar/servlets/user_logout_servlet.cpp.i
+.PHONY : radar/servlets/user_logout_servlet.cpp.i
+
+radar/servlets/user_logout_servlet.s: radar/servlets/user_logout_servlet.cpp.s
+
+.PHONY : radar/servlets/user_logout_servlet.s
+
+# target to generate assembly for a file
+radar/servlets/user_logout_servlet.cpp.s:
+	$(MAKE) -f CMakeFiles/radar_system.dir/build.make CMakeFiles/radar_system.dir/radar/servlets/user_logout_servlet.cpp.s
+.PHONY : radar/servlets/user_logout_servlet.cpp.s
+
+radar/servlets/user_modify_servlet.o: radar/servlets/user_modify_servlet.cpp.o
+
+.PHONY : radar/servlets/user_modify_servlet.o
+
+# target to build an object file
+radar/servlets/user_modify_servlet.cpp.o:
+	$(MAKE) -f CMakeFiles/radar_system.dir/build.make CMakeFiles/radar_system.dir/radar/servlets/user_modify_servlet.cpp.o
+.PHONY : radar/servlets/user_modify_servlet.cpp.o
+
+radar/servlets/user_modify_servlet.i: radar/servlets/user_modify_servlet.cpp.i
+
+.PHONY : radar/servlets/user_modify_servlet.i
+
+# target to preprocess a source file
+radar/servlets/user_modify_servlet.cpp.i:
+	$(MAKE) -f CMakeFiles/radar_system.dir/build.make CMakeFiles/radar_system.dir/radar/servlets/user_modify_servlet.cpp.i
+.PHONY : radar/servlets/user_modify_servlet.cpp.i
+
+radar/servlets/user_modify_servlet.s: radar/servlets/user_modify_servlet.cpp.s
+
+.PHONY : radar/servlets/user_modify_servlet.s
+
+# target to generate assembly for a file
+radar/servlets/user_modify_servlet.cpp.s:
+	$(MAKE) -f CMakeFiles/radar_system.dir/build.make CMakeFiles/radar_system.dir/radar/servlets/user_modify_servlet.cpp.s
+.PHONY : radar/servlets/user_modify_servlet.cpp.s
+
+radar/struct.o: radar/struct.cpp.o
+
+.PHONY : radar/struct.o
+
+# target to build an object file
+radar/struct.cpp.o:
+	$(MAKE) -f CMakeFiles/radar_system.dir/build.make CMakeFiles/radar_system.dir/radar/struct.cpp.o
+.PHONY : radar/struct.cpp.o
+
+radar/struct.i: radar/struct.cpp.i
+
+.PHONY : radar/struct.i
+
+# target to preprocess a source file
+radar/struct.cpp.i:
+	$(MAKE) -f CMakeFiles/radar_system.dir/build.make CMakeFiles/radar_system.dir/radar/struct.cpp.i
+.PHONY : radar/struct.cpp.i
+
+radar/struct.s: radar/struct.cpp.s
+
+.PHONY : radar/struct.s
+
+# target to generate assembly for a file
+radar/struct.cpp.s:
+	$(MAKE) -f CMakeFiles/radar_system.dir/build.make CMakeFiles/radar_system.dir/radar/struct.cpp.s
+.PHONY : radar/struct.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -232,9 +569,46 @@ help:
 	@echo "... email_test"
 	@echo "... sqlite3_test"
 	@echo "... sylar"
+	@echo "... orm_data"
+	@echo "... radar/manager/user_manager.o"
+	@echo "... radar/manager/user_manager.i"
+	@echo "... radar/manager/user_manager.s"
 	@echo "... radar/my_module.o"
 	@echo "... radar/my_module.i"
 	@echo "... radar/my_module.s"
+	@echo "... radar/radar_util.o"
+	@echo "... radar/radar_util.i"
+	@echo "... radar/radar_util.s"
+	@echo "... radar/resource_servlet.o"
+	@echo "... radar/resource_servlet.i"
+	@echo "... radar/resource_servlet.s"
+	@echo "... radar/servlets/user_active_servlet.o"
+	@echo "... radar/servlets/user_active_servlet.i"
+	@echo "... radar/servlets/user_active_servlet.s"
+	@echo "... radar/servlets/user_change_passwd_servlet.o"
+	@echo "... radar/servlets/user_change_passwd_servlet.i"
+	@echo "... radar/servlets/user_change_passwd_servlet.s"
+	@echo "... radar/servlets/user_clear_servlet.o"
+	@echo "... radar/servlets/user_clear_servlet.i"
+	@echo "... radar/servlets/user_clear_servlet.s"
+	@echo "... radar/servlets/user_create_servlet.o"
+	@echo "... radar/servlets/user_create_servlet.i"
+	@echo "... radar/servlets/user_create_servlet.s"
+	@echo "... radar/servlets/user_forget_passwd_servlet.o"
+	@echo "... radar/servlets/user_forget_passwd_servlet.i"
+	@echo "... radar/servlets/user_forget_passwd_servlet.s"
+	@echo "... radar/servlets/user_login_servlet.o"
+	@echo "... radar/servlets/user_login_servlet.i"
+	@echo "... radar/servlets/user_login_servlet.s"
+	@echo "... radar/servlets/user_logout_servlet.o"
+	@echo "... radar/servlets/user_logout_servlet.i"
+	@echo "... radar/servlets/user_logout_servlet.s"
+	@echo "... radar/servlets/user_modify_servlet.o"
+	@echo "... radar/servlets/user_modify_servlet.i"
+	@echo "... radar/servlets/user_modify_servlet.s"
+	@echo "... radar/struct.o"
+	@echo "... radar/struct.i"
+	@echo "... radar/struct.s"
 .PHONY : help
 
 

@@ -1,0 +1,160 @@
+<!-- <!DOCTYPE HTML> -->
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>登录</title>
+        <link rel="stylesheet" class="ui" href="../css/semantic.min.css"/>
+        <link rel="stylesheet" class="ui" href="../css/body.css"/>
+        <link rel="stylesheet" class="ui" href="../css/chat.css"/>
+
+        <script type="text/javascript">
+            function submitForm() {
+                var auth_id = document.forms["loginForm"]["auth_id"].value;
+                var password = document.forms["loginForm"]["password"].value;
+
+                if (auth_id == null || auth_id == "") {
+                    alert("账号/邮箱不能为空");
+                    return;
+                }
+                if (password == null || password == "") {
+                    alert("密码不能为空");
+                    return;
+                }
+                var reg_filter=/^s*[.A-Za-z0-9_-]{4,15}s*$/;
+                if (!reg_filter.test(password)) {
+                    alert("密码填写不正确,请重新填写！可使用的字符为（A-Z a-z 0-9 _ - .)长度不小于4个字符，不超过15个字符，注意不要使用空格");
+                    return;
+                }
+
+                var req = new XMLHttpRequest();
+                uri = "http://172.18.25.130:8091/user/login?auth_id=" + auth_id + "&passwd=" + password;
+                req.open('GET', uri, true);
+                req.setRequestHeader("Host", "172.18.25.130:8091");
+                // Set a function to be called when the request is complete
+                req.onload = function () {
+                    if (req.status === 200) {
+                        // 成功收到http响应
+                        var response = JSON.parse(req.responseText);
+                        if(response.code == "200") {
+                            alert("登录成功");
+                            // 更新表单的 action 属性，使其携带参数跳转到下一个界面
+                            var action = "./chat.html?username=" + encodeURIComponent(auth_id);
+                            document.forms.loginForm.action = action;
+                            document.querySelector('form').submit();
+                        }
+                        else if(response.code == "402") {
+                            alert("账号格式有误，请重新输入");
+                        }
+                        else if(response.code == "403") {
+                            alert("账号未注册，请前往注册");
+                        }
+                        else if(response.code == "409") {
+                            alert("已有账号正在登录中，请先退出");
+                        }
+                        else if(response.code == "410") {
+                            alert("账号未激活，尚未通过邮件验证码");
+                        }
+                        else if(response.code == "411") {
+                            alert("密码输入错误，请重新输入");
+                        }
+                        else if(response.code == "500") {
+                            alert("数据库操作失败，请重试");
+                        }
+                        else {
+                            alert(JSON.stringify(response));
+                        }
+                    } 
+                    else {
+                        alert("An error occurred: " + req.status);
+                    }
+                };
+                req.send(null);
+            }
+
+            function logout() {
+                var req = new XMLHttpRequest();
+                uri = "http://172.18.25.130:8091/user/logout";
+                req.open('GET', uri, true);
+                req.setRequestHeader("Host", "172.18.25.130:8091");
+                // Set a function to be called when the request is complete
+                req.onload = function () {
+                    if (req.status === 200) {
+                        // 成功收到http响应
+                        var response = JSON.parse(req.responseText);
+                        if(response.code == "200") {
+                            alert("退出登录");
+                            // 更新表单的 action 属性，使其跳转到下一个界面
+                            var action = "./login.html";
+                            document.forms.loginForm.action = action;
+                            document.querySelector('form').submit();
+                        }
+                        else if(response.code == "408") {
+                            alert("当前没有账号登录，请先登录");
+                        }
+                        else {
+                            alert(JSON.stringify(response));
+                        }
+                    } 
+                    else {
+                        alert("An error occurred: " + req.status);
+                    }
+                };
+                req.send(null);
+            }
+        </script>
+    </head>
+
+    <body onload="logout()">
+        <div class="ui fixed transparent inverted main menu">
+            <div class="container">
+                <div class="title item">
+                    <b>ChatRoom</b> 在线聊天系统
+                </div>
+                <div class="right menu">
+                    <div class="title item">
+                        From: wwt
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="wrapper" style="display: block; z-index: 998;">
+        <div class="container">
+            <div id="login" class="ui two column relaxed grid">
+                <div class="column">
+                    <div class="ui fluid form segment">
+                        <h3 class="ui header">登录</h3>
+                            <form name="loginForm"  action="" onsubmit="return false;" method="post">
+                                <div class="field">
+                                    <label>账号/邮箱</label>
+                                    <input name="auth_id" id="auth_id" placeholder="输入账号或邮箱" type="text">
+                                </div>
+                                <div class="field">
+                                    <label>密码</label>
+                                    <input name="password" id="password" type="password">
+                                </div>
+                                
+                                <button type="button" onclick="submitForm()" class="ui blue login_submit button">登录</button> &nbsp
+                                <a href='./forgetPasswd.html'> 忘记密码 </a>
+                                &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+                                <a href='./register.html'> 注册帐号 </a>
+                            </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <footer>
+            <div class="ui divider"></div>
+            <div class="container">
+                <div class="ui divided horizontal footer link list">
+                    <a href="https://github.com/suliangxd/ChatRoom" class="item">Github</a>
+                    <div class="item">
+                        开发者： <a href="http://github.com/suliangxd" target="_blank">wwt</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

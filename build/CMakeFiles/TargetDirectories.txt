@@ -8,3 +8,6 @@
 /home/wwt/radar_system/build/WebServer_sylar/CMakeFiles/email_test.dir
 /home/wwt/radar_system/build/WebServer_sylar/CMakeFiles/sqlite3_test.dir
 /home/wwt/radar_system/build/WebServer_sylar/CMakeFiles/sylar.dir
+/home/wwt/radar_system/build/orm_out/CMakeFiles/rebuild_cache.dir
+/home/wwt/radar_system/build/orm_out/CMakeFiles/edit_cache.dir
+/home/wwt/radar_system/build/orm_out/CMakeFiles/orm_data.dir

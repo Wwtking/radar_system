@@ -1,0 +1,181 @@
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>修改</title>
+		<link rel="stylesheet" class="ui" href="../css/semantic.min.css"/>
+		<link rel="stylesheet" class="ui" href="../css/body.css"/>
+		<link rel="stylesheet" class="ui" href="../css/chat.css"/>
+	</head>
+
+	<body>
+		<div class="ui fixed transparent inverted main menu">
+			<div class="container">
+				<div class="title item">
+					<b>{{cookieUser}}&nbsp</b> 在线聊天系统 
+				</div>
+
+				<div class="right menu">
+					<div class="title item">
+						&nbsp<b><a id="returnLink" href="javascript:void(0)" onclick="returnChat()"> 返回 </a></b>
+						&nbsp<b><a href="./logout.html"> 注销 </a></b>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="wrapper" style="display: block; z-index: 998;">
+			<div class="container">
+				<div id="login" class="ui two column relaxed grid">
+					<div class="column">
+						<div class="ui fluid form segment">
+							<h3 class="ui header">修改个人信息</h3>
+								<form name="ModifyForm"  action="" onsubmit="return vaildateForm();" onreset="reset()" method="post">
+									<div class="field">
+										<label id="accountLabel">账号：</label>
+									</div>
+									<div class="field">
+										<label>昵称</label>
+										<input name="name" id="name" placeholder="选填" type="text">
+									</div>
+									<div class="field">
+										<label>新密码</label>
+										<input name="password" id="password" placeholder="选填" type="password">
+									</div>
+									<div class="field">
+										<label>重复密码</label>
+										<input name="rep_password" id="rep_password" placeholder="选填" type="password">
+									</div>
+									<div class="field">
+										<label>邮箱</label>
+										<input name="email" id="email" placeholder="选填" type="text">
+									</div>
+									<input type="submit" value="提交" id="submit" class="ui blue login_submit button">
+									&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+									&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+									<input type="reset"  value="重置" id="reset" class="ui blue login_submit button">
+								</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script type="text/javascript">
+			function vaildateForm() {
+				var name = document.forms["ModifyForm"]["name"].value;
+				var password = document.forms["ModifyForm"]["password"].value;
+				var rep_password = document.forms["ModifyForm"]["rep_password"].value;
+				var email = document.forms["ModifyForm"]["email"].value;
+				var reg_filter=/^s*[.A-Za-z0-9_-]{3,20}s*$/;
+
+				if (name != null && name != "") {
+					// 保存username到localStorage
+    				localStorage.setItem("username", name);
+				}
+
+				if (password != null && password != "") {
+					if (!reg_filter.test(password)) {
+						alert("密码填写不正确,请重新填写！可使用的字符为（A-Z a-z 0-9 _ - .)长度不小于4个字符，不超过15个字符，注意不要使用空格");
+						return false;	
+					}
+					if (rep_password == null || rep_password == "") {
+						alert("重复密码不能为空");
+						return false;
+					}
+					if (password != rep_password) {
+						alert("密码不匹配");
+						return false;
+					}
+				}
+				if (email != null && email != "") {
+					var atpos=email.indexOf("@");
+					var dotpos=email.lastIndexOf(".");
+					if (atpos<1 || dotpos<atpos+2 || dotpos+2>=email.length) {
+						alert("请输入有效的邮箱地址");
+						return false;
+					}
+				}
+
+				var req = new XMLHttpRequest();
+                uri = "http://172.18.25.130:8091/user/modify?name=" + name + "&email=" + email + "&passwd=" + password;
+                req.open('GET', uri, true);
+                req.setRequestHeader("Host", "172.18.25.130:8091");
+                // Set a function to be called when the request is complete
+                req.onload = function () {
+                    if (req.status == 200) {
+                        // 成功收到http响应
+                        var response = JSON.parse(req.responseText);
+                        if(response.code == "200") {
+                            alert("修改成功");
+                        }
+                        else if(response.code == "400") {
+							alert("没有修改信息，请输入后再提交");
+                        }
+						else if(response.code == "401") {
+							alert("邮箱已注册，请更换");
+                        }
+						else if(response.code == "402") {
+							alert("邮箱格式有误，请重新输入");
+                        }
+                        else if(response.code == "403") {
+							alert("账号异常，不存在");
+                        }
+						else if(response.code == "408") {
+							alert("当前没有账号登录，请先登录");
+                        }
+                        else if(response.code == "500") {
+                            alert("数据库操作失败，请重试");
+                        }
+                        else if(response.code == "501") {
+                            alert("邮件验证码发送失败，请重试");
+                        }
+                        else {
+                            alert(JSON.stringify(response));
+                        }
+                    } 
+                    else {
+                        alert("An error occurred: " + req.status);
+                    }
+                };
+                req.send(null);
+				
+				return true;
+			}
+
+			function reset() {
+				$('#name').val('');
+				$('#password').val('');
+				$('#rep_password').val('');
+				$('#email').val('');
+			}
+			
+			// 获取账号并显示
+			var account = GetQueryString("account");
+			var accountLabel = document.getElementById("accountLabel");	// 获取label元素
+			accountLabel.innerHTML += `${account}`;		// 将全局变量的值插入到label元素中
+
+			// 在目标页面中获取 URL 查询参数的值
+            function GetQueryString(name) {
+                var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+                var r = window.location.search.substr(1).match(reg);
+                if (r != null) {
+                    return decodeURIComponent(r[2]);
+                }
+                return null;
+            }
+
+			function returnChat() {
+				var userid = GetQueryString("userid");
+
+				// 从localStorage中获取username的值
+				username = localStorage.getItem("username");
+				
+				var returnUrl = "./chat.html?username=" + username + "&userid=" + userid;
+				// 获取注销链接元素
+				var returnLink = document.getElementById("returnLink");
+				// 将注销页面地址拼接到 href 属性中
+				returnLink.href = returnUrl;
+			}
+		</script>
+	</body>
+<html>

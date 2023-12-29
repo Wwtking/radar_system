@@ -1,0 +1,312 @@
+﻿<html>
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>聊天</title>
+        <link rel="stylesheet" type="text/css" href="../css/chat_room.css">
+    </head>
+ 
+    <body onload="login()">
+        <div class="top-right-links">
+            <b><a id="uploadLink" href="javascript:void(0)" onclick="upload()">文件管理</a></b> &nbsp
+            <b><a id="modifyLink" href="javascript:void(0)" onclick="modify()">个人信息</a></b> &nbsp
+            <!-- <b><a href="./modify.html">个人信息</a></b> &nbsp -->
+            <b><a href="./logout.html">注销</a></b> &nbsp
+        </div>
+
+        <div class="container">
+            <div class="leftSide">
+                <!--header-->
+                <div class="header">
+                    <div class="userimg">
+                        <img src="../image/chat/user1.jpg" class="cover">
+                    </div>
+                    <ul class="nav_icons">
+                        <li><img src="../image/chat/chat.png"></li>
+                        <li><img src="../image/chat/application.png"></li>
+                    </ul>
+                </div>
+                <!--search-->
+                <div class="search_chat">
+                    <div>
+                        <input type="text" placeholder="搜索...">
+                        <img src="../image/chat/search.png">
+                    </div>
+                </div>
+                <!--ChatList-->
+                <div class="chatlist">
+                    <div class="block active">
+                        <div class="imgbx">
+                            <img src="../image/avatar/Group01.jpg" class="cover">
+                        </div>
+                        <div class="details">
+                            <!-- 左列消息提示框在这里 -->
+                            <div class="listHead">
+                                <h4>在线聊天群</h4>
+                                <p class="time">&nbsp</p>
+                            </div>
+                            <div class="message_p">
+                                <p>&nbsp</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+ 
+            <div class="rightSide">
+                <div class="header">
+                    <div class="imgText">
+                        <div class="userimg">
+                            <img src="../image/avatar/Group01.jpg" class="cover">
+                        </div>
+                        <h4>在线聊天群<br><span>活跃</span></h4>
+                    </div>
+                    <ul class="nav_icons">
+                        <li><img src="../image/chat/minimize.png"></li>
+                        <li><img src="../image/chat/minimize2.png"></li>
+                        <li><img src="../image/chat/close.png"></li>
+                    </ul>
+                </div>
+
+                <!--chatbox-->
+                <div class="chatBox">
+                        <!-- 对话展示框在这里 -->
+                        <!-- <div class="message my_message">name</div>
+                        <div class="message my_message">
+                            <p>你在干嘛呢？<br><span>10:15</span> </p>
+                        </div> -->
+                    </div>
+                </div>
+                
+                <!--chat input-->
+                <div class="chatbox_input">
+                    <div class="instrument">
+                        <img src="../image/chat/emoji.png" >
+                        <img src="../image/chat/voice.png">
+                    </div>
+                    <div>
+                        <input type="text" id="message-input" placeholder="请输入内容" onkeydown="handleKeyDown(event)">
+                        <button id="submit-btn" onclick="sendmsg()">发送</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 下面sendMessage()按照这个显示格式写
+        <div class="chatBox">
+            <div class="message my_message">name</div>
+            <div class="message my_message">
+                <p>你在干嘛呢？<br><span>10:15</span> </p>
+            </div>
+            <div class="message frnd_message">
+                <p>在写作业<br><span>10:15</span> </p>
+            </div>
+        </div> -->
+
+        <script type="text/javascript">
+            var chatRoomName = "在线聊天群";
+            // 获取元素
+            const messageInput = document.getElementById('message-input');
+            const chatBox = document.querySelector('.chatBox');
+            const leftMessage = document.querySelector('.details');
+
+            // 定义函数：发送消息
+            function sendMessage(message, name, time) {
+                // 显示用户名，相当于 <div class="message my_message">name</div>
+                const usernameElement = document.createElement('div');
+                usernameElement.classList.add('message');
+                usernameElement.textContent = name;
+
+                // 消息框架，相当于 <div class="message my_message">
+                const newMessage = document.createElement('div');
+                newMessage.classList.add('message');
+
+                // 创建并设置头像元素
+                const avatar = document.createElement('img');
+                // var randomNumber = Math.floor(Math.random() * 9) + 1;   // 1~9随机值
+                avatar.src = "../image/avatar/Member00" + ((parseInt(userid)%9)+1).toString() + ".jpg";
+                
+                // 消息内容，相当于 <p>你在干嘛呢？
+                const messageContent = document.createElement('p');
+                messageContent.textContent = message;
+
+                // 添加时间信息，相当于 <span>10:15</span>
+                const timeInfo = document.createElement('span');
+                timeInfo.textContent = time;
+                messageContent.appendChild(document.createElement('br'));
+                messageContent.appendChild(timeInfo);
+                
+                // 根据信息发送是自己还是别人来决定显示在左还是右
+                if(name == username) {
+                    // 自己发送信息
+                    usernameElement.classList.add('my_message');
+                    newMessage.classList.add('my_message');
+                    timeInfo.style['text-align'] = 'right';
+
+                    // 先添加消息内容，再添加图片，因为自己发消息，头像在内容右边
+                    avatar.classList.add('my_avatar');
+                    newMessage.appendChild(messageContent);
+                    newMessage.appendChild(avatar);
+                }
+                else {
+                    // 别人发送信息
+                    usernameElement.classList.add('frnd_message');
+                    newMessage.classList.add('frnd_message');
+                    timeInfo.style['text-align'] = 'left';
+                    
+                    // 先添加图片，再添加消息内容，因为别人发消息，头像在内容左边
+                    avatar.classList.add('frnd_avatar');
+                    newMessage.appendChild(avatar);
+                    newMessage.appendChild(messageContent);
+                }
+                
+                // 将消息内容添加到消息框架中，再将整个消息添加到对话展示框中
+                //newMessage.appendChild(messageContent);
+                //newMessage.appendChild(avatar);
+                chatBox.appendChild(usernameElement);
+                chatBox.appendChild(newMessage);
+
+                // 更新左边提示消息
+                leftMessageRemind(chatRoomName, message, time);
+                
+                // 清空输入框
+                messageInput.value = '';
+            }
+
+            // 定义函数：发送提醒
+            // <div class="reminder">xxx加入聊天室</div>
+            function sendRemind(message, name, time) {
+                const remindElement = document.createElement('div');
+                remindElement.classList.add('reminder');
+                remindElement.textContent = name + message + time;
+                chatBox.appendChild(remindElement);
+            }
+
+            // 定义函数：左边列表的消息提醒
+            function leftMessageRemind(name, message, time) {
+                leftMessage.innerHTML = '';
+
+                const leftRemindElement = document.createElement('div');
+                leftRemindElement.classList.add('listHead');
+
+                const roomNameElement = document.createElement('h4');
+                roomNameElement.textContent = name;
+
+                const timeElement = document.createElement('p');
+                timeElement.classList.add('time');
+                timeElement.textContent = time;
+
+                const messageElement = document.createElement('div');
+                messageElement.classList.add('message_p');
+
+                const contentElement = document.createElement('p');
+                contentElement.textContent = message;
+
+                leftRemindElement.appendChild(roomNameElement);
+                leftRemindElement.appendChild(timeElement);
+                leftMessage.appendChild(leftRemindElement);
+
+                messageElement.appendChild(contentElement);
+                leftMessage.appendChild(messageElement);
+            }
+
+            // 在目标页面中获取 URL 查询参数的值
+            function GetQueryString(name) {
+                var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+                var r = window.location.search.substr(1).match(reg);
+                if (r != null) {
+                    return decodeURIComponent(r[2]);
+                }
+                return null;
+            }
+
+            var websocket = null;
+            var username = null;
+            var userid = null;
+            var account = null;
+            
+            function login() {
+                // 将login界面的账号作为聊天室的昵称
+                username = GetQueryString("username");
+                userid = GetQueryString("userid");
+                account = GetQueryString("account");
+    
+                websocket = new WebSocket("ws://172.18.25.130:8072/wwt/chat");
+    
+                websocket.onerror = function() {
+                    alert("websocket onerror");
+                }
+    
+                websocket.onopen = function() {
+                    // alert("onopen " + document.getElementById('tname').value)
+                    var o = {}
+                    o.type = "login_request"
+                    o.name = username;
+                    websocket.send(JSON.stringify(o));
+                }
+    
+                websocket.onmessage = function(e) {
+                    // alert("onmessage " + e.data);
+                    var o = JSON.parse(e.data);
+                    if(o.type == "user_enter") {
+                        sendRemind("加入聊天室  ", o.name, o.time);
+                    } 
+                    else if(o.type == "user_leave") {
+                        sendRemind("离开聊天室  ", o.name, o.time);
+                    } 
+                    else if(o.type == "msg") {
+                        sendMessage(o.msg, o.name, o.time);
+                    } 
+                    else if(o.type == "login_response") {
+                        if(o.result == "408") {
+                            alert("当前没有账号登录，请先登录");
+                        }
+                        else if(o.result != "200") {
+                            alert("[" + o.result + "] [" + o.msg+ "]");
+                        }
+                        if(o.result == "400" || o.result == "402") {
+                            websocket = null;
+                        }
+                    }
+                }
+    
+                websocket.onclose= function() {
+                    sendRemind("您已和服务器断开连接，请重新刷新页面", "", "");
+                }
+            }
+            
+            // 回车发送消息
+            function handleKeyDown(event) {
+                if (event.key === "Enter") {
+                    event.preventDefault(); // 阻止回车键默认的换行行为
+                    sendmsg();
+                }
+            }
+
+            function sendmsg() {
+                var o = {}
+                o.type = "send_request";
+                o.msg = messageInput.value;
+                websocket.send(JSON.stringify(o));
+            }
+
+            function modify() {
+				var modifyUrl = "./modify.html?account=" + account + "&userid=" + userid;
+				// 获取修改链接元素
+				var modifyLink = document.getElementById("modifyLink");
+				// 将修改页面地址拼接到 href 属性中
+				modifyLink.href = modifyUrl;
+            }
+
+            function upload() {
+				var uploadUrl = "./upload.html?username=" + username + "&userid=" + userid;
+				// 获取文件管理链接元素
+				var uploadLink = document.getElementById("uploadLink");
+				// 将文件管理页面地址拼接到 href 属性中
+				uploadLink.href = uploadUrl;
+            }
+
+        </script>
+
+    </body>
+</html>

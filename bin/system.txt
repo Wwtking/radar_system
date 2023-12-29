@@ -135,3 +135,80 @@
 2023-12-27 14:18:49	28938	main	3	[INFO]	[system]	src/tcp_server.cpp:78	tcp server bind success, Socket information [sock=18, family=2, type=1, protocol=0, isConnected=0, m_locolAddress=127.0.0.1:8071]
 2023-12-27 14:18:49	28938	main	3	[INFO]	[system]	radar/my_module.cpp:22	onServerReady
 2023-12-27 14:18:49	28938	main	3	[INFO]	[system]	radar/my_module.cpp:27	onServerUp
+2023-12-29 03:43:06	27202	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/log.yml ok
+2023-12-29 03:43:06	27202	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/server.yml ok
+2023-12-29 03:43:06	27202	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/worker.yml ok
+2023-12-29 03:43:06	27202	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/sqlite3.yml ok
+2023-12-29 03:43:06	27202	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/system.yml ok
+2023-12-29 03:43:06	27202	UNKOWN	0	[INFO]	[system]	radar/my_module.cpp:145	CreateModule:0x21593c0
+2023-12-29 03:43:06	27202	UNKOWN	0	[INFO]	[system]	src/library.cpp:89	load module name=radar_system version=1.0 path=/home/wwt/radar_system/bin/module/libradar_system.so success
+2023-12-29 03:43:06	27202	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/log.yml ok
+2023-12-29 03:43:06	27202	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/server.yml ok
+2023-12-29 03:43:06	27202	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/worker.yml ok
+2023-12-29 03:43:06	27202	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/sqlite3.yml ok
+2023-12-29 03:43:06	27202	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/system.yml ok
+2023-12-29 03:43:06	27202	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/log.yml ok
+2023-12-29 03:43:06	27202	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/server.yml ok
+2023-12-29 03:43:06	27202	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/worker.yml ok
+2023-12-29 03:43:06	27202	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/sqlite3.yml ok
+2023-12-29 03:43:06	27202	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/system.yml ok
+2023-12-29 03:43:06	27202	main	3	[INFO]	[system]	radar/my_module.cpp:31	onLoad
+2023-12-29 03:43:06	27202	main	3	[ERROR]	[system]	src/socket.cpp:122	setsockopt sockfd=16 level=6 optname=1 errno=95 errstr=Operation not supported
+2023-12-29 03:43:06	27202	main	3	[INFO]	[system]	src/tcp_server.cpp:78	tcp server bind success, Socket information [sock=14, family=2, type=1, protocol=0, isConnected=0, m_locolAddress=0.0.0.0:8091]
+2023-12-29 03:43:06	27202	main	3	[INFO]	[system]	src/tcp_server.cpp:78	tcp server bind success, Socket information [sock=15, family=2, type=1, protocol=0, isConnected=0, m_locolAddress=127.0.0.1:39309]
+2023-12-29 03:43:06	27202	main	3	[INFO]	[system]	src/tcp_server.cpp:78	tcp server bind success, Socket information [sock=16, family=1, type=1, protocol=0, isConnected=0, m_locolAddress=/tmp/test_radar.sock]
+2023-12-29 03:43:06	27202	main	3	[INFO]	[system]	src/tcp_server.cpp:78	tcp server bind success, Socket information [sock=17, family=2, type=1, protocol=0, isConnected=0, m_locolAddress=0.0.0.0:8073]
+2023-12-29 03:43:06	27202	main	3	[INFO]	[system]	src/tcp_server.cpp:78	tcp server bind success, Socket information [sock=18, family=2, type=1, protocol=0, isConnected=0, m_locolAddress=127.0.0.1:8071]
+2023-12-29 03:43:06	27202	main	3	[INFO]	[system]	radar/my_module.cpp:41	onServerReady
+2023-12-29 03:43:06	27202	main	3	[INFO]	[system]	radar/my_module.cpp:50	init database begin
+2023-12-29 03:43:06	27202	main	3	[INFO]	[system]	radar/my_module.cpp:65	init database end
+2023-12-29 03:43:06	27202	main	3	[INFO]	[system]	radar/my_module.cpp:113	addServlet
+2023-12-29 03:43:06	27202	main	3	[INFO]	[system]	radar/my_module.cpp:138	onServerUp
+2023-12-29 03:43:23	27212	io_2	27	[INFO]	[system]	src/http/http_server.cpp:18	handleClient: Socket information [sock=24, family=2, type=1, protocol=0, isConnected=1, m_locolAddress=172.18.25.130:8091, m_remoteAddress=172.18.25.64:50153]
+2023-12-29 03:43:23	27219	io_9	28	[INFO]	[system]	src/http/http_server.cpp:18	handleClient: Socket information [sock=27, family=2, type=1, protocol=0, isConnected=1, m_locolAddress=172.18.25.130:8091, m_remoteAddress=172.18.25.64:50154]
+2023-12-29 03:43:23	27212	io_2	27	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/login.html
+2023-12-29 03:43:23	27212	io_2	27	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///css/semantic.min.css
+2023-12-29 03:43:23	27219	io_9	28	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///css/body.css
+2023-12-29 03:43:23	27219	io_9	29	[INFO]	[system]	src/http/http_server.cpp:18	handleClient: Socket information [sock=28, family=2, type=1, protocol=0, isConnected=1, m_locolAddress=172.18.25.130:8091, m_remoteAddress=172.18.25.64:50156]
+2023-12-29 03:43:23	27219	io_9	29	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///css/chat.css
+2023-12-29 03:43:23	27212	io_2	27	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///image/bg.jpg
+2023-12-29 03:43:24	27211	io_1	27	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/login.html
+2023-12-29 03:43:24	27211	io_1	27	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///css/semantic.min.css
+2023-12-29 03:43:24	27213	io_3	29	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///css/body.css
+2023-12-29 03:43:24	27216	io_6	28	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///css/chat.css
+2023-12-29 03:43:24	27211	io_1	27	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///image/bg.jpg
+2023-12-29 03:43:25	27211	io_1	27	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/login.html
+2023-12-29 03:43:25	27211	io_1	27	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///css/semantic.min.css
+2023-12-29 03:43:25	27213	io_3	28	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///css/body.css
+2023-12-29 03:43:25	27213	io_3	29	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///css/chat.css
+2023-12-29 03:43:25	27211	io_1	27	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///image/bg.jpg
+2023-12-29 03:43:27	27212	io_2	27	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/login.html
+2023-12-29 03:43:27	27212	io_2	27	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///css/semantic.min.css
+2023-12-29 03:43:27	27219	io_9	29	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///css/body.css
+2023-12-29 03:43:27	27219	io_9	28	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///css/chat.css
+2023-12-29 03:43:27	27219	io_9	27	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///image/bg.jpg
+2023-12-29 03:43:33	27217	io_7	27	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/login.html
+2023-12-29 03:43:33	27217	io_7	27	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///css/semantic.min.css
+2023-12-29 03:43:33	27215	io_5	28	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///css/body.css
+2023-12-29 03:43:33	27212	io_2	29	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///css/chat.css
+2023-12-29 03:43:33	27217	io_7	27	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///image/bg.jpg
+2023-12-29 03:43:37	27211	io_1	27	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/chat.html
+2023-12-29 03:43:37	27213	io_3	27	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///css/chat_room.css
+2023-12-29 03:43:37	27213	io_3	28	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///image/chat/user1.jpg
+2023-12-29 03:43:37	27211	io_1	38	[INFO]	[system]	src/http/http_server.cpp:18	handleClient: Socket information [sock=29, family=2, type=1, protocol=0, isConnected=1, m_locolAddress=172.18.25.130:8091, m_remoteAddress=172.18.25.64:50159]
+2023-12-29 03:43:37	27211	io_1	29	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///image/chat/chat.png
+2023-12-29 03:43:37	27213	io_3	39	[INFO]	[system]	src/http/http_server.cpp:18	handleClient: Socket information [sock=30, family=2, type=1, protocol=0, isConnected=1, m_locolAddress=172.18.25.130:8091, m_remoteAddress=172.18.25.64:50160]
+2023-12-29 03:43:37	27213	io_3	38	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///image/chat/application.png
+2023-12-29 03:43:37	27216	io_6	39	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///image/chat/search.png
+2023-12-29 03:43:37	27210	io_0	40	[INFO]	[system]	src/http/http_server.cpp:18	handleClient: Socket information [sock=31, family=2, type=1, protocol=0, isConnected=1, m_locolAddress=172.18.25.130:8091, m_remoteAddress=172.18.25.64:50161]
+2023-12-29 03:43:37	27210	io_0	40	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///image/avatar/Group01.jpg
+2023-12-29 03:43:37	27211	io_1	27	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///image/chat/minimize.png
+2023-12-29 03:43:37	27210	io_0	29	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///image/chat/minimize2.png
+2023-12-29 03:43:37	27210	io_0	38	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///image/chat/close.png
+2023-12-29 03:43:37	27210	io_0	39	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///image/chat/emoji.png
+2023-12-29 03:43:37	27210	io_0	28	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///image/chat/voice.png
+2023-12-29 03:43:39	27214	io_4	28	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/logout.html
+2023-12-29 03:43:39	27214	io_4	28	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///css/semantic.min.css
+2023-12-29 03:43:39	27210	io_0	39	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///css/body.css
+2023-12-29 03:43:39	27213	io_3	38	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///css/chat.css
+2023-12-29 03:43:39	27214	io_4	28	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///image/bg.jpg

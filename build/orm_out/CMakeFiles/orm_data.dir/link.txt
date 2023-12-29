@@ -1,0 +1,2 @@
+/usr/bin/ar qc liborm_data.a  CMakeFiles/orm_data.dir/user/data/user_info.cpp.o
+/usr/bin/ranlib liborm_data.a

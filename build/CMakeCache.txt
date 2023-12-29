@@ -221,6 +221,12 @@ OPENSSL_SSL_LIBRARY:FILEPATH=/usr/lib64/libssl.so
 //pkg-config executable
 PKG_CONFIG_EXECUTABLE:FILEPATH=/usr/bin/pkg-config
 
+//Value Computed by CMake
+orm_data_BINARY_DIR:STATIC=/home/wwt/radar_system/build/orm_out
+
+//Value Computed by CMake
+orm_data_SOURCE_DIR:STATIC=/home/wwt/radar_system/orm_out
+
 //Path to a library.
 pkgcfg_lib__OPENSSL_crypto:FILEPATH=/usr/lib64/libcrypto.so
 
@@ -229,6 +235,9 @@ pkgcfg_lib__OPENSSL_ssl:FILEPATH=/usr/lib64/libssl.so
 
 //Value Computed by CMake
 radar_system_BINARY_DIR:STATIC=/home/wwt/radar_system/build
+
+//Dependencies for the target
+radar_system_LIB_DEPENDS:STATIC=general;orm_data;
 
 //Value Computed by CMake
 radar_system_SOURCE_DIR:STATIC=/home/wwt/radar_system
@@ -344,7 +353,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=2
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=3
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

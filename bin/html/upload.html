@@ -1,0 +1,172 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>上传/下载</title>
+        <link rel="stylesheet" type="text/css" href="../css/up_down_load.css">
+        <link rel="stylesheet" class="ui" href="../css/semantic.min.css"/>
+        <link rel="stylesheet" class="ui" href="../css/body.css"/>
+        <link rel="stylesheet" class="ui" href="../css/chat.css"/>
+    </head>
+
+    <body>
+        <div class="ui fixed transparent inverted main menu">
+            <div class="container">
+                <div class="title item">
+                    <b>File Manager </b> 文件管理系统
+                </div>
+                <div class="right menu">
+					<div class="title item">
+						&nbsp<b><a id="returnLink" href="javascript:void(0)" onclick="returnChat()"> 返回 </a></b>
+					</div>
+				</div>
+            </div>
+        </div>
+
+        <div style="display: block; z-index: 998;">
+			<div class="container">
+				<div id="login" class="ui two column relaxed grid">
+					<div class="column">
+						<div class="ui fluid form segment">
+                            <h3> 上传资源 </h3>&nbsp &nbsp
+                            <label for="file-uploader" class="btn btn-raised">Upload</label>
+                            <input class="hidden" type="file" id="file-uploader" onchange="uploadFile(event)" multiple >
+                            <label>请选择文件进行上传</label>
+                        </div>
+					</div>
+                    <div class="column">
+                        <div class="ui fluid form segment">
+                            <h3> 下载资源 </h3>
+                            <ol id="download"></ol>
+                        </div>
+                    </div>
+				</div>
+			</div>
+		</div>
+        <div id="toast"></div>
+
+        <script>
+            var downloadDOM = document.getElementById('download');
+            var toastDOM = document.getElementById('toast');
+            showUploadedFiles();
+
+            const maxFileSize = 100 * 1024 * 1024;    // 单个文件最大内存
+            const maxFileCount = 10;                  // 一次性上传最大文件数
+
+            // 上传文件
+            function uploadFile(event) {
+                let target = event.target || event.srcElement || event.currentTarget;
+                const files = target.files;
+                let count = 0;
+
+                if(files.length > maxFileCount) {
+                    alert("一次性上传文件数量不能超过" + maxFileCount.toString() + "个");
+                    const msg = `all files uploaded failed!`;
+                    showToastMessage(msg, 'error');
+                    return;
+                }
+
+                // 方法一：使用二进制特有文件流格式(application/octet-stream)
+                for (let i = 0; i < files.length; i++) {
+                    const file = files[i];
+                    if(file.size > maxFileSize) {
+                        alert("文件大小不能超过" + (maxFileSize/1024/1024).toString() + "MB");
+                        const msg = `${file.name} file uploaded failed!`;
+                        showToastMessage(msg, 'error');
+                        continue;
+                    }
+                    fetch("http://172.18.25.130:8091/file/upload", {
+                        method: "POST",
+                        headers: {
+                            "Filename": encodeURI(file.name),
+                            "Content-Type": "application/octet-stream",
+                        },
+                        body: file,
+                    }).then(response => {
+                        console.log("上传成功", response);
+                        showUploadedFiles();
+                        count = count + 1;
+                        if(count == files.length) {
+                            const msg = `${files.length} file(s) uploaded successfully!`;
+                            showToastMessage(msg, 'success');
+                        }
+                    }).catch(error => {
+                        console.error("上传失败", error);
+                        const msg = `${file.name} file uploaded failed!`;
+                        showToastMessage(msg, 'error');
+                    });
+                }
+
+                // 方法二：使用formData方式传输二进制文件流(文件会加入头部信息)
+                /*
+                const file = files[0];          // 获取用户选择的文件
+                const formData = new FormData();
+                formData.append('file', file);  // 添加文件到FormData中，'file'是字段名
+
+                var req = new XMLHttpRequest();
+                uri = "http://172.18.25.130:8091/file/upload";
+                req.open('POST', uri, true);
+                req.setRequestHeader("Filename", encodeURI(file.name));
+                req.onload = function () {
+                };
+                req.send(formData);
+                */
+            }
+
+            // 展示所有上传文件，并且点击下载
+            function showUploadedFiles() {
+                let xhr = new XMLHttpRequest();
+                xhr.open("GET", "/file/query", true);
+                xhr.onreadystatechange = function() {
+                    if(xhr.readyState === 4) {
+                        if(xhr.status === 200) {
+                            let filenames = JSON.parse(xhr.responseText);
+                            let listOfFileHTML = "";
+                            for(var i = 0; i < filenames.length; i++) {
+                                listOfFileHTML = listOfFileHTML + "<li> <a href='/file/download/" + encodeURI(filenames[i]) +"'>" + filenames[i] + "</a></li>"
+                            }
+                            downloadDOM.innerHTML = listOfFileHTML;
+                        } 
+                        else{
+                            alert("An error occurred: " + xhr.status);
+                        }
+                    }
+                }
+                xhr.send();
+            }
+
+            // 提示信息
+            function showToastMessage(msg, type) {
+                toastDOM.innerText = msg;
+                if(type === 'error') {
+                    toastDOM.classList.add('toast-visible-error');
+                    setTimeout(function() {toastDOM.classList.remove('toast-visible-error')}, 3000);
+                }
+                else{
+                    toastDOM.classList.add('toast-visible-success');        
+                    setTimeout(function() {toastDOM.classList.remove('toast-visible-success')}, 3000);
+                }
+            }
+
+            // 在目标页面中获取 URL 查询参数的值
+            function GetQueryString(name) {
+                var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+                var r = window.location.search.substr(1).match(reg);
+                if (r != null) {
+                    return decodeURIComponent(r[2]);
+                }
+                return null;
+            }
+
+            function returnChat() {
+				var userid = GetQueryString("userid");
+                var username = GetQueryString("username");
+
+				var returnUrl = "./chat.html?username=" + username + "&userid=" + userid;
+				// 获取注销链接元素
+				var returnLink = document.getElementById("returnLink");
+				// 将注销页面地址拼接到 href 属性中
+				returnLink.href = returnUrl;
+			}
+        </script>
+    </body>
+</html>
