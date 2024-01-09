@@ -44,6 +44,7 @@ set(SRC radar/my_module.cpp
         radar/resource_servlet.cpp
         radar/struct.cpp
         radar/radar_util.cpp
+        radar/radar_data_message.cpp
         radar/manager/user_manager.cpp
         radar/servlets/user_create_servlet.cpp
         radar/servlets/user_active_servlet.cpp
@@ -52,7 +53,8 @@ set(SRC radar/my_module.cpp
         radar/servlets/user_modify_servlet.cpp
         radar/servlets/user_forget_passwd_servlet.cpp
         radar/servlets/user_change_passwd_servlet.cpp
-        radar/servlets/user_clear_servlet.cpp)
+        radar/servlets/user_clear_servlet.cpp
+        radar/servlets/radar_data_trans_servlet.cpp)
 
 # 通过变量SRC生成libradar_system.so共享库
 add_library(radar_system SHARED ${SRC})

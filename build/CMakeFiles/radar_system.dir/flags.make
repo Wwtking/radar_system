@@ -16,6 +16,8 @@ CXX_INCLUDES = -I/home/wwt/radar_system/. -I/home/wwt/radar_system/radar -I/home
 
 # Custom defines: CMakeFiles/radar_system.dir/radar/radar_util.cpp.o_DEFINES = __FILE__="radar/radar_util.cpp"
 
+# Custom defines: CMakeFiles/radar_system.dir/radar/radar_data_message.cpp.o_DEFINES = __FILE__="radar/radar_data_message.cpp"
+
 # Custom defines: CMakeFiles/radar_system.dir/radar/manager/user_manager.cpp.o_DEFINES = __FILE__="radar/manager/user_manager.cpp"
 
 # Custom defines: CMakeFiles/radar_system.dir/radar/servlets/user_create_servlet.cpp.o_DEFINES = __FILE__="radar/servlets/user_create_servlet.cpp"
@@ -33,4 +35,6 @@ CXX_INCLUDES = -I/home/wwt/radar_system/. -I/home/wwt/radar_system/radar -I/home
 # Custom defines: CMakeFiles/radar_system.dir/radar/servlets/user_change_passwd_servlet.cpp.o_DEFINES = __FILE__="radar/servlets/user_change_passwd_servlet.cpp"
 
 # Custom defines: CMakeFiles/radar_system.dir/radar/servlets/user_clear_servlet.cpp.o_DEFINES = __FILE__="radar/servlets/user_clear_servlet.cpp"
+
+# Custom defines: CMakeFiles/radar_system.dir/radar/servlets/radar_data_trans_servlet.cpp.o_DEFINES = __FILE__="radar/servlets/radar_data_trans_servlet.cpp"
 

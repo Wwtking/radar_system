@@ -258,6 +258,33 @@ radar/my_module.cpp.s:
 	$(MAKE) -f CMakeFiles/radar_system.dir/build.make CMakeFiles/radar_system.dir/radar/my_module.cpp.s
 .PHONY : radar/my_module.cpp.s
 
+radar/radar_data_message.o: radar/radar_data_message.cpp.o
+
+.PHONY : radar/radar_data_message.o
+
+# target to build an object file
+radar/radar_data_message.cpp.o:
+	$(MAKE) -f CMakeFiles/radar_system.dir/build.make CMakeFiles/radar_system.dir/radar/radar_data_message.cpp.o
+.PHONY : radar/radar_data_message.cpp.o
+
+radar/radar_data_message.i: radar/radar_data_message.cpp.i
+
+.PHONY : radar/radar_data_message.i
+
+# target to preprocess a source file
+radar/radar_data_message.cpp.i:
+	$(MAKE) -f CMakeFiles/radar_system.dir/build.make CMakeFiles/radar_system.dir/radar/radar_data_message.cpp.i
+.PHONY : radar/radar_data_message.cpp.i
+
+radar/radar_data_message.s: radar/radar_data_message.cpp.s
+
+.PHONY : radar/radar_data_message.s
+
+# target to generate assembly for a file
+radar/radar_data_message.cpp.s:
+	$(MAKE) -f CMakeFiles/radar_system.dir/build.make CMakeFiles/radar_system.dir/radar/radar_data_message.cpp.s
+.PHONY : radar/radar_data_message.cpp.s
+
 radar/radar_util.o: radar/radar_util.cpp.o
 
 .PHONY : radar/radar_util.o
@@ -311,6 +338,33 @@ radar/resource_servlet.s: radar/resource_servlet.cpp.s
 radar/resource_servlet.cpp.s:
 	$(MAKE) -f CMakeFiles/radar_system.dir/build.make CMakeFiles/radar_system.dir/radar/resource_servlet.cpp.s
 .PHONY : radar/resource_servlet.cpp.s
+
+radar/servlets/radar_data_trans_servlet.o: radar/servlets/radar_data_trans_servlet.cpp.o
+
+.PHONY : radar/servlets/radar_data_trans_servlet.o
+
+# target to build an object file
+radar/servlets/radar_data_trans_servlet.cpp.o:
+	$(MAKE) -f CMakeFiles/radar_system.dir/build.make CMakeFiles/radar_system.dir/radar/servlets/radar_data_trans_servlet.cpp.o
+.PHONY : radar/servlets/radar_data_trans_servlet.cpp.o
+
+radar/servlets/radar_data_trans_servlet.i: radar/servlets/radar_data_trans_servlet.cpp.i
+
+.PHONY : radar/servlets/radar_data_trans_servlet.i
+
+# target to preprocess a source file
+radar/servlets/radar_data_trans_servlet.cpp.i:
+	$(MAKE) -f CMakeFiles/radar_system.dir/build.make CMakeFiles/radar_system.dir/radar/servlets/radar_data_trans_servlet.cpp.i
+.PHONY : radar/servlets/radar_data_trans_servlet.cpp.i
+
+radar/servlets/radar_data_trans_servlet.s: radar/servlets/radar_data_trans_servlet.cpp.s
+
+.PHONY : radar/servlets/radar_data_trans_servlet.s
+
+# target to generate assembly for a file
+radar/servlets/radar_data_trans_servlet.cpp.s:
+	$(MAKE) -f CMakeFiles/radar_system.dir/build.make CMakeFiles/radar_system.dir/radar/servlets/radar_data_trans_servlet.cpp.s
+.PHONY : radar/servlets/radar_data_trans_servlet.cpp.s
 
 radar/servlets/user_active_servlet.o: radar/servlets/user_active_servlet.cpp.o
 
@@ -576,12 +630,18 @@ help:
 	@echo "... radar/my_module.o"
 	@echo "... radar/my_module.i"
 	@echo "... radar/my_module.s"
+	@echo "... radar/radar_data_message.o"
+	@echo "... radar/radar_data_message.i"
+	@echo "... radar/radar_data_message.s"
 	@echo "... radar/radar_util.o"
 	@echo "... radar/radar_util.i"
 	@echo "... radar/radar_util.s"
 	@echo "... radar/resource_servlet.o"
 	@echo "... radar/resource_servlet.i"
 	@echo "... radar/resource_servlet.s"
+	@echo "... radar/servlets/radar_data_trans_servlet.o"
+	@echo "... radar/servlets/radar_data_trans_servlet.i"
+	@echo "... radar/servlets/radar_data_trans_servlet.s"
 	@echo "... radar/servlets/user_active_servlet.o"
 	@echo "... radar/servlets/user_active_servlet.i"
 	@echo "... radar/servlets/user_active_servlet.s"

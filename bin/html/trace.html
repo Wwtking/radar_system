@@ -1,0 +1,212 @@
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>人员轨迹模拟</title>
+    <link rel="stylesheet" type="text/css" href="../css/map.css">
+</head>
+<body onload="webSocketConnect()">
+    <div id="info">坐标: (x, y)</div>
+    <div id="tooltip" class="tooltip">坐标: (x, y)</div>
+    <canvas id="myCanvas" width="600" height="500"></canvas>
+
+    <script>
+        var canvas = document.getElementById('myCanvas');     // 获取canvas元素
+        var ctx = canvas.getContext('2d');                    // 获取canvas的2D绘图上下文
+        var infoBox = document.getElementById('info');       
+        var tooltip = document.getElementById('tooltip');     // 获取工具提示元素
+        var points = [];                  // 存储所有点的数组
+        var iconUrl = '../image/ren.png'; // 小人图标的URL
+        var icon = new Image();
+        icon.src = iconUrl;               // 设置Image对象的源为小人图标的URL
+
+        // 生成并返回一个随机坐标点
+        function generatePoint() {
+            return {
+                x: Math.random() * canvas.width,
+                y: Math.random() * canvas.height
+            };
+        }
+
+        // 在指定坐标点绘制小人图标
+        function drawMarker(point) {
+            ctx.drawImage(icon, point.x - icon.width / 2, point.y - icon.height / 2);
+        }
+
+        // 使用贝塞尔曲线绘制平滑轨迹
+        function drawBezierCurve(points) {
+            if (points.length < 2) {
+                return;
+            }
+            ctx.setLineDash([10, 5]);               // 线条为虚线样式，其中线段长度为10个像素，间隔为5个像素
+            ctx.lineWidth = 2;                      // 线条的宽度
+            ctx.strokeStyle = '#264653';            // 线条的颜色
+            ctx.beginPath();                        // 开始新的路径绘制
+            ctx.moveTo(points[0].x, points[0].y);   // 将绘制的起点移动到数组中的第一个点
+
+            for (var i = 1; i < points.length; i++) {
+                var midPoint = midpoint(points[i - 1], points[i]);    // 计算它们的中点
+                // 绘制从前一个点 (points[i - 1]) 到中点的二次贝塞尔曲线
+                ctx.quadraticCurveTo(points[i - 1].x, points[i - 1].y, midPoint.x, midPoint.y); 
+            }
+            // 在曲线的末尾，绘制一条直线到数组中的最后一个点，以完成整个路径
+            ctx.lineTo(points[points.length - 1].x, points[points.length - 1].y);
+
+            ctx.stroke();               // 根据设置的样式绘制定义的路径
+            ctx.setLineDash([]);        // 取消虚线效果，恢复为实线
+        }
+
+        /*
+        // 直接画直线轨迹，不做轨迹处理
+        function drawDashedLine(points) {
+            if (points.length < 2) return;
+            ctx.setLineDash([10, 5]);
+            ctx.lineWidth = 2;
+            ctx.strokeStyle = '#264653';
+            ctx.beginPath();
+            ctx.moveTo(points[0].x, points[0].y);
+            for (var i = 1; i < points.length; i++) {
+                ctx.lineTo(points[i].x, points[i].y);
+            }
+            ctx.stroke();
+            ctx.setLineDash([]);
+        }
+        */
+
+        // 计算并返回两点之间的中点
+        function midpoint(point1, point2) {
+            return {
+                x: (point1.x + point2.x) / 2,
+                y: (point1.y + point2.y) / 2
+            };
+        }
+
+        function updateInfo(point) {
+            infoBox.textContent = `坐标: (${point.x.toFixed(0)}, ${point.y.toFixed(0)})`;
+        }
+
+        // 检查鼠标是否在指定点附近
+        function pointNearMarker(mouseX, mouseY, markerPoint) {
+            var dx = mouseX - markerPoint.x;
+            var dy = mouseY - markerPoint.y;
+            return Math.sqrt(dx * dx + dy * dy) < icon.width / 2;
+        }
+
+        // 处理鼠标悬停事件，显示人员点坐标
+        canvas.addEventListener('mousemove', function(event) {
+            if (points.length === 0) {
+                return;
+            }
+
+            // 获取最新添加的标志点
+            var lastPoint = points[points.length - 1];
+            var rect = canvas.getBoundingClientRect();
+            var mouseX = event.clientX - rect.left;     // 计算鼠标的X坐标相对于画布的位置
+            var mouseY = event.clientY - rect.top;      // 计算鼠标的y坐标相对于画布的位置
+
+            if (pointNearMarker(mouseX, mouseY, lastPoint)) {
+                // 如果鼠标靠近标志点，显示工具提示框
+                tooltip.style.display = 'block';
+                tooltip.style.left = event.clientX + 'px';
+                tooltip.style.top = event.clientY + 'px';
+                tooltip.textContent = `坐标: (${lastPoint.x.toFixed(0)}, ${lastPoint.y.toFixed(0)})`;
+            } else {
+                tooltip.style.display = 'none';
+            }
+        });
+
+        // 处理鼠标点击事件，显示坐标提示框
+        canvas.addEventListener('click', function(event) {
+            if (points.length === 0) {
+                return;
+            }
+
+            // 获取最新添加的标志点
+            var lastPoint = points[points.length - 1];
+            var rect = canvas.getBoundingClientRect();
+            var mouseX = event.clientX - rect.left;     // 计算鼠标的X坐标相对于画布的位置
+            var mouseY = event.clientY - rect.top;      // 计算鼠标的y坐标相对于画布的位置
+
+            if (pointNearMarker(mouseX, mouseY, lastPoint)) {
+                // 如果鼠标点击标志点，弹出信息，可自定义
+                alert(`点击了最新的标志点，坐标: (${lastPoint.x.toFixed(0)}, ${lastPoint.y.toFixed(0)})`);
+            }
+        });
+
+        // 创建动画，使标志物平滑移动到新位置
+        function animateToPoint(newPoint) {
+            var frameCount = 30;      // 设置动画的总帧数为30
+            var currentFrame = 0;     // 当前的帧数
+            // 获取轨迹数组 points 中的最后一个点作为起始点
+            var lastPoint = points.length > 0 ? points[points.length - 1] : newPoint;
+            var xIncrement = (newPoint.x - lastPoint.x) / frameCount;
+            var yIncrement = (newPoint.y - lastPoint.y) / frameCount;
+            
+            // 用于执行动画的每一帧
+            function animate() {
+                if (currentFrame < frameCount) {
+                    ctx.clearRect(0, 0, canvas.width, canvas.height);   // 清除整个画布
+                    // 将 lastPoint 添加到 points 数组副本末尾，并返回这个新的数组，不会改变原始的 points 数组
+                    drawBezierCurve(points.concat(lastPoint));    // 绘制贝塞尔曲线轨迹
+                    drawMarker(lastPoint);                        // 绘制标志物
+                    lastPoint.x += xIncrement;
+                    lastPoint.y += yIncrement;
+                    currentFrame++;
+                    requestAnimationFrame(animate);     // 请求浏览器调用 animate 函数来绘制下一帧
+                } else {
+                    updateInfo(lastPoint);              // 更新信息显示
+                    points.push(newPoint);              // 将新点添加到轨迹数组中
+                }
+            }
+
+            animate();
+        }
+
+        /*
+        // 定时生成新的点，并开始动画
+        setInterval(function() {
+            var newPoint = generatePoint();
+            animateToPoint(newPoint);
+        }, 3000);
+        */
+
+
+        // websocket连接及数据传输
+        var websocket = null;
+        function webSocketConnect() {
+            websocket = new WebSocket("ws://172.18.25.130:8073/radar/data");
+
+            websocket.onerror = function() {
+                alert("websocket onerror");
+            }
+
+            websocket.onopen = function() {
+                var o = {}
+                o.type = "start_request"
+                // o.name = username;
+                websocket.send(JSON.stringify(o));
+            }
+
+            // 收到后端传输的数据
+            websocket.onmessage = function(e) {
+                var o = JSON.parse(e.data);
+                if(o.type == "radar_data") {
+                    var newPoint = {
+                        id: parseInt(o.id, 10),
+                        x: parseInt(o.x, 10),
+                        y: parseInt(o.y, 10),
+                        v: parseInt(o.v, 10)
+                    };
+                    animateToPoint(newPoint);
+                }
+            }
+
+            websocket.onclose= function() {
+                alert("您已和服务器断开连接，请重新刷新页面");
+            }
+        }
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,168 @@
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>人员定位模拟</title>
+    <link rel="stylesheet" type="text/css" href="../css/map.css">
+</head>
+<body onload="webSocketConnect()">
+    <div id="info">坐标: (x, y)</div>
+    <div id="tooltip" class="tooltip">坐标: (x, y)</div>
+    <canvas id="myCanvas" width="600" height="400"></canvas>
+
+    <script>
+        var canvas = document.getElementById('myCanvas');
+        var ctx = canvas.getContext('2d');
+        var infoBox = document.getElementById('info');
+        var tooltip = document.getElementById('tooltip');     // 获取工具提示元素
+        var lastPoint = {x: 300, y: 200}; // 初始点
+        var iconUrl = '../image/ren.png'; // 小人图标的URL
+        var icon = new Image();
+        icon.src = iconUrl;               // 设置Image对象的源为小人图标的URL
+
+        function generatePoint() {
+            return {
+                x: Math.random() * canvas.width,
+                y: Math.random() * canvas.height
+            };
+        }
+
+        // 在指定坐标点绘制圆点
+        function drawMarker(point) {
+            ctx.fillStyle = '#2a9d8f'; // 使用更鲜明的颜色
+            ctx.beginPath();
+            ctx.arc(point.x, point.y, 10, 0, Math.PI * 2, true);
+            ctx.fill();
+        }
+        
+        /*
+        // 在指定坐标点绘制小人图标
+        function drawMarker(point) {
+            ctx.drawImage(icon, point.x - icon.width / 2, point.y - icon.height / 2);
+        }
+        */
+
+        function drawLineToPoint(newPoint) {
+            ctx.setLineDash([10, 5]);
+            ctx.lineWidth = 2; // 更精细的线条
+            ctx.strokeStyle = '#264653'; // 更暗的线颜色，以增加对比度
+            ctx.beginPath();
+            ctx.moveTo(lastPoint.x, lastPoint.y);
+            ctx.lineTo(newPoint.x, newPoint.y);
+            ctx.stroke();
+            ctx.setLineDash([]);
+            lastPoint = newPoint;
+        }
+
+        function updateInfo(point) {
+            infoBox.textContent = `坐标: (${point.x.toFixed(0)}, ${point.y.toFixed(0)})`;
+        }
+
+        // 检查鼠标是否在指定点附近
+        function pointNearMarker(mouseX, mouseY, markerPoint) {
+            var dx = mouseX - markerPoint.x;
+            var dy = mouseY - markerPoint.y;
+            return Math.sqrt(dx * dx + dy * dy) < icon.width / 2;
+        }
+
+        // 处理鼠标悬停事件，显示人员点坐标
+        canvas.addEventListener('mousemove', function(event) {
+            // 获取最新添加的标志点
+            var rect = canvas.getBoundingClientRect();
+            var mouseX = event.clientX - rect.left;     // 计算鼠标的X坐标相对于画布的位置
+            var mouseY = event.clientY - rect.top;      // 计算鼠标的y坐标相对于画布的位置
+
+            if (pointNearMarker(mouseX, mouseY, lastPoint)) {
+                // 如果鼠标靠近标志点，显示工具提示框
+                tooltip.style.display = 'block';
+                tooltip.style.left = event.clientX + 'px';
+                tooltip.style.top = event.clientY + 'px';
+                tooltip.textContent = `坐标: (${lastPoint.x.toFixed(0)}, ${lastPoint.y.toFixed(0)})`;
+            } else {
+                tooltip.style.display = 'none';
+            }
+        });
+
+        // 处理鼠标点击事件，显示坐标提示框
+        canvas.addEventListener('click', function(event) {
+            // 获取最新添加的标志点
+            var rect = canvas.getBoundingClientRect();
+            var mouseX = event.clientX - rect.left;     // 计算鼠标的X坐标相对于画布的位置
+            var mouseY = event.clientY - rect.top;      // 计算鼠标的y坐标相对于画布的位置
+
+            if (pointNearMarker(mouseX, mouseY, lastPoint)) {
+                // 如果鼠标点击标志点，弹出信息，可自定义
+                alert(`点击了最新的标志点，坐标: (${lastPoint.x.toFixed(0)}, ${lastPoint.y.toFixed(0)})`);
+            }
+        });
+
+        function animateToPoint(newPoint) {
+            var frameCount = 30;
+            var currentFrame = 0;
+            var xIncrement = (newPoint.x - lastPoint.x) / frameCount;
+            var yIncrement = (newPoint.y - lastPoint.y) / frameCount;
+            
+            function animate() {
+                if (currentFrame < frameCount) {
+                    ctx.clearRect(lastPoint.x - 11, lastPoint.y - 11, 22, 22); // 清除旧的标志物
+                    lastPoint.x += xIncrement;
+                    lastPoint.y += yIncrement;
+                    drawLineToPoint(lastPoint);     // 绘制线段
+                    drawMarker(lastPoint);          // 绘制新的标志物
+                    updateInfo(lastPoint);          // 更新信息显示
+                    currentFrame++;
+                    requestAnimationFrame(animate); // 递归调用
+                }
+            }
+
+            animate();
+        }
+
+        /*
+        setInterval(function() {
+            var newPoint = generatePoint();
+            animateToPoint(newPoint);
+        }, 3000); // 每3秒开始一个新的动画
+        */
+
+
+
+        // websocket连接及数据传输
+        var websocket = null;
+        function webSocketConnect() {
+            websocket = new WebSocket("ws://172.18.25.130:8073/radar/data");
+
+            websocket.onerror = function() {
+                alert("websocket onerror");
+            }
+
+            websocket.onopen = function() {
+                var o = {}
+                o.type = "start_request"
+                // o.name = username;
+                websocket.send(JSON.stringify(o));
+            }
+            
+            // 收到后端传输的数据
+            websocket.onmessage = function(e) {
+                var o = JSON.parse(e.data);
+                if(o.type == "radar_data") {
+                    var newPoint = {
+                        id: parseInt(o.id, 10),
+                        x: parseInt(o.x, 10),
+                        y: parseInt(o.y, 10),
+                        v: parseInt(o.v, 10)
+                    };
+                    animateToPoint(newPoint);
+                }
+            }
+
+            websocket.onclose= function() {
+                alert("您已和服务器断开连接，请重新刷新页面");
+            }
+        }
+
+
+    </script>
+
+</body>
+</html>

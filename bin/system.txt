@@ -212,3 +212,1204 @@
 2023-12-29 03:43:39	27210	io_0	39	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///css/body.css
 2023-12-29 03:43:39	27213	io_3	38	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///css/chat.css
 2023-12-29 03:43:39	27214	io_4	28	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///image/bg.jpg
+2023-12-29 03:50:32	27816	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/log.yml ok
+2023-12-29 03:50:32	27816	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/server.yml ok
+2023-12-29 03:50:32	27816	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/worker.yml ok
+2023-12-29 03:50:32	27816	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/sqlite3.yml ok
+2023-12-29 03:50:32	27816	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/system.yml ok
+2023-12-29 03:50:32	27816	UNKOWN	0	[INFO]	[system]	radar/my_module.cpp:145	CreateModule:0xe043c0
+2023-12-29 03:50:32	27816	UNKOWN	0	[INFO]	[system]	src/library.cpp:89	load module name=radar_system version=1.0 path=/home/wwt/radar_system/bin/module/libradar_system.so success
+2023-12-29 03:50:32	27816	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/log.yml ok
+2023-12-29 03:50:32	27816	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/server.yml ok
+2023-12-29 03:50:32	27816	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/worker.yml ok
+2023-12-29 03:50:32	27816	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/sqlite3.yml ok
+2023-12-29 03:50:32	27816	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/system.yml ok
+2023-12-29 03:50:32	27816	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/log.yml ok
+2023-12-29 03:50:32	27816	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/server.yml ok
+2023-12-29 03:50:32	27816	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/worker.yml ok
+2023-12-29 03:50:32	27816	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/sqlite3.yml ok
+2023-12-29 03:50:32	27816	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/system.yml ok
+2023-12-29 03:50:32	27816	main	3	[INFO]	[system]	radar/my_module.cpp:31	onLoad
+2023-12-29 03:50:32	27816	main	3	[ERROR]	[system]	src/socket.cpp:122	setsockopt sockfd=16 level=6 optname=1 errno=95 errstr=Operation not supported
+2023-12-29 03:50:32	27816	main	3	[INFO]	[system]	src/tcp_server.cpp:78	tcp server bind success, Socket information [sock=14, family=2, type=1, protocol=0, isConnected=0, m_locolAddress=0.0.0.0:8091]
+2023-12-29 03:50:32	27816	main	3	[INFO]	[system]	src/tcp_server.cpp:78	tcp server bind success, Socket information [sock=15, family=2, type=1, protocol=0, isConnected=0, m_locolAddress=127.0.0.1:38814]
+2023-12-29 03:50:32	27816	main	3	[INFO]	[system]	src/tcp_server.cpp:78	tcp server bind success, Socket information [sock=16, family=1, type=1, protocol=0, isConnected=0, m_locolAddress=/tmp/test_radar.sock]
+2023-12-29 03:50:32	27816	main	3	[INFO]	[system]	src/tcp_server.cpp:78	tcp server bind success, Socket information [sock=17, family=2, type=1, protocol=0, isConnected=0, m_locolAddress=0.0.0.0:8073]
+2023-12-29 03:50:32	27816	main	3	[INFO]	[system]	src/tcp_server.cpp:78	tcp server bind success, Socket information [sock=18, family=2, type=1, protocol=0, isConnected=0, m_locolAddress=127.0.0.1:8071]
+2023-12-29 03:50:32	27816	main	3	[INFO]	[system]	radar/my_module.cpp:41	onServerReady
+2023-12-29 03:50:32	27816	main	3	[INFO]	[system]	radar/my_module.cpp:113	addServlet
+2023-12-29 03:50:32	27816	main	3	[INFO]	[system]	radar/my_module.cpp:138	onServerUp
+2023-12-29 03:50:43	27821	io_2	26	[INFO]	[system]	src/http/http_server.cpp:18	handleClient: Socket information [sock=24, family=2, type=1, protocol=0, isConnected=1, m_locolAddress=172.18.25.130:8091, m_remoteAddress=172.18.25.64:50284]
+2023-12-29 03:50:43	27821	io_2	26	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/map_test.html
+2023-12-29 03:50:43	27821	io_2	27	[INFO]	[system]	src/http/http_server.cpp:18	handleClient: Socket information [sock=27, family=2, type=1, protocol=0, isConnected=1, m_locolAddress=172.18.25.130:8091, m_remoteAddress=172.18.25.64:50285]
+2023-12-29 03:50:43	27821	io_2	26	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///js/jquery-3.7.1.min.js
+2023-12-29 03:50:43	27821	io_2	27	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///js/echarts.min.js
+2023-12-29 03:50:44	27822	io_3	27	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///image/MacOdrum-LV5-floorplan-web.svg
+2023-12-30 13:59:12	24898	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/log.yml ok
+2023-12-30 13:59:12	24898	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/server.yml ok
+2023-12-30 13:59:12	24898	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/worker.yml ok
+2023-12-30 13:59:12	24898	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/sqlite3.yml ok
+2023-12-30 13:59:12	24898	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/system.yml ok
+2023-12-30 13:59:12	24898	UNKOWN	0	[INFO]	[system]	radar/my_module.cpp:145	CreateModule:0xcc73c0
+2023-12-30 13:59:12	24898	UNKOWN	0	[INFO]	[system]	src/library.cpp:89	load module name=radar_system version=1.0 path=/home/wwt/radar_system/bin/module/libradar_system.so success
+2023-12-30 13:59:12	24898	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/log.yml ok
+2023-12-30 13:59:12	24898	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/server.yml ok
+2023-12-30 13:59:12	24898	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/worker.yml ok
+2023-12-30 13:59:12	24898	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/sqlite3.yml ok
+2023-12-30 13:59:12	24898	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/system.yml ok
+2023-12-30 13:59:12	24898	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/log.yml ok
+2023-12-30 13:59:12	24898	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/server.yml ok
+2023-12-30 13:59:12	24898	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/worker.yml ok
+2023-12-30 13:59:12	24898	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/sqlite3.yml ok
+2023-12-30 13:59:12	24898	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/system.yml ok
+2023-12-30 13:59:12	24898	main	3	[INFO]	[system]	radar/my_module.cpp:31	onLoad
+2023-12-30 13:59:12	24898	main	3	[ERROR]	[system]	src/socket.cpp:122	setsockopt sockfd=16 level=6 optname=1 errno=95 errstr=Operation not supported
+2023-12-30 13:59:12	24898	main	3	[INFO]	[system]	src/tcp_server.cpp:78	tcp server bind success, Socket information [sock=14, family=2, type=1, protocol=0, isConnected=0, m_locolAddress=0.0.0.0:8091]
+2023-12-30 13:59:12	24898	main	3	[INFO]	[system]	src/tcp_server.cpp:78	tcp server bind success, Socket information [sock=15, family=2, type=1, protocol=0, isConnected=0, m_locolAddress=127.0.0.1:39139]
+2023-12-30 13:59:12	24898	main	3	[INFO]	[system]	src/tcp_server.cpp:78	tcp server bind success, Socket information [sock=16, family=1, type=1, protocol=0, isConnected=0, m_locolAddress=/tmp/test_radar.sock]
+2023-12-30 13:59:12	24898	main	3	[INFO]	[system]	src/tcp_server.cpp:78	tcp server bind success, Socket information [sock=17, family=2, type=1, protocol=0, isConnected=0, m_locolAddress=0.0.0.0:8073]
+2023-12-30 13:59:12	24898	main	3	[INFO]	[system]	src/tcp_server.cpp:78	tcp server bind success, Socket information [sock=18, family=2, type=1, protocol=0, isConnected=0, m_locolAddress=127.0.0.1:8071]
+2023-12-30 13:59:12	24898	main	3	[INFO]	[system]	radar/my_module.cpp:41	onServerReady
+2023-12-30 13:59:12	24898	main	3	[INFO]	[system]	radar/my_module.cpp:113	addServlet
+2023-12-30 13:59:12	24898	main	3	[INFO]	[system]	radar/my_module.cpp:138	onServerUp
+2023-12-30 13:59:16	24911	io_7	22	[INFO]	[system]	src/http/http_server.cpp:18	handleClient: Socket information [sock=21, family=2, type=1, protocol=0, isConnected=1, m_locolAddress=172.18.25.130:8091, m_remoteAddress=172.18.25.64:56765]
+2023-12-30 13:59:16	24909	io_5	23	[INFO]	[system]	src/http/http_server.cpp:18	handleClient: Socket information [sock=23, family=2, type=1, protocol=0, isConnected=1, m_locolAddress=172.18.25.130:8091, m_remoteAddress=172.18.25.64:56766]
+2023-12-30 13:59:16	24909	io_5	22	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/map_test.html
+2023-12-30 13:59:16	24909	io_5	22	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///js/jquery-3.7.1.min.js
+2023-12-30 13:59:16	24911	io_7	23	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///js/echarts.min.js
+2023-12-30 13:59:17	24911	io_7	23	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///image/MacOdrum-LV5-floorplan-web.svg
+2023-12-30 13:59:18	24907	io_3	23	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/map_test.html
+2023-12-30 13:59:18	24907	io_3	23	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///js/jquery-3.7.1.min.js
+2023-12-30 13:59:18	24906	io_2	22	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///js/echarts.min.js
+2023-12-30 13:59:19	24906	io_2	22	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///image/MacOdrum-LV5-floorplan-web.svg
+2023-12-30 14:00:05	24906	io_2	22	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/map_test.html
+2023-12-30 14:00:05	24907	io_3	22	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///js/jquery-3.7.1.min.js
+2023-12-30 14:00:05	24907	io_3	23	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///js/echarts.min.js
+2023-12-30 14:00:05	24911	io_7	23	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///image/MacOdrum-LV5-floorplan-web.svg
+2023-12-30 14:00:40	24910	io_6	23	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/map_test.html
+2023-12-30 14:00:40	24910	io_6	23	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///js/jquery-3.7.1.min.js
+2023-12-30 14:00:40	24908	io_4	22	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///js/echarts.min.js
+2023-12-30 14:00:40	24908	io_4	22	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///image/MacOdrum-LV5-floorplan-web.svg
+2023-12-30 14:06:33	24913	io_9	22	[WARN]	[system]	src/http/http_server.cpp:25	recv http request fail, errno=11 errstr=Resource temporarily unavailable cliet:Socket information [sock=-1, family=2, type=1, protocol=0, isConnected=0, m_locolAddress=172.18.25.130:8091, m_remoteAddress=172.18.25.64:56765] keep_alive=1
+2023-12-30 14:06:33	24908	io_4	23	[WARN]	[system]	src/http/http_server.cpp:25	recv http request fail, errno=11 errstr=Resource temporarily unavailable cliet:Socket information [sock=-1, family=2, type=1, protocol=0, isConnected=0, m_locolAddress=172.18.25.130:8091, m_remoteAddress=172.18.25.64:56766] keep_alive=1
+2023-12-30 14:06:33	24908	io_4	227	[INFO]	[system]	src/http/http_server.cpp:18	handleClient: Socket information [sock=21, family=2, type=1, protocol=0, isConnected=1, m_locolAddress=172.18.25.130:8091, m_remoteAddress=172.18.25.64:57090]
+2023-12-30 14:06:33	24913	io_9	228	[INFO]	[system]	src/http/http_server.cpp:18	handleClient: Socket information [sock=23, family=2, type=1, protocol=0, isConnected=1, m_locolAddress=172.18.25.130:8091, m_remoteAddress=172.18.25.64:57091]
+2023-12-30 14:06:33	24908	io_4	227	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/map_test.html
+2023-12-30 14:06:33	24908	io_4	227	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///js/jquery-3.7.1.min.js
+2023-12-30 14:06:33	24908	io_4	228	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///js/echarts.min.js
+2023-12-30 14:06:33	24908	io_4	228	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///image/MacOdrum-LV5-floorplan-web.svg
+2023-12-30 14:07:59	24909	io_5	228	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/map_test.html
+2023-12-30 14:07:59	24909	io_5	228	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///js/jquery-3.7.1.min.js
+2023-12-30 14:07:59	24905	io_1	227	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///js/echarts.min.js
+2023-12-30 14:07:59	24909	io_5	227	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///image/MacOdrum-LV5-floorplan-web.svg
+2023-12-30 14:08:40	24907	io_3	227	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/map_test.html
+2023-12-30 14:08:40	24907	io_3	227	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///js/jquery-3.7.1.min.js
+2023-12-30 14:08:40	24907	io_3	228	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///js/echarts.min.js
+2023-12-30 14:08:40	24907	io_3	228	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///image/MacOdrum-LV5-floorplan-web.svg
+2023-12-30 14:18:10	24907	io_3	227	[WARN]	[system]	src/http/http_server.cpp:25	recv http request fail, errno=11 errstr=Resource temporarily unavailable cliet:Socket information [sock=-1, family=2, type=1, protocol=0, isConnected=0, m_locolAddress=172.18.25.130:8091, m_remoteAddress=172.18.25.64:57090] keep_alive=1
+2023-12-30 14:18:10	24906	io_2	228	[WARN]	[system]	src/http/http_server.cpp:25	recv http request fail, errno=11 errstr=Resource temporarily unavailable cliet:Socket information [sock=-1, family=2, type=1, protocol=0, isConnected=0, m_locolAddress=172.18.25.130:8091, m_remoteAddress=172.18.25.64:57091] keep_alive=1
+2023-12-30 14:18:10	24906	io_2	561	[INFO]	[system]	src/http/http_server.cpp:18	handleClient: Socket information [sock=21, family=2, type=1, protocol=0, isConnected=1, m_locolAddress=172.18.25.130:8091, m_remoteAddress=172.18.25.64:57512]
+2023-12-30 14:18:10	24907	io_3	562	[INFO]	[system]	src/http/http_server.cpp:18	handleClient: Socket information [sock=23, family=2, type=1, protocol=0, isConnected=1, m_locolAddress=172.18.25.130:8091, m_remoteAddress=172.18.25.64:57513]
+2023-12-30 14:18:10	24906	io_2	561	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/map_test.html
+2023-12-30 14:18:10	24907	io_3	562	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///js/echarts.min.js
+2023-12-30 14:18:10	24906	io_2	561	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///js/jquery-3.7.1.min.js
+2023-12-30 14:18:10	24907	io_3	562	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///image/MacOdrum-LV5-floorplan-web.svg
+2023-12-30 14:20:45	24910	io_6	562	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/map_test.html
+2023-12-30 14:20:45	24910	io_6	562	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///js/jquery-3.7.1.min.js
+2023-12-30 14:20:45	24908	io_4	561	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///js/echarts.min.js
+2023-12-30 14:20:45	24908	io_4	561	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///image/MacOdrum-LV5-floorplan-web.svg
+2023-12-30 14:20:46	24909	io_5	561	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/map_test.html
+2023-12-30 14:20:46	24909	io_5	561	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///js/jquery-3.7.1.min.js
+2023-12-30 14:20:46	24905	io_1	562	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///js/echarts.min.js
+2023-12-30 14:20:46	24905	io_1	562	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///image/MacOdrum-LV5-floorplan-web.svg
+2023-12-30 14:23:24	24913	io_9	562	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/map_test.html
+2023-12-30 14:23:24	24913	io_9	562	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///js/jquery-3.7.1.min.js
+2023-12-30 14:23:24	24904	io_0	561	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///js/echarts.min.js
+2023-12-30 14:23:24	24908	io_4	561	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///image/MacOdrum-LV5-floorplan-web.svg
+2023-12-30 14:23:27	24908	io_4	561	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/map_test.html
+2023-12-30 14:23:27	24908	io_4	561	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///js/jquery-3.7.1.min.js
+2023-12-30 14:23:27	24913	io_9	562	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///js/echarts.min.js
+2023-12-30 14:23:28	24908	io_4	562	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///image/MacOdrum-LV5-floorplan-web.svg
+2023-12-30 14:25:21	24909	io_5	562	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/map_test.html
+2023-12-30 14:25:21	24909	io_5	562	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///js/jquery-3.7.1.min.js
+2023-12-30 14:25:21	24905	io_1	561	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///js/echarts.min.js
+2023-12-30 14:25:21	24905	io_1	561	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///image/MacOdrum-LV5-floorplan-web.svg
+2023-12-30 14:25:23	24907	io_3	561	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/map_test.html
+2023-12-30 14:25:23	24907	io_3	561	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///js/jquery-3.7.1.min.js
+2023-12-30 14:25:23	24906	io_2	562	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///js/echarts.min.js
+2023-12-30 14:25:23	24906	io_2	562	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///image/MacOdrum-LV5-floorplan-web.svg
+2023-12-30 14:25:55	24904	io_0	562	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/map_test.html
+2023-12-30 14:25:55	24904	io_0	562	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///js/jquery-3.7.1.min.js
+2023-12-30 14:25:55	24912	io_8	561	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///js/echarts.min.js
+2023-12-30 14:25:55	24912	io_8	561	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///image/MacOdrum-LV5-floorplan-web.svg
+2023-12-30 14:26:02	24908	io_4	561	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/map_test.html
+2023-12-30 14:26:02	24908	io_4	561	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///js/jquery-3.7.1.min.js
+2023-12-30 14:26:02	24910	io_6	562	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///js/echarts.min.js
+2023-12-30 14:26:02	24910	io_6	562	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///image/MacOdrum-LV5-floorplan-web.svg
+2023-12-30 14:28:12	24906	io_2	562	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/map_test.html
+2023-12-30 14:28:12	24906	io_2	562	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///js/jquery-3.7.1.min.js
+2023-12-30 14:28:12	24907	io_3	561	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///js/echarts.min.js
+2023-12-30 14:28:12	24911	io_7	561	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///image/MacOdrum-LV5-floorplan-web.svg
+2023-12-30 14:29:39	24910	io_6	561	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/map_test.html
+2023-12-30 14:29:39	24910	io_6	561	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///js/jquery-3.7.1.min.js
+2023-12-30 14:29:39	24908	io_4	562	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///js/echarts.min.js
+2023-12-30 14:29:39	24908	io_4	562	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///image/MacOdrum-LV5-floorplan-web.svg
+2023-12-30 14:30:09	24904	io_0	562	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/map_test.html
+2023-12-30 14:30:09	24904	io_0	562	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///js/jquery-3.7.1.min.js
+2023-12-30 14:30:09	24905	io_1	561	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///js/echarts.min.js
+2023-12-30 14:30:09	24905	io_1	561	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///image/MacOdrum-LV5-floorplan-web.svg
+2023-12-30 14:30:17	24911	io_7	561	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/map_test.html
+2023-12-30 14:30:17	24911	io_7	561	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///js/jquery-3.7.1.min.js
+2023-12-30 14:30:17	24907	io_3	562	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///js/echarts.min.js
+2023-12-30 14:30:17	24907	io_3	562	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///image/MacOdrum-LV5-floorplan-web.svg
+2023-12-30 14:41:12	26174	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/log.yml ok
+2023-12-30 14:41:12	26174	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/server.yml ok
+2023-12-30 14:41:12	26174	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/worker.yml ok
+2023-12-30 14:41:12	26174	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/sqlite3.yml ok
+2023-12-30 14:41:12	26174	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/system.yml ok
+2023-12-30 14:41:12	26174	UNKOWN	0	[INFO]	[system]	radar/my_module.cpp:145	CreateModule:0x1fa23c0
+2023-12-30 14:41:12	26174	UNKOWN	0	[INFO]	[system]	src/library.cpp:89	load module name=radar_system version=1.0 path=/home/wwt/radar_system/bin/module/libradar_system.so success
+2023-12-30 14:41:12	26174	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/log.yml ok
+2023-12-30 14:41:12	26174	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/server.yml ok
+2023-12-30 14:41:12	26174	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/worker.yml ok
+2023-12-30 14:41:12	26174	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/sqlite3.yml ok
+2023-12-30 14:41:12	26174	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/system.yml ok
+2023-12-30 14:41:12	26174	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/log.yml ok
+2023-12-30 14:41:12	26174	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/server.yml ok
+2023-12-30 14:41:12	26174	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/worker.yml ok
+2023-12-30 14:41:12	26174	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/sqlite3.yml ok
+2023-12-30 14:41:12	26174	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/system.yml ok
+2023-12-30 14:41:12	26174	main	3	[INFO]	[system]	radar/my_module.cpp:31	onLoad
+2023-12-30 14:41:12	26174	main	3	[ERROR]	[system]	src/socket.cpp:122	setsockopt sockfd=16 level=6 optname=1 errno=95 errstr=Operation not supported
+2023-12-30 14:41:12	26174	main	3	[INFO]	[system]	src/tcp_server.cpp:78	tcp server bind success, Socket information [sock=14, family=2, type=1, protocol=0, isConnected=0, m_locolAddress=0.0.0.0:8091]
+2023-12-30 14:41:12	26174	main	3	[INFO]	[system]	src/tcp_server.cpp:78	tcp server bind success, Socket information [sock=15, family=2, type=1, protocol=0, isConnected=0, m_locolAddress=127.0.0.1:37999]
+2023-12-30 14:41:12	26174	main	3	[INFO]	[system]	src/tcp_server.cpp:78	tcp server bind success, Socket information [sock=16, family=1, type=1, protocol=0, isConnected=0, m_locolAddress=/tmp/test_radar.sock]
+2023-12-30 14:41:12	26174	main	3	[INFO]	[system]	src/tcp_server.cpp:78	tcp server bind success, Socket information [sock=17, family=2, type=1, protocol=0, isConnected=0, m_locolAddress=0.0.0.0:8073]
+2023-12-30 14:41:12	26174	main	3	[INFO]	[system]	src/tcp_server.cpp:78	tcp server bind success, Socket information [sock=18, family=2, type=1, protocol=0, isConnected=0, m_locolAddress=127.0.0.1:8071]
+2023-12-30 14:41:12	26174	main	3	[INFO]	[system]	radar/my_module.cpp:41	onServerReady
+2023-12-30 14:41:12	26174	main	3	[INFO]	[system]	radar/my_module.cpp:113	addServlet
+2023-12-30 14:41:12	26174	main	3	[INFO]	[system]	radar/my_module.cpp:138	onServerUp
+2023-12-30 14:41:12	26186	io_9	21	[INFO]	[system]	src/http/http_server.cpp:18	handleClient: Socket information [sock=21, family=2, type=1, protocol=0, isConnected=1, m_locolAddress=172.18.25.130:8091, m_remoteAddress=172.18.25.64:59215]
+2023-12-30 14:41:12	26185	io_8	22	[INFO]	[system]	src/http/http_server.cpp:18	handleClient: Socket information [sock=23, family=2, type=1, protocol=0, isConnected=1, m_locolAddress=172.18.25.130:8091, m_remoteAddress=172.18.25.64:59216]
+2023-12-30 14:41:12	26186	io_9	21	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/map_test_2.html
+2023-12-30 14:41:13	26186	io_9	21	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///js/jquery-3.7.1.min.js
+2023-12-30 14:41:13	26186	io_9	21	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///js/echarts.min.js
+2023-12-30 14:41:13	26186	io_9	21	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///image/MacOdrum-LV5-floorplan-web.svg
+2023-12-30 14:41:13	26186	io_9	23	[INFO]	[system]	src/http/http_server.cpp:18	handleClient: Socket information [sock=28, family=2, type=1, protocol=0, isConnected=1, m_locolAddress=172.18.25.130:8091, m_remoteAddress=172.18.25.64:59217]
+2023-12-30 14:41:24	26186	io_9	21	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/map_test_2.html
+2023-12-30 14:41:24	26185	io_8	22	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///js/echarts.min.js
+2023-12-30 14:41:24	26186	io_9	21	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///js/jquery-3.7.1.min.js
+2023-12-30 14:41:24	26185	io_8	22	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///image/MacOdrum-LV5-floorplan-web.svg
+2023-12-30 14:41:28	26178	io_1	22	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/map_test.html
+2023-12-30 14:41:28	26178	io_1	22	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///js/jquery-3.7.1.min.js
+2023-12-30 14:41:28	26180	io_3	21	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///js/echarts.min.js
+2023-12-30 14:41:28	26180	io_3	21	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///image/MacOdrum-LV5-floorplan-web.svg
+2023-12-30 14:42:09	26180	io_3	21	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/map_test_2.html
+2023-12-30 14:42:09	26180	io_3	21	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///js/jquery-3.7.1.min.js
+2023-12-30 14:42:09	26178	io_1	22	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///js/echarts.min.js
+2023-12-30 14:42:09	26178	io_1	22	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///image/MacOdrum-LV5-floorplan-web.svg
+2023-12-30 14:42:30	26179	io_2	22	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/map_test_2.html
+2023-12-30 14:42:30	26184	io_7	23	[WARN]	[system]	src/http/http_server.cpp:25	recv http request fail, errno=0 errstr=Success cliet:Socket information [sock=-1, family=2, type=1, protocol=0, isConnected=0, m_locolAddress=172.18.25.130:8091, m_remoteAddress=172.18.25.64:59217] keep_alive=1
+2023-12-30 14:42:30	26184	io_7	22	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///js/jquery-3.7.1.min.js
+2023-12-30 14:42:30	26179	io_2	21	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///js/echarts.min.js
+2023-12-30 14:42:30	26179	io_2	21	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///image/MacOdrum-LV5-floorplan-web.svg
+2023-12-30 14:42:31	26182	io_5	21	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/map_test_2.html
+2023-12-30 14:42:31	26182	io_5	21	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///js/jquery-3.7.1.min.js
+2023-12-30 14:42:31	26185	io_8	22	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///js/echarts.min.js
+2023-12-30 14:42:31	26185	io_8	22	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///image/MacOdrum-LV5-floorplan-web.svg
+2023-12-30 14:43:52	26186	io_9	22	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/map_test_2.html
+2023-12-30 14:43:52	26186	io_9	22	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///js/jquery-3.7.1.min.js
+2023-12-30 14:43:52	26183	io_6	21	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///js/echarts.min.js
+2023-12-30 14:43:52	26183	io_6	21	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///image/MacOdrum-LV5-floorplan-web.svg
+2023-12-30 14:44:12	26183	io_6	21	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/map_test_2.html
+2023-12-30 14:44:12	26183	io_6	21	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///js/jquery-3.7.1.min.js
+2023-12-30 14:44:12	26182	io_5	22	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///js/echarts.min.js
+2023-12-30 14:44:12	26182	io_5	22	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///image/MacOdrum-LV5-floorplan-web.svg
+2023-12-30 14:46:32	26180	io_3	22	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/map_test_2.html
+2023-12-30 14:46:32	26180	io_3	22	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///js/jquery-3.7.1.min.js
+2023-12-30 14:46:32	26177	io_0	21	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///js/echarts.min.js
+2023-12-30 14:46:32	26177	io_0	21	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///image/MacOdrum-LV5-floorplan-web.svg
+2023-12-30 14:46:42	26186	io_9	21	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/map_test_2.html
+2023-12-30 14:46:42	26186	io_9	21	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///js/jquery-3.7.1.min.js
+2023-12-30 14:46:42	26178	io_1	22	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///js/echarts.min.js
+2023-12-30 14:46:42	26185	io_8	22	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///image/MacOdrum-LV5-floorplan-web.svg
+2023-12-30 14:46:51	26186	io_9	22	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/map_test_2.html
+2023-12-30 14:46:51	26177	io_0	22	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///js/jquery-3.7.1.min.js
+2023-12-30 14:46:51	26186	io_9	21	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///js/echarts.min.js
+2023-12-30 14:46:51	26182	io_5	21	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///image/MacOdrum-LV5-floorplan-web.svg
+2023-12-30 14:46:57	26184	io_7	21	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/map_test_2.html
+2023-12-30 14:46:57	26184	io_7	21	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///js/jquery-3.7.1.min.js
+2023-12-30 14:46:57	26179	io_2	22	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///js/echarts.min.js
+2023-12-30 14:46:57	26184	io_7	22	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///image/MacOdrum-LV5-floorplan-web.svg
+2023-12-30 14:48:00	26182	io_5	22	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/map_test_2.html
+2023-12-30 14:48:00	26182	io_5	22	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///js/jquery-3.7.1.min.js
+2023-12-30 14:48:00	26183	io_6	21	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///js/echarts.min.js
+2023-12-30 14:48:00	26183	io_6	21	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///image/MacOdrum-LV5-floorplan-web.svg
+2023-12-30 14:48:43	26185	io_8	21	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/map_test_2.html
+2023-12-30 14:48:43	26185	io_8	21	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///js/jquery-3.7.1.min.js
+2023-12-30 14:48:43	26186	io_9	22	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///js/echarts.min.js
+2023-12-30 14:48:43	26186	io_9	22	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///image/MacOdrum-LV5-floorplan-web.svg
+2023-12-30 14:50:29	26181	io_4	22	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/map_test_2.html
+2023-12-30 14:50:29	26179	io_2	22	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///js/jquery-3.7.1.min.js
+2023-12-30 14:50:29	26184	io_7	21	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///js/echarts.min.js
+2023-12-30 14:50:29	26180	io_3	21	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///image/MacOdrum-LV5-floorplan-web.svg
+2023-12-30 14:51:45	26186	io_9	21	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/map_test_2.html
+2023-12-30 14:51:45	26186	io_9	21	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///js/jquery-3.7.1.min.js
+2023-12-30 14:51:45	26186	io_9	22	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///js/echarts.min.js
+2023-12-30 14:51:46	26186	io_9	22	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///image/MacOdrum-LV5-floorplan-web.svg
+2023-12-30 14:52:18	26177	io_0	22	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/map_test_2.html
+2023-12-30 14:52:18	26177	io_0	21	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///js/echarts.min.js
+2023-12-30 14:52:18	26180	io_3	22	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///js/jquery-3.7.1.min.js
+2023-12-30 14:52:18	26177	io_0	21	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///image/MacOdrum-LV5-floorplan-web.svg
+2023-12-30 14:53:21	26177	io_0	21	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/map_test_2.html
+2023-12-30 14:53:21	26177	io_0	21	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///js/jquery-3.7.1.min.js
+2023-12-30 14:53:21	26180	io_3	22	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///js/echarts.min.js
+2023-12-30 14:53:21	26186	io_9	22	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///image/MacOdrum-LV5-floorplan-web.svg
+2023-12-30 14:53:28	26183	io_6	22	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/map_test_2.html
+2023-12-30 14:53:28	26183	io_6	22	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///js/jquery-3.7.1.min.js
+2023-12-30 14:53:28	26178	io_1	21	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///js/echarts.min.js
+2023-12-30 14:53:29	26178	io_1	21	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///image/MacOdrum-LV5-floorplan-web.svg
+2023-12-30 14:56:21	26178	io_1	21	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/map_test.html
+2023-12-30 14:56:21	26178	io_1	21	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///js/jquery-3.7.1.min.js
+2023-12-30 14:56:21	26178	io_1	22	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///js/echarts.min.js
+2023-12-30 14:56:21	26178	io_1	22	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///image/MacOdrum-LV5-floorplan-web.svg
+2023-12-30 14:56:58	26181	io_4	22	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/map_test.html
+2023-12-30 14:56:58	26181	io_4	22	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///js/jquery-3.7.1.min.js
+2023-12-30 14:56:58	26179	io_2	21	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///js/echarts.min.js
+2023-12-30 14:56:58	26180	io_3	21	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///image/MacOdrum-LV5-floorplan-web.svg
+2023-12-30 14:57:46	26178	io_1	21	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/map_test.html
+2023-12-30 14:57:46	26178	io_1	21	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///js/jquery-3.7.1.min.js
+2023-12-30 14:57:46	26183	io_6	22	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///js/echarts.min.js
+2023-12-30 14:57:46	26183	io_6	22	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///image/MacOdrum-LV5-floorplan-web.svg
+2023-12-30 15:05:06	26179	io_2	22	[WARN]	[system]	src/http/http_server.cpp:25	recv http request fail, errno=11 errstr=Resource temporarily unavailable cliet:Socket information [sock=-1, family=2, type=1, protocol=0, isConnected=0, m_locolAddress=172.18.25.130:8091, m_remoteAddress=172.18.25.64:59216] keep_alive=1
+2023-12-30 15:05:06	26180	io_3	21	[WARN]	[system]	src/http/http_server.cpp:25	recv http request fail, errno=11 errstr=Resource temporarily unavailable cliet:Socket information [sock=-1, family=2, type=1, protocol=0, isConnected=0, m_locolAddress=172.18.25.130:8091, m_remoteAddress=172.18.25.64:59215] keep_alive=1
+2023-12-30 15:05:06	26180	io_3	701	[INFO]	[system]	src/http/http_server.cpp:18	handleClient: Socket information [sock=21, family=2, type=1, protocol=0, isConnected=1, m_locolAddress=172.18.25.130:8091, m_remoteAddress=172.18.25.64:60211]
+2023-12-30 15:05:06	26179	io_2	702	[INFO]	[system]	src/http/http_server.cpp:18	handleClient: Socket information [sock=23, family=2, type=1, protocol=0, isConnected=1, m_locolAddress=172.18.25.130:8091, m_remoteAddress=172.18.25.64:60212]
+2023-12-30 15:05:06	26180	io_3	701	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/map_test.html
+2023-12-30 15:05:06	26180	io_3	701	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///js/jquery-3.7.1.min.js
+2023-12-30 15:05:06	26179	io_2	702	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///js/echarts.min.js
+2023-12-30 15:05:06	26179	io_2	702	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///image/MacOdrum-LV5-floorplan-web.svg
+2023-12-30 15:05:34	26179	io_2	702	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/map_test.html
+2023-12-30 15:05:34	26179	io_2	702	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///js/jquery-3.7.1.min.js
+2023-12-30 15:05:34	26180	io_3	701	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///js/echarts.min.js
+2023-12-30 15:05:35	26180	io_3	701	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///image/MacOdrum-LV5-floorplan-web.svg
+2023-12-30 15:09:45	26181	io_4	701	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/map_test.html
+2023-12-30 15:09:45	26181	io_4	701	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///js/jquery-3.7.1.min.js
+2023-12-30 15:09:45	26182	io_5	702	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///js/echarts.min.js
+2023-12-30 15:09:45	26185	io_8	702	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///image/MacOdrum-LV5-floorplan-web.svg
+2023-12-30 15:15:46	26184	io_7	702	[WARN]	[system]	src/http/http_server.cpp:25	recv http request fail, errno=11 errstr=Resource temporarily unavailable cliet:Socket information [sock=-1, family=2, type=1, protocol=0, isConnected=0, m_locolAddress=172.18.25.130:8091, m_remoteAddress=172.18.25.64:60212] keep_alive=1
+2023-12-30 15:15:46	26186	io_9	701	[WARN]	[system]	src/http/http_server.cpp:25	recv http request fail, errno=11 errstr=Resource temporarily unavailable cliet:Socket information [sock=-1, family=2, type=1, protocol=0, isConnected=0, m_locolAddress=172.18.25.130:8091, m_remoteAddress=172.18.25.64:60211] keep_alive=1
+2023-12-30 15:15:46	26186	io_9	1007	[INFO]	[system]	src/http/http_server.cpp:18	handleClient: Socket information [sock=21, family=2, type=1, protocol=0, isConnected=1, m_locolAddress=172.18.25.130:8091, m_remoteAddress=172.18.25.64:61122]
+2023-12-30 15:15:46	26184	io_7	1008	[INFO]	[system]	src/http/http_server.cpp:18	handleClient: Socket information [sock=23, family=2, type=1, protocol=0, isConnected=1, m_locolAddress=172.18.25.130:8091, m_remoteAddress=172.18.25.64:61123]
+2023-12-30 15:15:46	26186	io_9	1007	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/map_test.html
+2023-12-30 15:15:46	26186	io_9	1007	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///js/jquery-3.7.1.min.js
+2023-12-30 15:15:46	26184	io_7	1008	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///js/echarts.min.js
+2023-12-30 15:15:47	26178	io_1	1008	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///image/MacOdrum-LV5-floorplan-web.svg
+2023-12-30 15:16:17	26179	io_2	1008	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/map_test.html
+2023-12-30 15:16:17	26179	io_2	1008	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///js/jquery-3.7.1.min.js
+2023-12-30 15:16:18	26179	io_2	1007	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///js/echarts.min.js
+2023-12-30 15:16:18	26179	io_2	1007	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///image/MacOdrum-LV5-floorplan-web.svg
+2023-12-30 15:19:42	26182	io_5	1007	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/map_test.html
+2023-12-30 15:19:42	26182	io_5	1007	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///js/jquery-3.7.1.min.js
+2023-12-30 15:19:42	26183	io_6	1008	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///js/echarts.min.js
+2023-12-30 15:19:42	26182	io_5	1008	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///image/MacOdrum-LV5-floorplan-web.svg
+2023-12-31 05:13:41	19714	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/log.yml ok
+2023-12-31 05:13:41	19714	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/server.yml ok
+2023-12-31 05:13:41	19714	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/worker.yml ok
+2023-12-31 05:13:42	19714	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/sqlite3.yml ok
+2023-12-31 05:13:42	19714	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/system.yml ok
+2023-12-31 05:13:42	19714	UNKOWN	0	[INFO]	[system]	radar/my_module.cpp:145	CreateModule:0x257d3c0
+2023-12-31 05:13:42	19714	UNKOWN	0	[INFO]	[system]	src/library.cpp:89	load module name=radar_system version=1.0 path=/home/wwt/radar_system/bin/module/libradar_system.so success
+2023-12-31 05:13:42	19714	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/log.yml ok
+2023-12-31 05:13:42	19714	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/server.yml ok
+2023-12-31 05:13:42	19714	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/worker.yml ok
+2023-12-31 05:13:42	19714	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/sqlite3.yml ok
+2023-12-31 05:13:42	19714	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/system.yml ok
+2023-12-31 05:13:42	19714	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/log.yml ok
+2023-12-31 05:13:42	19714	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/server.yml ok
+2023-12-31 05:13:42	19714	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/worker.yml ok
+2023-12-31 05:13:42	19714	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/sqlite3.yml ok
+2023-12-31 05:13:42	19714	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/system.yml ok
+2023-12-31 05:13:42	19714	main	3	[INFO]	[system]	radar/my_module.cpp:31	onLoad
+2023-12-31 05:13:42	19714	main	3	[ERROR]	[system]	src/socket.cpp:122	setsockopt sockfd=16 level=6 optname=1 errno=95 errstr=Operation not supported
+2023-12-31 05:13:42	19714	main	3	[INFO]	[system]	src/tcp_server.cpp:78	tcp server bind success, Socket information [sock=14, family=2, type=1, protocol=0, isConnected=0, m_locolAddress=0.0.0.0:8091]
+2023-12-31 05:13:42	19714	main	3	[INFO]	[system]	src/tcp_server.cpp:78	tcp server bind success, Socket information [sock=15, family=2, type=1, protocol=0, isConnected=0, m_locolAddress=127.0.0.1:38429]
+2023-12-31 05:13:42	19714	main	3	[INFO]	[system]	src/tcp_server.cpp:78	tcp server bind success, Socket information [sock=16, family=1, type=1, protocol=0, isConnected=0, m_locolAddress=/tmp/test_radar.sock]
+2023-12-31 05:13:42	19714	main	3	[INFO]	[system]	src/tcp_server.cpp:78	tcp server bind success, Socket information [sock=17, family=2, type=1, protocol=0, isConnected=0, m_locolAddress=0.0.0.0:8073]
+2023-12-31 05:13:42	19714	main	3	[INFO]	[system]	src/tcp_server.cpp:78	tcp server bind success, Socket information [sock=18, family=2, type=1, protocol=0, isConnected=0, m_locolAddress=127.0.0.1:8071]
+2023-12-31 05:13:42	19714	main	3	[INFO]	[system]	radar/my_module.cpp:41	onServerReady
+2023-12-31 05:13:42	19714	main	3	[INFO]	[system]	radar/my_module.cpp:113	addServlet
+2023-12-31 05:13:42	19714	main	3	[INFO]	[system]	radar/my_module.cpp:138	onServerUp
+2023-12-31 05:13:45	19722	io_5	23	[INFO]	[system]	src/http/http_server.cpp:18	handleClient: Socket information [sock=23, family=2, type=1, protocol=0, isConnected=1, m_locolAddress=172.18.25.130:8091, m_remoteAddress=172.18.25.64:59444]
+2023-12-31 05:13:45	19720	io_3	22	[INFO]	[system]	src/http/http_server.cpp:18	handleClient: Socket information [sock=20, family=2, type=1, protocol=0, isConnected=1, m_locolAddress=172.18.25.130:8091, m_remoteAddress=172.18.25.64:59443]
+2023-12-31 05:13:45	19720	io_3	22	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/map_test_2.html
+2023-12-31 05:13:45	19722	io_5	23	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///js/echarts.min.js
+2023-12-31 05:13:45	19720	io_3	22	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///js/jquery-3.7.1.min.js
+2023-12-31 05:14:11	19720	io_3	23	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/map_test_2.html
+2023-12-31 05:14:11	19720	io_3	23	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///js/jquery-3.7.1.min.js
+2023-12-31 05:14:11	19720	io_3	22	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///js/echarts.min.js
+2023-12-31 05:16:56	19719	io_2	22	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/map_test_2.html
+2023-12-31 05:16:56	19719	io_2	22	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///js/jquery-3.7.1.min.js
+2023-12-31 05:16:56	19719	io_2	23	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///js/echarts.min.js
+2023-12-31 05:19:54	19719	io_2	23	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/map_test_2.html
+2023-12-31 05:19:54	19719	io_2	23	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///js/jquery-3.7.1.min.js
+2023-12-31 05:19:54	19718	io_1	22	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///js/echarts.min.js
+2023-12-31 05:22:38	19717	io_0	22	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/map_test_2.html
+2023-12-31 05:22:38	19717	io_0	22	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///js/jquery-3.7.1.min.js
+2023-12-31 05:22:38	19723	io_6	23	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///js/echarts.min.js
+2023-12-31 05:22:53	19725	io_8	23	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/map_test_2.html
+2023-12-31 05:22:53	19725	io_8	23	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///js/jquery-3.7.1.min.js
+2023-12-31 05:22:53	19724	io_7	22	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///js/echarts.min.js
+2023-12-31 05:23:27	19717	io_0	22	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/map_test_2.html
+2023-12-31 05:23:27	19717	io_0	22	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///js/jquery-3.7.1.min.js
+2023-12-31 05:23:27	19723	io_6	23	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///js/echarts.min.js
+2023-12-31 05:33:27	19719	io_2	22	[WARN]	[system]	src/http/http_server.cpp:25	recv http request fail, errno=11 errstr=Resource temporarily unavailable cliet:Socket information [sock=-1, family=2, type=1, protocol=0, isConnected=0, m_locolAddress=172.18.25.130:8091, m_remoteAddress=172.18.25.64:59443] keep_alive=1
+2023-12-31 05:33:27	19722	io_5	23	[WARN]	[system]	src/http/http_server.cpp:25	recv http request fail, errno=11 errstr=Resource temporarily unavailable cliet:Socket information [sock=-1, family=2, type=1, protocol=0, isConnected=0, m_locolAddress=172.18.25.130:8091, m_remoteAddress=172.18.25.64:59444] keep_alive=1
+2023-12-31 05:33:47	19722	io_5	602	[INFO]	[system]	src/http/http_server.cpp:18	handleClient: Socket information [sock=20, family=2, type=1, protocol=0, isConnected=1, m_locolAddress=172.18.25.130:8091, m_remoteAddress=172.18.25.64:61446]
+2023-12-31 05:33:47	19718	io_1	603	[INFO]	[system]	src/http/http_server.cpp:18	handleClient: Socket information [sock=23, family=2, type=1, protocol=0, isConnected=1, m_locolAddress=172.18.25.130:8091, m_remoteAddress=172.18.25.64:61447]
+2023-12-31 05:33:47	19722	io_5	602	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/map_test_2.html
+2023-12-31 05:33:47	19722	io_5	603	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/js/echarts.js
+2023-12-31 05:33:47	19718	io_1	602	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/js/jquery-2.1.1.js
+2023-12-31 05:33:47	19717	io_0	604	[INFO]	[system]	src/http/http_server.cpp:18	handleClient: Socket information [sock=24, family=2, type=1, protocol=0, isConnected=1, m_locolAddress=172.18.25.130:8091, m_remoteAddress=172.18.25.64:61449]
+2023-12-31 05:33:47	19717	io_0	604	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/js/bmap.min.js
+2023-12-31 05:34:19	19717	io_0	604	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/map_test_2.html
+2023-12-31 05:34:19	19717	io_0	604	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///js/jquery-2.1.1.js
+2023-12-31 05:34:19	19717	io_0	602	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///js/echarts.js
+2023-12-31 05:34:19	19718	io_1	603	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/js/bmap.min.js
+2023-12-31 05:34:19	19717	io_0	602	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///js/echarts.js.map
+2023-12-31 05:34:38	19721	io_4	602	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/map_test_2.html
+2023-12-31 05:34:38	19721	io_4	602	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///js/jquery-3.7.1.min.js
+2023-12-31 05:34:38	19726	io_9	603	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///js/echarts.js
+2023-12-31 05:34:38	19723	io_6	604	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/js/bmap.min.js
+2023-12-31 05:34:38	19726	io_9	603	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///js/echarts.js.map
+2023-12-31 05:43:36	19724	io_7	604	[WARN]	[system]	src/http/http_server.cpp:25	recv http request fail, errno=11 errstr=Resource temporarily unavailable cliet:Socket information [sock=-1, family=2, type=1, protocol=0, isConnected=0, m_locolAddress=172.18.25.130:8091, m_remoteAddress=172.18.25.64:61449] keep_alive=1
+2023-12-31 05:43:36	19718	io_1	602	[WARN]	[system]	src/http/http_server.cpp:25	recv http request fail, errno=11 errstr=Resource temporarily unavailable cliet:Socket information [sock=-1, family=2, type=1, protocol=0, isConnected=0, m_locolAddress=172.18.25.130:8091, m_remoteAddress=172.18.25.64:61446] keep_alive=1
+2023-12-31 05:43:36	19719	io_2	603	[WARN]	[system]	src/http/http_server.cpp:25	recv http request fail, errno=11 errstr=Resource temporarily unavailable cliet:Socket information [sock=-1, family=2, type=1, protocol=0, isConnected=0, m_locolAddress=172.18.25.130:8091, m_remoteAddress=172.18.25.64:61447] keep_alive=1
+2023-12-31 05:43:36	19724	io_7	884	[INFO]	[system]	src/http/http_server.cpp:18	handleClient: Socket information [sock=23, family=2, type=1, protocol=0, isConnected=1, m_locolAddress=172.18.25.130:8091, m_remoteAddress=172.18.25.64:62579]
+2023-12-31 05:43:36	19717	io_0	883	[INFO]	[system]	src/http/http_server.cpp:18	handleClient: Socket information [sock=20, family=2, type=1, protocol=0, isConnected=1, m_locolAddress=172.18.25.130:8091, m_remoteAddress=172.18.25.64:62578]
+2023-12-31 05:43:36	19717	io_0	883	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/map_test_2.html
+2023-12-31 05:45:42	19723	io_6	884	[WARN]	[system]	src/http/http_server.cpp:25	recv http request fail, errno=11 errstr=Resource temporarily unavailable cliet:Socket information [sock=-1, family=2, type=1, protocol=0, isConnected=0, m_locolAddress=172.18.25.130:8091, m_remoteAddress=172.18.25.64:62579] keep_alive=1
+2023-12-31 05:45:42	19726	io_9	944	[INFO]	[system]	src/http/http_server.cpp:18	handleClient: Socket information [sock=23, family=2, type=1, protocol=0, isConnected=1, m_locolAddress=172.18.25.130:8091, m_remoteAddress=172.18.25.64:62715]
+2023-12-31 05:45:42	19723	io_6	883	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/map_test_2.html
+2023-12-31 05:47:51	19720	io_3	1007	[INFO]	[system]	src/http/http_server.cpp:18	handleClient: Socket information [sock=23, family=2, type=1, protocol=0, isConnected=1, m_locolAddress=172.18.25.130:8091, m_remoteAddress=172.18.25.64:62813]
+2023-12-31 05:47:51	19724	io_7	883	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/map_test_2.html
+2023-12-31 05:47:51	19721	io_4	944	[WARN]	[system]	src/http/http_server.cpp:25	recv http request fail, errno=11 errstr=Resource temporarily unavailable cliet:Socket information [sock=-1, family=2, type=1, protocol=0, isConnected=0, m_locolAddress=172.18.25.130:8091, m_remoteAddress=172.18.25.64:62715] keep_alive=1
+2023-12-31 05:50:01	19724	io_7	883	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/map_test_2.html
+2023-12-31 05:50:01	19721	io_4	1007	[WARN]	[system]	src/http/http_server.cpp:25	recv http request fail, errno=11 errstr=Resource temporarily unavailable cliet:Socket information [sock=-1, family=2, type=1, protocol=0, isConnected=0, m_locolAddress=172.18.25.130:8091, m_remoteAddress=172.18.25.64:62813] keep_alive=1
+2023-12-31 05:50:01	19724	io_7	1072	[INFO]	[system]	src/http/http_server.cpp:18	handleClient: Socket information [sock=23, family=2, type=1, protocol=0, isConnected=1, m_locolAddress=172.18.25.130:8091, m_remoteAddress=172.18.25.64:62937]
+2023-12-31 05:52:04	19717	io_0	883	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/map_test_2.html
+2023-12-31 05:52:04	19718	io_1	1072	[WARN]	[system]	src/http/http_server.cpp:25	recv http request fail, errno=11 errstr=Resource temporarily unavailable cliet:Socket information [sock=-1, family=2, type=1, protocol=0, isConnected=0, m_locolAddress=172.18.25.130:8091, m_remoteAddress=172.18.25.64:62937] keep_alive=1
+2023-12-31 05:52:04	19718	io_1	1134	[INFO]	[system]	src/http/http_server.cpp:18	handleClient: Socket information [sock=23, family=2, type=1, protocol=0, isConnected=1, m_locolAddress=172.18.25.130:8091, m_remoteAddress=172.18.25.64:63061]
+2023-12-31 05:52:28	19720	io_3	883	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/logout.html
+2023-12-31 05:52:28	19724	io_7	883	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///css/semantic.min.css
+2023-12-31 05:52:28	19721	io_4	1134	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///css/chat.css
+2023-12-31 05:52:28	19720	io_3	1147	[INFO]	[system]	src/http/http_server.cpp:18	handleClient: Socket information [sock=25, family=2, type=1, protocol=0, isConnected=1, m_locolAddress=172.18.25.130:8091, m_remoteAddress=172.18.25.64:63084]
+2023-12-31 05:52:28	19720	io_3	1147	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///css/body.css
+2023-12-31 05:52:28	19724	io_7	883	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///image/bg.jpg
+2023-12-31 05:54:02	19726	io_9	883	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/map_test_2.html
+2023-12-31 05:55:41	19723	io_6	883	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/map_test_2.html
+2023-12-31 05:58:30	19721	io_4	1147	[WARN]	[system]	src/http/http_server.cpp:25	recv http request fail, errno=11 errstr=Resource temporarily unavailable cliet:Socket information [sock=-1, family=2, type=1, protocol=0, isConnected=0, m_locolAddress=172.18.25.130:8091, m_remoteAddress=172.18.25.64:63084] keep_alive=1
+2023-12-31 05:58:30	19724	io_7	1134	[WARN]	[system]	src/http/http_server.cpp:25	recv http request fail, errno=11 errstr=Resource temporarily unavailable cliet:Socket information [sock=-1, family=2, type=1, protocol=0, isConnected=0, m_locolAddress=172.18.25.130:8091, m_remoteAddress=172.18.25.64:63061] keep_alive=1
+2023-12-31 05:58:30	19724	io_7	883	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/map_test_2.html
+2023-12-31 05:58:30	19724	io_7	1318	[INFO]	[system]	src/http/http_server.cpp:18	handleClient: Socket information [sock=23, family=2, type=1, protocol=0, isConnected=1, m_locolAddress=172.18.25.130:8091, m_remoteAddress=172.18.25.64:63402]
+2023-12-31 06:01:55	19726	io_9	1318	[WARN]	[system]	src/http/http_server.cpp:25	recv http request fail, errno=11 errstr=Resource temporarily unavailable cliet:Socket information [sock=-1, family=2, type=1, protocol=0, isConnected=0, m_locolAddress=172.18.25.130:8091, m_remoteAddress=172.18.25.64:63402] keep_alive=1
+2023-12-31 06:01:55	19722	io_5	883	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/map_test_2.html
+2023-12-31 06:01:55	19726	io_9	1415	[INFO]	[system]	src/http/http_server.cpp:18	handleClient: Socket information [sock=23, family=2, type=1, protocol=0, isConnected=1, m_locolAddress=172.18.25.130:8091, m_remoteAddress=172.18.25.64:63667]
+2023-12-31 06:04:11	19719	io_2	1415	[WARN]	[system]	src/http/http_server.cpp:25	recv http request fail, errno=11 errstr=Resource temporarily unavailable cliet:Socket information [sock=-1, family=2, type=1, protocol=0, isConnected=0, m_locolAddress=172.18.25.130:8091, m_remoteAddress=172.18.25.64:63667] keep_alive=1
+2023-12-31 06:04:11	19718	io_1	883	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/map_test.html
+2023-12-31 06:04:11	19718	io_1	1482	[INFO]	[system]	src/http/http_server.cpp:18	handleClient: Socket information [sock=23, family=2, type=1, protocol=0, isConnected=1, m_locolAddress=172.18.25.130:8091, m_remoteAddress=172.18.25.64:63820]
+2023-12-31 06:14:11	19722	io_5	1482	[WARN]	[system]	src/http/http_server.cpp:25	recv http request fail, errno=11 errstr=Resource temporarily unavailable cliet:Socket information [sock=-1, family=2, type=1, protocol=0, isConnected=0, m_locolAddress=172.18.25.130:8091, m_remoteAddress=172.18.25.64:63820] keep_alive=1
+2023-12-31 06:14:11	19719	io_2	883	[WARN]	[system]	src/http/http_server.cpp:25	recv http request fail, errno=11 errstr=Resource temporarily unavailable cliet:Socket information [sock=-1, family=2, type=1, protocol=0, isConnected=0, m_locolAddress=172.18.25.130:8091, m_remoteAddress=172.18.25.64:62578] keep_alive=1
+2023-12-31 06:14:54	19722	io_5	1793	[INFO]	[system]	src/http/http_server.cpp:18	handleClient: Socket information [sock=20, family=2, type=1, protocol=0, isConnected=1, m_locolAddress=172.18.25.130:8091, m_remoteAddress=172.18.25.64:64307]
+2023-12-31 06:14:54	19722	io_5	1793	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/map_test.html
+2023-12-31 06:14:54	19721	io_4	1794	[INFO]	[system]	src/http/http_server.cpp:18	handleClient: Socket information [sock=23, family=2, type=1, protocol=0, isConnected=1, m_locolAddress=172.18.25.130:8091, m_remoteAddress=172.18.25.64:64308]
+2023-12-31 06:24:54	19723	io_6	1794	[WARN]	[system]	src/http/http_server.cpp:25	recv http request fail, errno=11 errstr=Resource temporarily unavailable cliet:Socket information [sock=-1, family=2, type=1, protocol=0, isConnected=0, m_locolAddress=172.18.25.130:8091, m_remoteAddress=172.18.25.64:64308] keep_alive=1
+2023-12-31 06:24:54	19723	io_6	1793	[WARN]	[system]	src/http/http_server.cpp:25	recv http request fail, errno=0 errstr=Success cliet:Socket information [sock=-1, family=2, type=1, protocol=0, isConnected=0, m_locolAddress=172.18.25.130:8091, m_remoteAddress=172.18.25.64:64307] keep_alive=1
+2023-12-31 06:26:42	19718	io_1	2138	[INFO]	[system]	src/http/http_server.cpp:18	handleClient: Socket information [sock=23, family=2, type=1, protocol=0, isConnected=1, m_locolAddress=172.18.25.130:8091, m_remoteAddress=172.18.25.64:65427]
+2023-12-31 06:26:42	19719	io_2	2137	[INFO]	[system]	src/http/http_server.cpp:18	handleClient: Socket information [sock=20, family=2, type=1, protocol=0, isConnected=1, m_locolAddress=172.18.25.130:8091, m_remoteAddress=172.18.25.64:65426]
+2023-12-31 06:26:42	19719	io_2	2137	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/map_test.html
+2023-12-31 06:26:42	19719	io_2	2137	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/your-icon-url-here.png
+2023-12-31 06:27:33	19721	io_4	2137	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/map_test.html
+2023-12-31 06:27:33	19721	io_4	2137	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///image/ren.png
+2023-12-31 06:30:15	19718	io_1	2138	[WARN]	[system]	src/http/http_server.cpp:25	recv http request fail, errno=11 errstr=Resource temporarily unavailable cliet:Socket information [sock=-1, family=2, type=1, protocol=0, isConnected=0, m_locolAddress=172.18.25.130:8091, m_remoteAddress=172.18.25.64:65427] keep_alive=1
+2023-12-31 06:30:15	19721	io_4	2137	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/map_test.html
+2023-12-31 06:30:15	19717	io_0	2236	[INFO]	[system]	src/http/http_server.cpp:18	handleClient: Socket information [sock=23, family=2, type=1, protocol=0, isConnected=1, m_locolAddress=172.18.25.130:8091, m_remoteAddress=172.18.25.64:49208]
+2023-12-31 06:30:15	19721	io_4	2137	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///image/ren2.png
+2023-12-31 06:30:42	19722	io_5	2137	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/map_test.html
+2023-12-31 06:30:42	19722	io_5	2137	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///image/ren.png
+2023-12-31 06:33:04	19725	io_8	2137	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/map_test.html
+2023-12-31 06:33:04	19720	io_3	2236	[WARN]	[system]	src/http/http_server.cpp:25	recv http request fail, errno=11 errstr=Resource temporarily unavailable cliet:Socket information [sock=-1, family=2, type=1, protocol=0, isConnected=0, m_locolAddress=172.18.25.130:8091, m_remoteAddress=172.18.25.64:49208] keep_alive=1
+2023-12-31 06:33:04	19725	io_8	2316	[INFO]	[system]	src/http/http_server.cpp:18	handleClient: Socket information [sock=23, family=2, type=1, protocol=0, isConnected=1, m_locolAddress=172.18.25.130:8091, m_remoteAddress=172.18.25.64:49403]
+2023-12-31 06:33:04	19725	io_8	2137	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/your-icon-url-here.png
+2023-12-31 06:33:26	19725	io_8	2137	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/map_test.html
+2023-12-31 06:33:26	19725	io_8	2137	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///image/ren.png
+2023-12-31 06:34:23	19722	io_5	2316	[WARN]	[system]	src/http/http_server.cpp:25	recv http request fail, errno=11 errstr=Resource temporarily unavailable cliet:Socket information [sock=-1, family=2, type=1, protocol=0, isConnected=0, m_locolAddress=172.18.25.130:8091, m_remoteAddress=172.18.25.64:49403] keep_alive=1
+2023-12-31 06:34:23	19726	io_9	2137	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/map_test.html
+2023-12-31 06:34:23	19726	io_9	2355	[INFO]	[system]	src/http/http_server.cpp:18	handleClient: Socket information [sock=23, family=2, type=1, protocol=0, isConnected=1, m_locolAddress=172.18.25.130:8091, m_remoteAddress=172.18.25.64:49456]
+2023-12-31 06:34:23	19726	io_9	2137	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///image/ren.png
+2023-12-31 06:35:25	19717	io_0	2137	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/map_test.html
+2023-12-31 06:35:25	19724	io_7	2355	[WARN]	[system]	src/http/http_server.cpp:25	recv http request fail, errno=11 errstr=Resource temporarily unavailable cliet:Socket information [sock=-1, family=2, type=1, protocol=0, isConnected=0, m_locolAddress=172.18.25.130:8091, m_remoteAddress=172.18.25.64:49456] keep_alive=1
+2023-12-31 06:35:25	19724	io_7	2386	[INFO]	[system]	src/http/http_server.cpp:18	handleClient: Socket information [sock=23, family=2, type=1, protocol=0, isConnected=1, m_locolAddress=172.18.25.130:8091, m_remoteAddress=172.18.25.64:49490]
+2023-12-31 06:35:25	19724	io_7	2137	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///image/ren.png
+2023-12-31 06:37:19	19723	io_6	2386	[WARN]	[system]	src/http/http_server.cpp:25	recv http request fail, errno=0 errstr=Success cliet:Socket information [sock=-1, family=2, type=1, protocol=0, isConnected=0, m_locolAddress=172.18.25.130:8091, m_remoteAddress=172.18.25.64:49490] keep_alive=1
+2023-12-31 06:37:19	19720	io_3	2137	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/map_test.html
+2023-12-31 06:37:19	19720	io_3	2442	[INFO]	[system]	src/http/http_server.cpp:18	handleClient: Socket information [sock=23, family=2, type=1, protocol=0, isConnected=1, m_locolAddress=172.18.25.130:8091, m_remoteAddress=172.18.25.64:49602]
+2023-12-31 06:37:19	19720	io_3	2137	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///image/ren.png
+2023-12-31 06:39:15	19722	io_5	2442	[WARN]	[system]	src/http/http_server.cpp:25	recv http request fail, errno=11 errstr=Resource temporarily unavailable cliet:Socket information [sock=-1, family=2, type=1, protocol=0, isConnected=0, m_locolAddress=172.18.25.130:8091, m_remoteAddress=172.18.25.64:49602] keep_alive=1
+2023-12-31 06:39:15	19722	io_5	2501	[INFO]	[system]	src/http/http_server.cpp:18	handleClient: Socket information [sock=23, family=2, type=1, protocol=0, isConnected=1, m_locolAddress=172.18.25.130:8091, m_remoteAddress=172.18.25.64:49691]
+2023-12-31 06:39:15	19722	io_5	2137	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/map_test.html
+2023-12-31 06:39:16	19722	io_5	2137	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///image/ren.png
+2023-12-31 06:44:44	19725	io_8	2137	[WARN]	[system]	src/http/http_server.cpp:25	recv http request fail, errno=11 errstr=Resource temporarily unavailable cliet:Socket information [sock=-1, family=2, type=1, protocol=0, isConnected=0, m_locolAddress=172.18.25.130:8091, m_remoteAddress=172.18.25.64:65426] keep_alive=1
+2023-12-31 06:44:44	19723	io_6	2501	[WARN]	[system]	src/http/http_server.cpp:25	recv http request fail, errno=11 errstr=Resource temporarily unavailable cliet:Socket information [sock=-1, family=2, type=1, protocol=0, isConnected=0, m_locolAddress=172.18.25.130:8091, m_remoteAddress=172.18.25.64:49691] keep_alive=1
+2023-12-31 06:44:44	19725	io_8	2655	[INFO]	[system]	src/http/http_server.cpp:18	handleClient: Socket information [sock=20, family=2, type=1, protocol=0, isConnected=1, m_locolAddress=172.18.25.130:8091, m_remoteAddress=172.18.25.64:49972]
+2023-12-31 06:44:44	19723	io_6	2656	[INFO]	[system]	src/http/http_server.cpp:18	handleClient: Socket information [sock=23, family=2, type=1, protocol=0, isConnected=1, m_locolAddress=172.18.25.130:8091, m_remoteAddress=172.18.25.64:49973]
+2023-12-31 06:44:44	19723	io_6	2655	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/map_test.html
+2023-12-31 06:44:44	19723	io_6	2655	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/image/ren.png
+2023-12-31 06:44:52	19719	io_2	2655	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/map_test.html
+2023-12-31 06:44:52	19719	io_2	2655	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///image/ren.png
+2023-12-31 06:48:19	19722	io_5	2656	[WARN]	[system]	src/http/http_server.cpp:25	recv http request fail, errno=11 errstr=Resource temporarily unavailable cliet:Socket information [sock=-1, family=2, type=1, protocol=0, isConnected=0, m_locolAddress=172.18.25.130:8091, m_remoteAddress=172.18.25.64:49973] keep_alive=1
+2023-12-31 06:48:19	19722	io_5	2655	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/map_test.html
+2023-12-31 06:48:19	19726	io_9	2758	[INFO]	[system]	src/http/http_server.cpp:18	handleClient: Socket information [sock=24, family=2, type=1, protocol=0, isConnected=1, m_locolAddress=172.18.25.130:8091, m_remoteAddress=172.18.25.64:50165]
+2023-12-31 06:48:19	19722	io_5	2655	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///image/ren.png
+2023-12-31 06:50:34	19719	io_2	2758	[WARN]	[system]	src/http/http_server.cpp:25	recv http request fail, errno=11 errstr=Resource temporarily unavailable cliet:Socket information [sock=-1, family=2, type=1, protocol=0, isConnected=0, m_locolAddress=172.18.25.130:8091, m_remoteAddress=172.18.25.64:50165] keep_alive=1
+2023-12-31 06:50:34	19719	io_2	2823	[INFO]	[system]	src/http/http_server.cpp:18	handleClient: Socket information [sock=23, family=2, type=1, protocol=0, isConnected=1, m_locolAddress=172.18.25.130:8091, m_remoteAddress=172.18.25.64:50266]
+2023-12-31 06:50:34	19719	io_2	2655	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/map_test.html
+2023-12-31 06:50:34	19723	io_6	2655	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///image/ren.png
+2023-12-31 07:00:34	19721	io_4	2823	[WARN]	[system]	src/http/http_server.cpp:25	recv http request fail, errno=11 errstr=Resource temporarily unavailable cliet:Socket information [sock=-1, family=2, type=1, protocol=0, isConnected=0, m_locolAddress=172.18.25.130:8091, m_remoteAddress=172.18.25.64:50266] keep_alive=1
+2023-12-31 07:00:34	19724	io_7	2655	[WARN]	[system]	src/http/http_server.cpp:25	recv http request fail, errno=11 errstr=Resource temporarily unavailable cliet:Socket information [sock=-1, family=2, type=1, protocol=0, isConnected=0, m_locolAddress=172.18.25.130:8091, m_remoteAddress=172.18.25.64:49972] keep_alive=1
+2023-12-31 07:28:52	19719	io_2	3923	[INFO]	[system]	src/http/http_server.cpp:18	handleClient: Socket information [sock=20, family=2, type=1, protocol=0, isConnected=1, m_locolAddress=172.18.25.130:8091, m_remoteAddress=172.18.25.64:52073]
+2023-12-31 07:28:52	19724	io_7	3924	[INFO]	[system]	src/http/http_server.cpp:18	handleClient: Socket information [sock=23, family=2, type=1, protocol=0, isConnected=1, m_locolAddress=172.18.25.130:8091, m_remoteAddress=172.18.25.64:52074]
+2023-12-31 07:28:52	19719	io_2	3923	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/map_test.html
+2023-12-31 07:28:52	19722	io_5	3923	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///image/ren.png
+2023-12-31 07:30:25	19723	io_6	3967	[INFO]	[system]	src/http/http_server.cpp:18	handleClient: Socket information [sock=23, family=2, type=1, protocol=0, isConnected=1, m_locolAddress=172.18.25.130:8091, m_remoteAddress=172.18.25.64:52130]
+2023-12-31 07:30:25	19726	io_9	3924	[WARN]	[system]	src/http/http_server.cpp:25	recv http request fail, errno=11 errstr=Resource temporarily unavailable cliet:Socket information [sock=-1, family=2, type=1, protocol=0, isConnected=0, m_locolAddress=172.18.25.130:8091, m_remoteAddress=172.18.25.64:52074] keep_alive=1
+2023-12-31 07:30:25	19725	io_8	3923	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/map_test.html
+2023-12-31 07:30:25	19725	io_8	3923	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///image/ren.png
+2023-12-31 07:40:25	19719	io_2	3967	[WARN]	[system]	src/http/http_server.cpp:25	recv http request fail, errno=11 errstr=Resource temporarily unavailable cliet:Socket information [sock=-1, family=2, type=1, protocol=0, isConnected=0, m_locolAddress=172.18.25.130:8091, m_remoteAddress=172.18.25.64:52130] keep_alive=1
+2023-12-31 07:40:25	19720	io_3	3923	[WARN]	[system]	src/http/http_server.cpp:25	recv http request fail, errno=11 errstr=Resource temporarily unavailable cliet:Socket information [sock=-1, family=2, type=1, protocol=0, isConnected=0, m_locolAddress=172.18.25.130:8091, m_remoteAddress=172.18.25.64:52073] keep_alive=1
+2023-12-31 07:41:14	19717	io_0	4283	[INFO]	[system]	src/http/http_server.cpp:18	handleClient: Socket information [sock=20, family=2, type=1, protocol=0, isConnected=1, m_locolAddress=172.18.25.130:8091, m_remoteAddress=172.18.25.64:52604]
+2023-12-31 07:41:14	19724	io_7	4284	[INFO]	[system]	src/http/http_server.cpp:18	handleClient: Socket information [sock=23, family=2, type=1, protocol=0, isConnected=1, m_locolAddress=172.18.25.130:8091, m_remoteAddress=172.18.25.64:52605]
+2023-12-31 07:41:14	19724	io_7	4283	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/map_test_2.html
+2023-12-31 07:41:14	19724	io_7	4283	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///image/ren.png
+2023-12-31 07:43:24	19723	io_6	4283	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/map_test_2.html
+2023-12-31 07:43:24	19724	io_7	4284	[WARN]	[system]	src/http/http_server.cpp:25	recv http request fail, errno=11 errstr=Resource temporarily unavailable cliet:Socket information [sock=-1, family=2, type=1, protocol=0, isConnected=0, m_locolAddress=172.18.25.130:8091, m_remoteAddress=172.18.25.64:52605] keep_alive=1
+2023-12-31 07:43:24	19724	io_7	4344	[INFO]	[system]	src/http/http_server.cpp:18	handleClient: Socket information [sock=23, family=2, type=1, protocol=0, isConnected=1, m_locolAddress=172.18.25.130:8091, m_remoteAddress=172.18.25.64:52686]
+2023-12-31 07:43:24	19724	io_7	4283	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///image/ren.png
+2023-12-31 07:46:45	19722	io_5	4344	[WARN]	[system]	src/http/http_server.cpp:25	recv http request fail, errno=11 errstr=Resource temporarily unavailable cliet:Socket information [sock=-1, family=2, type=1, protocol=0, isConnected=0, m_locolAddress=172.18.25.130:8091, m_remoteAddress=172.18.25.64:52686] keep_alive=1
+2023-12-31 07:46:45	19726	io_9	4283	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/map_test_2.html
+2023-12-31 07:46:45	19721	io_4	4439	[INFO]	[system]	src/http/http_server.cpp:18	handleClient: Socket information [sock=23, family=2, type=1, protocol=0, isConnected=1, m_locolAddress=172.18.25.130:8091, m_remoteAddress=172.18.25.64:52820]
+2023-12-31 07:46:45	19726	io_9	4283	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///image/ren.png
+2023-12-31 07:47:44	19721	io_4	4283	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/map_test_2.html
+2023-12-31 07:47:44	19721	io_4	4283	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///image/ren.png
+2023-12-31 07:52:17	33229	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/log.yml ok
+2023-12-31 07:52:17	33229	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/server.yml ok
+2023-12-31 07:52:17	33229	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/worker.yml ok
+2023-12-31 07:52:17	33229	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/sqlite3.yml ok
+2023-12-31 07:52:17	33229	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/system.yml ok
+2023-12-31 07:52:18	33229	UNKOWN	0	[INFO]	[system]	radar/my_module.cpp:145	CreateModule:0xd473c0
+2023-12-31 07:52:18	33229	UNKOWN	0	[INFO]	[system]	src/library.cpp:89	load module name=radar_system version=1.0 path=/home/wwt/radar_system/bin/module/libradar_system.so success
+2023-12-31 07:52:18	33229	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/log.yml ok
+2023-12-31 07:52:18	33229	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/server.yml ok
+2023-12-31 07:52:18	33229	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/worker.yml ok
+2023-12-31 07:52:18	33229	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/sqlite3.yml ok
+2023-12-31 07:52:18	33229	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/system.yml ok
+2023-12-31 07:52:18	33229	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/log.yml ok
+2023-12-31 07:52:18	33229	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/server.yml ok
+2023-12-31 07:52:18	33229	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/worker.yml ok
+2023-12-31 07:52:18	33229	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/sqlite3.yml ok
+2023-12-31 07:52:18	33229	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/system.yml ok
+2023-12-31 07:52:18	33229	main	3	[INFO]	[system]	radar/my_module.cpp:31	onLoad
+2023-12-31 07:52:18	33229	main	3	[ERROR]	[system]	src/socket.cpp:122	setsockopt sockfd=16 level=6 optname=1 errno=95 errstr=Operation not supported
+2023-12-31 07:52:18	33229	main	3	[INFO]	[system]	src/tcp_server.cpp:78	tcp server bind success, Socket information [sock=14, family=2, type=1, protocol=0, isConnected=0, m_locolAddress=0.0.0.0:8091]
+2023-12-31 07:52:18	33229	main	3	[INFO]	[system]	src/tcp_server.cpp:78	tcp server bind success, Socket information [sock=15, family=2, type=1, protocol=0, isConnected=0, m_locolAddress=127.0.0.1:42085]
+2023-12-31 07:52:18	33229	main	3	[INFO]	[system]	src/tcp_server.cpp:78	tcp server bind success, Socket information [sock=16, family=1, type=1, protocol=0, isConnected=0, m_locolAddress=/tmp/test_radar.sock]
+2023-12-31 07:52:18	33229	main	3	[INFO]	[system]	src/tcp_server.cpp:78	tcp server bind success, Socket information [sock=17, family=2, type=1, protocol=0, isConnected=0, m_locolAddress=0.0.0.0:8073]
+2023-12-31 07:52:18	33229	main	3	[INFO]	[system]	src/tcp_server.cpp:78	tcp server bind success, Socket information [sock=18, family=2, type=1, protocol=0, isConnected=0, m_locolAddress=127.0.0.1:8071]
+2023-12-31 07:52:18	33229	main	3	[INFO]	[system]	radar/my_module.cpp:41	onServerReady
+2023-12-31 07:52:18	33229	main	3	[INFO]	[system]	radar/my_module.cpp:113	addServlet
+2023-12-31 07:52:18	33229	main	3	[INFO]	[system]	radar/my_module.cpp:138	onServerUp
+2023-12-31 07:52:19	33259	io_8	21	[INFO]	[system]	src/http/http_server.cpp:18	handleClient: Socket information [sock=20, family=2, type=1, protocol=0, isConnected=1, m_locolAddress=172.18.25.130:8091, m_remoteAddress=172.18.25.64:53183]
+2023-12-31 07:52:19	33259	io_8	21	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/local.html
+2023-12-31 07:52:19	33258	io_7	22	[INFO]	[system]	src/http/http_server.cpp:18	handleClient: Socket information [sock=23, family=2, type=1, protocol=0, isConnected=1, m_locolAddress=172.18.25.130:8091, m_remoteAddress=172.18.25.64:53184]
+2023-12-31 07:52:20	33259	io_8	21	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///image/ren.png
+2023-12-31 07:52:22	33254	io_3	21	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/trace.html
+2023-12-31 07:52:22	33254	io_3	21	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///image/ren.png
+2024-01-02 05:50:21	19801	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/log.yml ok
+2024-01-02 05:50:21	19801	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/server.yml ok
+2024-01-02 05:50:21	19801	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/worker.yml ok
+2024-01-02 05:50:21	19801	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/sqlite3.yml ok
+2024-01-02 05:50:21	19801	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/system.yml ok
+2024-01-02 05:50:21	19801	UNKOWN	0	[INFO]	[system]	radar/my_module.cpp:145	CreateModule:0x25023c0
+2024-01-02 05:50:21	19801	UNKOWN	0	[INFO]	[system]	src/library.cpp:89	load module name=radar_system version=1.0 path=/home/wwt/radar_system/bin/module/libradar_system.so success
+2024-01-02 05:50:22	19801	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/log.yml ok
+2024-01-02 05:50:22	19801	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/server.yml ok
+2024-01-02 05:50:22	19801	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/worker.yml ok
+2024-01-02 05:50:22	19801	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/sqlite3.yml ok
+2024-01-02 05:50:22	19801	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/system.yml ok
+2024-01-02 05:50:22	19801	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/log.yml ok
+2024-01-02 05:50:22	19801	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/server.yml ok
+2024-01-02 05:50:22	19801	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/worker.yml ok
+2024-01-02 05:50:22	19801	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/sqlite3.yml ok
+2024-01-02 05:50:22	19801	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/system.yml ok
+2024-01-02 05:50:22	19801	main	3	[INFO]	[system]	radar/my_module.cpp:31	onLoad
+2024-01-02 05:50:22	19801	main	3	[ERROR]	[system]	src/socket.cpp:122	setsockopt sockfd=16 level=6 optname=1 errno=95 errstr=Operation not supported
+2024-01-02 05:50:22	19801	main	3	[INFO]	[system]	src/tcp_server.cpp:78	tcp server bind success, Socket information [sock=14, family=2, type=1, protocol=0, isConnected=0, m_locolAddress=0.0.0.0:8091]
+2024-01-02 05:50:22	19801	main	3	[INFO]	[system]	src/tcp_server.cpp:78	tcp server bind success, Socket information [sock=15, family=2, type=1, protocol=0, isConnected=0, m_locolAddress=127.0.0.1:36291]
+2024-01-02 05:50:22	19801	main	3	[INFO]	[system]	src/tcp_server.cpp:78	tcp server bind success, Socket information [sock=16, family=1, type=1, protocol=0, isConnected=0, m_locolAddress=/tmp/test_radar.sock]
+2024-01-02 05:50:22	19801	main	3	[INFO]	[system]	src/tcp_server.cpp:78	tcp server bind success, Socket information [sock=17, family=2, type=1, protocol=0, isConnected=0, m_locolAddress=0.0.0.0:8073]
+2024-01-02 05:50:22	19801	main	3	[INFO]	[system]	src/tcp_server.cpp:78	tcp server bind success, Socket information [sock=18, family=2, type=1, protocol=0, isConnected=0, m_locolAddress=127.0.0.1:8071]
+2024-01-02 05:50:22	19801	main	3	[INFO]	[system]	radar/my_module.cpp:41	onServerReady
+2024-01-02 05:50:22	19801	main	3	[INFO]	[system]	radar/my_module.cpp:113	addServlet
+2024-01-02 05:50:22	19801	main	3	[INFO]	[system]	radar/my_module.cpp:138	onServerUp
+2024-01-02 05:50:43	19813	io_9	31	[INFO]	[system]	src/http/http_server.cpp:18	handleClient: Socket information [sock=28, family=2, type=1, protocol=0, isConnected=1, m_locolAddress=172.18.25.130:8091, m_remoteAddress=172.18.25.64:50312]
+2024-01-02 05:50:43	19813	io_9	31	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/local.html
+2024-01-02 05:50:43	19813	io_9	32	[INFO]	[system]	src/http/http_server.cpp:18	handleClient: Socket information [sock=30, family=2, type=1, protocol=0, isConnected=1, m_locolAddress=172.18.25.130:8091, m_remoteAddress=172.18.25.64:50313]
+2024-01-02 05:50:43	19813	io_9	31	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///css/chat_room.css
+2024-01-02 05:50:43	19813	io_9	31	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///image/ren.png
+2024-01-02 05:50:46	19808	io_4	31	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/trace.html
+2024-01-02 05:50:46	19808	io_4	31	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///css/chat_room.css
+2024-01-02 05:50:46	19808	io_4	31	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///image/ren.png
+2024-01-02 05:52:31	19807	io_3	86	[INFO]	[system]	src/http/http_server.cpp:18	handleClient: Socket information [sock=30, family=2, type=1, protocol=0, isConnected=1, m_locolAddress=172.18.25.130:8091, m_remoteAddress=172.18.25.64:50656]
+2024-01-02 05:52:31	19811	io_7	32	[WARN]	[system]	src/http/http_server.cpp:25	recv http request fail, errno=0 errstr=Success cliet:Socket information [sock=-1, family=2, type=1, protocol=0, isConnected=0, m_locolAddress=172.18.25.130:8091, m_remoteAddress=172.18.25.64:50313] keep_alive=1
+2024-01-02 05:52:31	19809	io_5	31	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/trace.html
+2024-01-02 05:52:31	19809	io_5	31	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///css/map.css
+2024-01-02 05:52:31	19809	io_5	31	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///image/ren.png
+2024-01-02 05:52:35	19809	io_5	31	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///css/map.css
+2024-01-02 05:53:01	19813	io_9	31	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/local.html
+2024-01-02 05:53:01	19813	io_9	31	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///css/map.css
+2024-01-02 05:53:01	19813	io_9	31	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///image/ren.png
+2024-01-02 05:53:38	19807	io_3	86	[WARN]	[system]	src/http/http_server.cpp:25	recv http request fail, errno=11 errstr=Resource temporarily unavailable cliet:Socket information [sock=-1, family=2, type=1, protocol=0, isConnected=0, m_locolAddress=172.18.25.130:8091, m_remoteAddress=172.18.25.64:50656] keep_alive=1
+2024-01-02 05:53:38	19804	io_0	31	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/local.html
+2024-01-02 05:53:38	19807	io_3	120	[INFO]	[system]	src/http/http_server.cpp:18	handleClient: Socket information [sock=30, family=2, type=1, protocol=0, isConnected=1, m_locolAddress=172.18.25.130:8091, m_remoteAddress=172.18.25.64:50801]
+2024-01-02 05:53:38	19804	io_0	31	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///css/map.css
+2024-01-02 05:53:38	19804	io_0	31	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///image/ren.png
+2024-01-02 05:53:49	19809	io_5	31	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/local.html
+2024-01-02 05:53:49	19809	io_5	31	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///css/map.css
+2024-01-02 05:53:49	19809	io_5	31	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///image/ren.png
+2024-01-02 05:53:55	19812	io_8	31	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/trace.html
+2024-01-02 05:53:55	19812	io_8	31	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///css/chat_room.css
+2024-01-02 05:53:55	19812	io_8	31	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///image/ren.png
+2024-01-02 05:54:15	19807	io_3	31	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/trace.html
+2024-01-02 05:54:15	19807	io_3	31	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///image/ren.png
+2024-01-02 05:55:49	19807	io_3	31	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/local.html
+2024-01-02 05:55:49	19806	io_2	120	[WARN]	[system]	src/http/http_server.cpp:25	recv http request fail, errno=11 errstr=Resource temporarily unavailable cliet:Socket information [sock=-1, family=2, type=1, protocol=0, isConnected=0, m_locolAddress=172.18.25.130:8091, m_remoteAddress=172.18.25.64:50801] keep_alive=1
+2024-01-02 05:55:49	19810	io_6	186	[INFO]	[system]	src/http/http_server.cpp:18	handleClient: Socket information [sock=30, family=2, type=1, protocol=0, isConnected=1, m_locolAddress=172.18.25.130:8091, m_remoteAddress=172.18.25.64:51194]
+2024-01-02 05:55:49	19807	io_3	31	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///css/map.css
+2024-01-02 05:55:49	19807	io_3	31	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///image/ren.png
+2024-01-02 05:55:51	19805	io_1	31	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/local.html
+2024-01-02 05:55:51	19805	io_1	31	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///css/map.css
+2024-01-02 05:55:51	19805	io_1	31	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///image/ren.png
+2024-01-02 05:56:50	19808	io_4	31	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/logout.html
+2024-01-02 05:56:50	19810	io_6	31	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///css/semantic.min.css
+2024-01-02 05:56:50	19806	io_2	186	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///css/chat.css
+2024-01-02 05:56:50	19808	io_4	214	[INFO]	[system]	src/http/http_server.cpp:18	handleClient: Socket information [sock=33, family=2, type=1, protocol=0, isConnected=1, m_locolAddress=172.18.25.130:8091, m_remoteAddress=172.18.25.64:51216]
+2024-01-02 05:56:50	19808	io_4	214	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///css/body.css
+2024-01-02 05:56:50	19810	io_6	31	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///image/bg.jpg
+2024-01-02 05:56:52	19813	io_9	31	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/trace.html
+2024-01-02 05:56:52	19813	io_9	31	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///css/map.css
+2024-01-02 05:56:52	19813	io_9	31	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///image/ren.png
+2024-01-02 05:56:55	19809	io_5	31	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/local.html
+2024-01-02 05:56:55	19809	io_5	31	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///css/map.css
+2024-01-02 05:56:55	19809	io_5	31	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///image/ren.png
+2024-01-02 05:59:35	19810	io_6	31	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/local.html
+2024-01-02 05:59:35	19810	io_6	31	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///css/map.css
+2024-01-02 05:59:35	19810	io_6	31	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///image/ren.png
+2024-01-02 05:59:37	19811	io_7	31	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///css/map.css
+2024-01-02 05:59:55	19809	io_5	31	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/local.html
+2024-01-02 05:59:55	19809	io_5	31	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///css/map.css
+2024-01-02 05:59:55	19809	io_5	31	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///image/ren.png
+2024-01-02 05:59:57	19804	io_0	31	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/trace.html
+2024-01-02 05:59:57	19804	io_0	31	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///css/map.css
+2024-01-02 05:59:57	19804	io_0	31	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///image/ren.png
+2024-01-02 05:59:59	19813	io_9	31	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///css/map.css
+2024-01-02 06:06:50	19804	io_0	214	[WARN]	[system]	src/http/http_server.cpp:25	recv http request fail, errno=11 errstr=Resource temporarily unavailable cliet:Socket information [sock=-1, family=2, type=1, protocol=0, isConnected=0, m_locolAddress=172.18.25.130:8091, m_remoteAddress=172.18.25.64:51216] keep_alive=1
+2024-01-02 06:06:50	19810	io_6	186	[WARN]	[system]	src/http/http_server.cpp:25	recv http request fail, errno=11 errstr=Resource temporarily unavailable cliet:Socket information [sock=-1, family=2, type=1, protocol=0, isConnected=0, m_locolAddress=172.18.25.130:8091, m_remoteAddress=172.18.25.64:51194] keep_alive=1
+2024-01-02 06:09:59	19811	io_7	31	[WARN]	[system]	src/http/http_server.cpp:25	recv http request fail, errno=11 errstr=Resource temporarily unavailable cliet:Socket information [sock=-1, family=2, type=1, protocol=0, isConnected=0, m_locolAddress=172.18.25.130:8091, m_remoteAddress=172.18.25.64:50312] keep_alive=1
+2024-01-02 07:36:04	22786	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/log.yml ok
+2024-01-02 07:36:04	22786	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/server.yml ok
+2024-01-02 07:36:04	22786	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/worker.yml ok
+2024-01-02 07:36:04	22786	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/sqlite3.yml ok
+2024-01-02 07:36:04	22786	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/system.yml ok
+2024-01-02 07:36:04	22786	UNKOWN	0	[INFO]	[system]	radar/my_module.cpp:145	CreateModule:0x18da3c0
+2024-01-02 07:36:04	22786	UNKOWN	0	[INFO]	[system]	src/library.cpp:89	load module name=radar_system version=1.0 path=/home/wwt/radar_system/bin/module/libradar_system.so success
+2024-01-02 07:36:04	22786	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/log.yml ok
+2024-01-02 07:36:04	22786	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/server.yml ok
+2024-01-02 07:36:04	22786	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/worker.yml ok
+2024-01-02 07:36:04	22786	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/sqlite3.yml ok
+2024-01-02 07:36:04	22786	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/system.yml ok
+2024-01-02 07:36:04	22786	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/log.yml ok
+2024-01-02 07:36:04	22786	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/server.yml ok
+2024-01-02 07:36:04	22786	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/worker.yml ok
+2024-01-02 07:36:04	22786	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/sqlite3.yml ok
+2024-01-02 07:36:04	22786	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/system.yml ok
+2024-01-02 07:36:04	22786	main	3	[INFO]	[system]	radar/my_module.cpp:31	onLoad
+2024-01-02 07:36:04	22786	main	3	[ERROR]	[system]	src/socket.cpp:122	setsockopt sockfd=16 level=6 optname=1 errno=95 errstr=Operation not supported
+2024-01-02 07:36:04	22786	main	3	[INFO]	[system]	src/tcp_server.cpp:78	tcp server bind success, Socket information [sock=14, family=2, type=1, protocol=0, isConnected=0, m_locolAddress=0.0.0.0:8091]
+2024-01-02 07:36:04	22786	main	3	[INFO]	[system]	src/tcp_server.cpp:78	tcp server bind success, Socket information [sock=15, family=2, type=1, protocol=0, isConnected=0, m_locolAddress=127.0.0.1:46794]
+2024-01-02 07:36:04	22786	main	3	[INFO]	[system]	src/tcp_server.cpp:78	tcp server bind success, Socket information [sock=16, family=1, type=1, protocol=0, isConnected=0, m_locolAddress=/tmp/test_radar.sock]
+2024-01-02 07:36:04	22786	main	3	[INFO]	[system]	src/tcp_server.cpp:78	tcp server bind success, Socket information [sock=17, family=2, type=1, protocol=0, isConnected=0, m_locolAddress=0.0.0.0:8073]
+2024-01-02 07:36:04	22786	main	3	[INFO]	[system]	src/tcp_server.cpp:78	tcp server bind success, Socket information [sock=18, family=2, type=1, protocol=0, isConnected=0, m_locolAddress=127.0.0.1:8071]
+2024-01-02 07:36:04	22786	main	3	[INFO]	[system]	radar/my_module.cpp:41	onServerReady
+2024-01-02 07:36:04	22786	main	3	[INFO]	[system]	radar/my_module.cpp:113	addServlet
+2024-01-02 07:36:04	22786	main	3	[INFO]	[system]	radar/my_module.cpp:138	onServerUp
+2024-01-02 07:36:08	22797	io_8	22	[INFO]	[system]	src/http/http_server.cpp:18	handleClient: Socket information [sock=28, family=2, type=1, protocol=0, isConnected=1, m_locolAddress=172.18.25.130:8091, m_remoteAddress=172.18.25.64:56891]
+2024-01-02 07:36:08	22798	io_9	23	[INFO]	[system]	src/http/http_server.cpp:18	handleClient: Socket information [sock=30, family=2, type=1, protocol=0, isConnected=1, m_locolAddress=172.18.25.130:8091, m_remoteAddress=172.18.25.64:56892]
+2024-01-02 07:36:08	22798	io_9	22	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/local.html
+2024-01-02 07:36:08	22798	io_9	22	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///css/map.css
+2024-01-02 07:36:08	22798	io_9	22	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///image/ren.png
+2024-01-02 07:36:27	22798	io_9	22	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/trace.html
+2024-01-02 07:36:27	22798	io_9	22	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///css/map.css
+2024-01-02 07:36:27	22798	io_9	22	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///image/ren.png
+2024-01-02 08:49:36	25570	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/log.yml ok
+2024-01-02 08:49:36	25570	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/server.yml ok
+2024-01-02 08:49:36	25570	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/worker.yml ok
+2024-01-02 08:49:36	25570	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/sqlite3.yml ok
+2024-01-02 08:49:36	25570	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/system.yml ok
+2024-01-02 08:49:36	25570	UNKOWN	0	[INFO]	[system]	radar/my_module.cpp:146	CreateModule:0x26063c0
+2024-01-02 08:49:36	25570	UNKOWN	0	[INFO]	[system]	src/library.cpp:89	load module name=radar_system version=1.0 path=/home/wwt/radar_system/bin/module/libradar_system.so success
+2024-01-02 08:49:36	25570	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/log.yml ok
+2024-01-02 08:49:36	25570	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/server.yml ok
+2024-01-02 08:49:36	25570	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/worker.yml ok
+2024-01-02 08:49:36	25570	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/sqlite3.yml ok
+2024-01-02 08:49:36	25570	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/system.yml ok
+2024-01-02 08:49:36	25570	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/log.yml ok
+2024-01-02 08:49:36	25570	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/server.yml ok
+2024-01-02 08:49:36	25570	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/worker.yml ok
+2024-01-02 08:49:36	25570	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/sqlite3.yml ok
+2024-01-02 08:49:36	25570	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/system.yml ok
+2024-01-02 08:49:36	25570	main	3	[INFO]	[system]	radar/my_module.cpp:32	onLoad
+2024-01-02 08:49:36	25570	main	3	[ERROR]	[system]	src/socket.cpp:122	setsockopt sockfd=16 level=6 optname=1 errno=95 errstr=Operation not supported
+2024-01-02 08:49:36	25570	main	3	[INFO]	[system]	src/tcp_server.cpp:78	tcp server bind success, Socket information [sock=14, family=2, type=1, protocol=0, isConnected=0, m_locolAddress=0.0.0.0:8091]
+2024-01-02 08:49:36	25570	main	3	[INFO]	[system]	src/tcp_server.cpp:78	tcp server bind success, Socket information [sock=15, family=2, type=1, protocol=0, isConnected=0, m_locolAddress=127.0.0.1:35470]
+2024-01-02 08:49:36	25570	main	3	[INFO]	[system]	src/tcp_server.cpp:78	tcp server bind success, Socket information [sock=16, family=1, type=1, protocol=0, isConnected=0, m_locolAddress=/tmp/test_radar.sock]
+2024-01-02 08:49:36	25570	main	3	[INFO]	[system]	src/tcp_server.cpp:78	tcp server bind success, Socket information [sock=17, family=2, type=1, protocol=0, isConnected=0, m_locolAddress=0.0.0.0:8073]
+2024-01-02 08:49:36	25570	main	3	[INFO]	[system]	src/tcp_server.cpp:78	tcp server bind success, Socket information [sock=18, family=2, type=1, protocol=0, isConnected=0, m_locolAddress=127.0.0.1:8071]
+2024-01-02 08:49:36	25570	main	3	[INFO]	[system]	radar/my_module.cpp:42	onServerReady
+2024-01-02 08:49:36	25570	main	3	[INFO]	[system]	radar/my_module.cpp:114	addServlet
+2024-01-02 08:49:36	25570	main	3	[INFO]	[system]	radar/my_module.cpp:139	onServerUp
+2024-01-02 08:49:44	25581	io_8	24	[INFO]	[system]	src/http/http_server.cpp:18	handleClient: Socket information [sock=28, family=2, type=1, protocol=0, isConnected=1, m_locolAddress=172.18.25.130:8091, m_remoteAddress=172.18.25.64:61190]
+2024-01-02 08:49:44	25576	io_3	25	[INFO]	[system]	src/http/http_server.cpp:18	handleClient: Socket information [sock=30, family=2, type=1, protocol=0, isConnected=1, m_locolAddress=172.18.25.130:8091, m_remoteAddress=172.18.25.64:61191]
+2024-01-02 08:49:44	25581	io_8	24	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/trace.html
+2024-01-02 08:49:44	25581	io_8	24	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///css/map.css
+2024-01-02 08:49:44	25581	io_8	24	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///image/ren.png
+2024-01-02 08:50:23	25581	io_8	24	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/trace.html
+2024-01-02 08:50:23	25581	io_8	24	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///css/map.css
+2024-01-02 08:50:23	25576	io_3	24	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///image/ren.png
+2024-01-02 08:51:23	25580	io_7	25	[WARN]	[system]	src/http/http_server.cpp:25	recv http request fail, errno=0 errstr=Success cliet:Socket information [sock=-1, family=2, type=1, protocol=0, isConnected=0, m_locolAddress=172.18.25.130:8091, m_remoteAddress=172.18.25.64:61191] keep_alive=1
+2024-01-02 08:51:23	25578	io_5	24	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/trace.html
+2024-01-02 08:51:23	25582	io_9	71	[INFO]	[system]	src/http/http_server.cpp:18	handleClient: Socket information [sock=30, family=2, type=1, protocol=0, isConnected=1, m_locolAddress=172.18.25.130:8091, m_remoteAddress=172.18.25.64:61277]
+2024-01-02 08:51:23	25578	io_5	24	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///css/map.css
+2024-01-02 08:51:23	25578	io_5	24	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///image/ren.png
+2024-01-02 08:51:23	25578	io_5	72	[INFO]	[system]	src/http/ws_server.cpp:16	handleClient: Socket information [sock=31, family=2, type=1, protocol=0, isConnected=1, m_locolAddress=172.18.25.130:8073, m_remoteAddress=172.18.25.64:61278]
+2024-01-02 08:51:23	25578	io_5	72	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:33	onConnect 0x7f8930001e48
+2024-01-02 08:51:23	25578	io_5	72	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:66	handle 0x7f8930001e48 opcode=1 data={"type":"start_request"}
+2024-01-02 08:51:23	25578	io_5	72	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"46","x":"167","y":"265"}
+ - 0x7f8930001e48
+2024-01-02 08:51:24	25582	io_9	72	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"217","x":"363","y":"156"}
+ - 0x7f8930001e48
+2024-01-02 08:51:25	25582	io_9	72	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"390","x":"471","y":"77"}
+ - 0x7f8930001e48
+2024-01-02 08:51:26	25577	io_4	72	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"223","x":"303","y":"366"}
+ - 0x7f8930001e48
+2024-01-02 08:51:27	25577	io_4	72	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"454","x":"71","y":"182"}
+ - 0x7f8930001e48
+2024-01-02 08:51:28	25578	io_5	72	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"169","x":"11","y":"17"}
+ - 0x7f8930001e48
+2024-01-02 08:51:29	25574	io_1	72	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"342","x":"362","y":"39"}
+ - 0x7f8930001e48
+2024-01-02 08:51:30	25574	io_1	72	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"189","x":"373","y":"463"}
+ - 0x7f8930001e48
+2024-01-02 08:51:31	25582	io_9	72	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"131","x":"153","y":"353"}
+ - 0x7f8930001e48
+2024-01-02 08:51:32	25573	io_0	72	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"498","x":"166","y":"314"}
+ - 0x7f8930001e48
+2024-01-02 08:51:33	25577	io_4	72	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"8","x":"34","y":"482"}
+ - 0x7f8930001e48
+2024-01-02 08:51:34	25581	io_8	72	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"411","x":"80","y":"90"}
+ - 0x7f8930001e48
+2024-01-02 08:51:35	25575	io_2	72	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"489","x":"43","y":"60"}
+ - 0x7f8930001e48
+2024-01-02 08:51:36	25575	io_2	72	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"354","x":"179","y":"110"}
+ - 0x7f8930001e48
+2024-01-02 08:51:37	25575	io_2	72	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"283","x":"403","y":"181"}
+ - 0x7f8930001e48
+2024-01-02 08:51:38	25579	io_6	72	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"300","x":"356","y":"439"}
+ - 0x7f8930001e48
+2024-01-02 08:51:39	25578	io_5	72	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"85","x":"271","y":"300"}
+ - 0x7f8930001e48
+2024-01-02 08:51:40	25574	io_1	72	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"294","x":"112","y":"172"}
+ - 0x7f8930001e48
+2024-01-02 08:51:41	25579	io_6	72	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"146","x":"302","y":"326"}
+ - 0x7f8930001e48
+2024-01-02 08:51:42	25581	io_8	72	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"460","x":"179","y":"492"}
+ - 0x7f8930001e48
+2024-01-02 08:51:43	25577	io_4	72	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"187","x":"177","y":"272"}
+ - 0x7f8930001e48
+2024-01-02 08:51:44	25576	io_3	72	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"278","x":"185","y":"98"}
+ - 0x7f8930001e48
+2024-01-02 08:51:45	25579	io_6	72	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"84","x":"96","y":"142"}
+ - 0x7f8930001e48
+2024-01-02 08:51:46	25578	io_5	72	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"194","x":"331","y":"67"}
+ - 0x7f8930001e48
+2024-01-02 08:51:47	25574	io_1	72	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"375","x":"431","y":"470"}
+ - 0x7f8930001e48
+2024-01-02 08:51:48	25575	io_2	72	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"59","x":"213","y":"71"}
+ - 0x7f8930001e48
+2024-01-02 08:51:49	25575	io_2	72	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"359","x":"259","y":"342"}
+ - 0x7f8930001e48
+2024-01-02 08:51:50	25575	io_2	72	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"31","x":"344","y":"201"}
+ - 0x7f8930001e48
+2024-01-02 08:51:51	25578	io_5	72	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"103","x":"384","y":"249"}
+ - 0x7f8930001e48
+2024-01-02 08:54:41	25926	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/log.yml ok
+2024-01-02 08:54:41	25926	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/server.yml ok
+2024-01-02 08:54:41	25926	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/worker.yml ok
+2024-01-02 08:54:41	25926	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/sqlite3.yml ok
+2024-01-02 08:54:41	25926	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/system.yml ok
+2024-01-02 08:54:41	25926	UNKOWN	0	[INFO]	[system]	radar/my_module.cpp:146	CreateModule:0x1c433c0
+2024-01-02 08:54:41	25926	UNKOWN	0	[INFO]	[system]	src/library.cpp:89	load module name=radar_system version=1.0 path=/home/wwt/radar_system/bin/module/libradar_system.so success
+2024-01-02 08:54:41	25926	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/log.yml ok
+2024-01-02 08:54:41	25926	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/server.yml ok
+2024-01-02 08:54:41	25926	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/worker.yml ok
+2024-01-02 08:54:41	25926	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/sqlite3.yml ok
+2024-01-02 08:54:41	25926	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/system.yml ok
+2024-01-02 08:54:41	25926	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/log.yml ok
+2024-01-02 08:54:41	25926	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/server.yml ok
+2024-01-02 08:54:41	25926	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/worker.yml ok
+2024-01-02 08:54:41	25926	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/sqlite3.yml ok
+2024-01-02 08:54:41	25926	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/system.yml ok
+2024-01-02 08:54:41	25926	main	3	[INFO]	[system]	radar/my_module.cpp:32	onLoad
+2024-01-02 08:54:41	25926	main	3	[ERROR]	[system]	src/socket.cpp:122	setsockopt sockfd=16 level=6 optname=1 errno=95 errstr=Operation not supported
+2024-01-02 08:54:41	25926	main	3	[INFO]	[system]	src/tcp_server.cpp:78	tcp server bind success, Socket information [sock=14, family=2, type=1, protocol=0, isConnected=0, m_locolAddress=0.0.0.0:8091]
+2024-01-02 08:54:41	25926	main	3	[INFO]	[system]	src/tcp_server.cpp:78	tcp server bind success, Socket information [sock=15, family=2, type=1, protocol=0, isConnected=0, m_locolAddress=127.0.0.1:45299]
+2024-01-02 08:54:41	25926	main	3	[INFO]	[system]	src/tcp_server.cpp:78	tcp server bind success, Socket information [sock=16, family=1, type=1, protocol=0, isConnected=0, m_locolAddress=/tmp/test_radar.sock]
+2024-01-02 08:54:41	25926	main	3	[INFO]	[system]	src/tcp_server.cpp:78	tcp server bind success, Socket information [sock=17, family=2, type=1, protocol=0, isConnected=0, m_locolAddress=0.0.0.0:8073]
+2024-01-02 08:54:41	25926	main	3	[INFO]	[system]	src/tcp_server.cpp:78	tcp server bind success, Socket information [sock=18, family=2, type=1, protocol=0, isConnected=0, m_locolAddress=127.0.0.1:8071]
+2024-01-02 08:54:41	25926	main	3	[INFO]	[system]	radar/my_module.cpp:42	onServerReady
+2024-01-02 08:54:41	25926	main	3	[INFO]	[system]	radar/my_module.cpp:114	addServlet
+2024-01-02 08:54:41	25926	main	3	[INFO]	[system]	radar/my_module.cpp:139	onServerUp
+2024-01-02 08:54:44	25936	io_7	22	[INFO]	[system]	src/http/http_server.cpp:18	handleClient: Socket information [sock=28, family=2, type=1, protocol=0, isConnected=1, m_locolAddress=172.18.25.130:8091, m_remoteAddress=172.18.25.64:61444]
+2024-01-02 08:54:44	25936	io_7	22	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/local.html
+2024-01-02 08:54:44	25929	io_0	23	[INFO]	[system]	src/http/http_server.cpp:18	handleClient: Socket information [sock=30, family=2, type=1, protocol=0, isConnected=1, m_locolAddress=172.18.25.130:8091, m_remoteAddress=172.18.25.64:61445]
+2024-01-02 08:54:44	25929	io_0	22	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///css/map.css
+2024-01-02 08:54:44	25929	io_0	22	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///image/ren.png
+2024-01-02 08:55:05	25936	io_7	22	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/local.html
+2024-01-02 08:55:05	25936	io_7	22	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///css/map.css
+2024-01-02 08:55:05	25936	io_7	22	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///image/ren.png
+2024-01-02 08:55:05	25936	io_7	35	[INFO]	[system]	src/http/ws_server.cpp:16	handleClient: Socket information [sock=31, family=2, type=1, protocol=0, isConnected=1, m_locolAddress=172.18.25.130:8073, m_remoteAddress=172.18.25.64:61467]
+2024-01-02 08:55:05	25936	io_7	35	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:33	onConnect 0x7f3844022758
+2024-01-02 08:55:05	25936	io_7	35	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:66	handle 0x7f3844022758 opcode=1 data={"type":"start_request"}
+2024-01-02 08:55:05	25936	io_7	35	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"116","x":"478","y":"481"}
+ - 0x7f3844022758
+2024-01-02 08:55:06	25936	io_7	35	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"11","x":"408","y":"121"}
+ - 0x7f3844022758
+2024-01-02 08:55:07	25936	io_7	35	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"226","x":"479","y":"141"}
+ - 0x7f3844022758
+2024-01-02 08:55:08	25935	io_6	35	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"390","x":"469","y":"168"}
+ - 0x7f3844022758
+2024-01-02 08:55:09	25936	io_7	35	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"298","x":"365","y":"168"}
+ - 0x7f3844022758
+2024-01-02 08:55:10	25929	io_0	35	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"413","x":"273","y":"327"}
+ - 0x7f3844022758
+2024-01-02 08:55:11	25930	io_1	35	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"295","x":"49","y":"202"}
+ - 0x7f3844022758
+2024-01-02 08:55:12	25937	io_8	22	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/trace.html
+2024-01-02 08:55:12	25937	io_8	22	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///css/map.css
+2024-01-02 08:55:12	25937	io_8	22	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///image/ren.png
+2024-01-02 08:55:12	25937	io_8	45	[INFO]	[system]	src/http/ws_server.cpp:16	handleClient: Socket information [sock=32, family=2, type=1, protocol=0, isConnected=1, m_locolAddress=172.18.25.130:8073, m_remoteAddress=172.18.25.64:61472]
+2024-01-02 08:55:12	25937	io_8	45	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:33	onConnect 0x7f3848001e48
+2024-01-02 08:55:12	25937	io_8	45	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:66	handle 0x7f3848001e48 opcode=1 data={"type":"start_request"}
+2024-01-02 08:55:12	25937	io_8	45	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"19","x":"400","y":"420"}
+ - 0x7f3848001e48
+2024-01-02 08:55:12	25937	io_8	35	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"437","x":"191","y":"31"}
+ - 0x7f3844022758
+2024-01-02 08:55:13	25930	io_1	45	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"293","x":"403","y":"392"}
+ - 0x7f3848001e48
+2024-01-02 08:55:13	25935	io_6	35	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"490","x":"488","y":"13"}
+ - 0x7f3844022758
+2024-01-02 08:55:14	25936	io_7	45	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"311","x":"131","y":"291"}
+ - 0x7f3848001e48
+2024-01-02 08:55:14	25938	io_9	35	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"458","x":"86","y":"74"}
+ - 0x7f3844022758
+2024-01-02 08:55:15	25937	io_8	45	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"244","x":"395","y":"436"}
+ - 0x7f3848001e48
+2024-01-02 08:55:15	25936	io_7	35	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"266","x":"286","y":"156"}
+ - 0x7f3844022758
+2024-01-02 08:55:16	25933	io_4	45	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"380","x":"459","y":"426"}
+ - 0x7f3848001e48
+2024-01-02 08:55:16	25930	io_1	35	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"260","x":"140","y":"348"}
+ - 0x7f3844022758
+2024-01-02 08:55:17	25935	io_6	45	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"426","x":"88","y":"494"}
+ - 0x7f3848001e48
+2024-01-02 08:55:17	25938	io_9	35	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"457","x":"107","y":"185"}
+ - 0x7f3844022758
+2024-01-02 08:55:18	25933	io_4	45	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"94","x":"291","y":"334"}
+ - 0x7f3848001e48
+2024-01-02 08:55:18	25935	io_6	35	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"107","x":"83","y":"322"}
+ - 0x7f3844022758
+2024-01-02 08:55:19	25936	io_7	45	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"144","x":"319","y":"453"}
+ - 0x7f3848001e48
+2024-01-02 08:55:19	25933	io_4	35	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"465","x":"130","y":"38"}
+ - 0x7f3844022758
+2024-01-02 08:55:20	25936	io_7	45	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"400","x":"334","y":"179"}
+ - 0x7f3848001e48
+2024-01-02 08:55:20	25932	io_3	35	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"55","x":"77","y":"211"}
+ - 0x7f3844022758
+2024-01-02 08:55:21	25938	io_9	45	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"481","x":"343","y":"169"}
+ - 0x7f3848001e48
+2024-01-02 08:55:21	25938	io_9	35	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"75","x":"469","y":"310"}
+ - 0x7f3844022758
+2024-01-02 08:55:22	25938	io_9	45	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"68","x":"228","y":"144"}
+ - 0x7f3848001e48
+2024-01-02 08:55:22	25929	io_0	35	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"500","x":"153","y":"499"}
+ - 0x7f3844022758
+2024-01-02 08:55:26	25937	io_8	45	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"197","x":"356","y":"80"}
+ - 0x7f3848001e48
+2024-01-02 08:55:26	25929	io_0	35	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"148","x":"289","y":"372"}
+ - 0x7f3844022758
+2024-01-02 08:55:27	25937	io_8	35	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"131","x":"50","y":"195"}
+ - 0x7f3844022758
+2024-01-02 08:55:27	25931	io_2	45	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"313","x":"437","y":"347"}
+ - 0x7f3848001e48
+2024-01-02 08:55:28	25937	io_8	35	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"223","x":"159","y":"310"}
+ - 0x7f3844022758
+2024-01-02 08:55:28	25931	io_2	45	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"21","x":"146","y":"306"}
+ - 0x7f3848001e48
+2024-01-02 08:55:29	25932	io_3	35	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"190","x":"361","y":"313"}
+ - 0x7f3844022758
+2024-01-02 08:55:29	25933	io_4	45	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"246","x":"88","y":"281"}
+ - 0x7f3848001e48
+2024-01-02 08:55:30	25936	io_7	35	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"391","x":"163","y":"256"}
+ - 0x7f3844022758
+2024-01-02 08:55:30	25932	io_3	45	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"389","x":"478","y":"155"}
+ - 0x7f3848001e48
+2024-01-02 08:55:31	25929	io_0	45	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"177","x":"224","y":"258"}
+ - 0x7f3848001e48
+2024-01-02 08:55:31	25936	io_7	35	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"295","x":"304","y":"455"}
+ - 0x7f3844022758
+2024-01-02 08:55:32	25937	io_8	35	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"231","x":"198","y":"4"}
+ - 0x7f3844022758
+2024-01-02 08:55:32	25933	io_4	45	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"44","x":"44","y":"446"}
+ - 0x7f3848001e48
+2024-01-02 08:55:33	25933	io_4	35	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"190","x":"175","y":"352"}
+ - 0x7f3844022758
+2024-01-02 08:55:33	25933	io_4	45	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"160","x":"485","y":"157"}
+ - 0x7f3848001e48
+2024-01-02 08:55:34	25929	io_0	35	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"189","x":"264","y":"473"}
+ - 0x7f3844022758
+2024-01-02 08:55:34	25932	io_3	45	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"500","x":"252","y":"352"}
+ - 0x7f3848001e48
+2024-01-02 08:55:35	25929	io_0	45	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"1","x":"435","y":"261"}
+ - 0x7f3848001e48
+2024-01-02 08:55:35	25929	io_0	35	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"157","x":"71","y":"239"}
+ - 0x7f3844022758
+2024-01-02 08:55:36	25932	io_3	45	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"415","x":"460","y":"209"}
+ - 0x7f3848001e48
+2024-01-02 08:55:36	25932	io_3	35	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"115","x":"383","y":"12"}
+ - 0x7f3844022758
+2024-01-02 08:55:37	25931	io_2	45	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"366","x":"424","y":"457"}
+ - 0x7f3848001e48
+2024-01-02 08:55:37	25931	io_2	35	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"312","x":"155","y":"0"}
+ - 0x7f3844022758
+2024-01-02 08:55:38	25932	io_3	45	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"410","x":"446","y":"175"}
+ - 0x7f3848001e48
+2024-01-02 08:55:38	25936	io_7	35	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"66","x":"382","y":"406"}
+ - 0x7f3844022758
+2024-01-02 08:55:39	25930	io_1	45	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"330","x":"288","y":"158"}
+ - 0x7f3848001e48
+2024-01-02 08:55:39	25932	io_3	35	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"429","x":"6","y":"93"}
+ - 0x7f3844022758
+2024-01-02 08:55:40	25935	io_6	45	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"189","x":"6","y":"27"}
+ - 0x7f3848001e48
+2024-01-02 08:55:40	25931	io_2	35	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"428","x":"7","y":"99"}
+ - 0x7f3844022758
+2024-01-02 08:55:41	25936	io_7	45	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"136","x":"411","y":"305"}
+ - 0x7f3848001e48
+2024-01-02 08:55:41	25936	io_7	35	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"395","x":"71","y":"435"}
+ - 0x7f3844022758
+2024-01-02 08:55:42	25933	io_4	45	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"351","x":"186","y":"358"}
+ - 0x7f3848001e48
+2024-01-02 08:55:42	25935	io_6	35	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"97","x":"52","y":"259"}
+ - 0x7f3844022758
+2024-01-02 08:55:43	25937	io_8	45	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"18","x":"110","y":"204"}
+ - 0x7f3848001e48
+2024-01-02 08:55:43	25937	io_8	35	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"425","x":"19","y":"333"}
+ - 0x7f3844022758
+2024-01-02 08:55:44	25932	io_3	35	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"329","x":"332","y":"120"}
+ - 0x7f3844022758
+2024-01-02 08:55:44	25929	io_0	45	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"422","x":"408","y":"127"}
+ - 0x7f3848001e48
+2024-01-02 08:55:45	25929	io_0	35	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"195","x":"336","y":"380"}
+ - 0x7f3844022758
+2024-01-02 08:55:45	25932	io_3	45	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"294","x":"25","y":"387"}
+ - 0x7f3848001e48
+2024-01-02 08:55:46	25932	io_3	45	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"280","x":"44","y":"82"}
+ - 0x7f3848001e48
+2024-01-02 08:55:46	25929	io_0	35	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"115","x":"199","y":"346"}
+ - 0x7f3844022758
+2024-01-02 08:55:47	25936	io_7	45	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"397","x":"48","y":"74"}
+ - 0x7f3848001e48
+2024-01-02 08:55:47	25933	io_4	35	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"347","x":"477","y":"137"}
+ - 0x7f3844022758
+2024-01-02 08:55:48	25936	io_7	45	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"347","x":"418","y":"203"}
+ - 0x7f3848001e48
+2024-01-02 08:55:48	25933	io_4	35	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"179","x":"437","y":"222"}
+ - 0x7f3844022758
+2024-01-02 08:55:49	25936	io_7	45	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"46","x":"361","y":"300"}
+ - 0x7f3848001e48
+2024-01-02 08:55:49	25933	io_4	35	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"173","x":"436","y":"207"}
+ - 0x7f3844022758
+2024-01-02 08:56:23	26169	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/log.yml ok
+2024-01-02 08:56:23	26169	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/server.yml ok
+2024-01-02 08:56:23	26169	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/worker.yml ok
+2024-01-02 08:56:23	26169	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/sqlite3.yml ok
+2024-01-02 08:56:23	26169	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/system.yml ok
+2024-01-02 08:56:23	26169	UNKOWN	0	[INFO]	[system]	radar/my_module.cpp:146	CreateModule:0x188d3c0
+2024-01-02 08:56:23	26169	UNKOWN	0	[INFO]	[system]	src/library.cpp:89	load module name=radar_system version=1.0 path=/home/wwt/radar_system/bin/module/libradar_system.so success
+2024-01-02 08:56:23	26169	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/log.yml ok
+2024-01-02 08:56:23	26169	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/server.yml ok
+2024-01-02 08:56:23	26169	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/worker.yml ok
+2024-01-02 08:56:23	26169	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/sqlite3.yml ok
+2024-01-02 08:56:23	26169	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/system.yml ok
+2024-01-02 08:56:23	26169	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/log.yml ok
+2024-01-02 08:56:23	26169	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/server.yml ok
+2024-01-02 08:56:23	26169	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/worker.yml ok
+2024-01-02 08:56:23	26169	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/sqlite3.yml ok
+2024-01-02 08:56:23	26169	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/system.yml ok
+2024-01-02 08:56:23	26169	main	3	[INFO]	[system]	radar/my_module.cpp:32	onLoad
+2024-01-02 08:56:23	26169	main	3	[ERROR]	[system]	src/socket.cpp:122	setsockopt sockfd=16 level=6 optname=1 errno=95 errstr=Operation not supported
+2024-01-02 08:56:23	26169	main	3	[INFO]	[system]	src/tcp_server.cpp:78	tcp server bind success, Socket information [sock=14, family=2, type=1, protocol=0, isConnected=0, m_locolAddress=0.0.0.0:8091]
+2024-01-02 08:56:23	26169	main	3	[INFO]	[system]	src/tcp_server.cpp:78	tcp server bind success, Socket information [sock=15, family=2, type=1, protocol=0, isConnected=0, m_locolAddress=127.0.0.1:43208]
+2024-01-02 08:56:23	26169	main	3	[INFO]	[system]	src/tcp_server.cpp:78	tcp server bind success, Socket information [sock=16, family=1, type=1, protocol=0, isConnected=0, m_locolAddress=/tmp/test_radar.sock]
+2024-01-02 08:56:23	26169	main	3	[INFO]	[system]	src/tcp_server.cpp:78	tcp server bind success, Socket information [sock=17, family=2, type=1, protocol=0, isConnected=0, m_locolAddress=0.0.0.0:8073]
+2024-01-02 08:56:23	26169	main	3	[INFO]	[system]	src/tcp_server.cpp:78	tcp server bind success, Socket information [sock=18, family=2, type=1, protocol=0, isConnected=0, m_locolAddress=127.0.0.1:8071]
+2024-01-02 08:56:23	26169	main	3	[INFO]	[system]	radar/my_module.cpp:42	onServerReady
+2024-01-02 08:56:23	26169	main	3	[INFO]	[system]	radar/my_module.cpp:114	addServlet
+2024-01-02 08:56:23	26169	main	3	[INFO]	[system]	radar/my_module.cpp:139	onServerUp
+2024-01-02 08:56:30	26177	io_5	22	[INFO]	[system]	src/http/http_server.cpp:18	handleClient: Socket information [sock=28, family=2, type=1, protocol=0, isConnected=1, m_locolAddress=172.18.25.130:8091, m_remoteAddress=172.18.25.64:61525]
+2024-01-02 08:56:30	26177	io_5	22	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/local.html
+2024-01-02 08:56:30	26179	io_7	23	[INFO]	[system]	src/http/http_server.cpp:18	handleClient: Socket information [sock=30, family=2, type=1, protocol=0, isConnected=1, m_locolAddress=172.18.25.130:8091, m_remoteAddress=172.18.25.64:61526]
+2024-01-02 08:56:30	26177	io_5	22	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///css/map.css
+2024-01-02 08:56:30	26177	io_5	22	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///image/ren.png
+2024-01-02 08:56:30	26177	io_5	24	[INFO]	[system]	src/http/ws_server.cpp:16	handleClient: Socket information [sock=31, family=2, type=1, protocol=0, isConnected=1, m_locolAddress=172.18.25.130:8073, m_remoteAddress=172.18.25.64:61528]
+2024-01-02 08:56:30	26177	io_5	24	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:33	onConnect 0x7f0e84024ae8
+2024-01-02 08:56:30	26177	io_5	24	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:66	handle 0x7f0e84024ae8 opcode=1 data={"type":"start_request"}
+2024-01-02 08:56:30	26177	io_5	24	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"112","x":"181","y":"407"}
+ - 0x7f0e84024ae8
+2024-01-02 08:56:31	26177	io_5	24	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"80","x":"265","y":"496"}
+ - 0x7f0e84024ae8
+2024-01-02 08:56:32	26177	io_5	24	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"289","x":"329","y":"460"}
+ - 0x7f0e84024ae8
+2024-01-02 08:56:33	26174	io_2	24	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"364","x":"122","y":"259"}
+ - 0x7f0e84024ae8
+2024-01-02 08:56:34	26174	io_2	24	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"412","x":"466","y":"298"}
+ - 0x7f0e84024ae8
+2024-01-02 08:56:35	26174	io_2	24	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"488","x":"8","y":"298"}
+ - 0x7f0e84024ae8
+2024-01-02 08:56:36	26175	io_3	24	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"354","x":"292","y":"31"}
+ - 0x7f0e84024ae8
+2024-01-02 08:56:37	26173	io_1	24	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"438","x":"244","y":"435"}
+ - 0x7f0e84024ae8
+2024-01-02 08:56:38	26173	io_1	24	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"55","x":"123","y":"88"}
+ - 0x7f0e84024ae8
+2024-01-02 08:56:39	26177	io_5	24	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"273","x":"485","y":"165"}
+ - 0x7f0e84024ae8
+2024-01-02 08:56:47	26347	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/log.yml ok
+2024-01-02 08:56:47	26347	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/server.yml ok
+2024-01-02 08:56:47	26347	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/worker.yml ok
+2024-01-02 08:56:47	26347	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/sqlite3.yml ok
+2024-01-02 08:56:47	26347	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/system.yml ok
+2024-01-02 08:56:47	26347	UNKOWN	0	[INFO]	[system]	radar/my_module.cpp:146	CreateModule:0x1f6c3c0
+2024-01-02 08:56:47	26347	UNKOWN	0	[INFO]	[system]	src/library.cpp:89	load module name=radar_system version=1.0 path=/home/wwt/radar_system/bin/module/libradar_system.so success
+2024-01-02 08:56:47	26347	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/log.yml ok
+2024-01-02 08:56:47	26347	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/server.yml ok
+2024-01-02 08:56:47	26347	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/worker.yml ok
+2024-01-02 08:56:47	26347	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/sqlite3.yml ok
+2024-01-02 08:56:47	26347	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/system.yml ok
+2024-01-02 08:56:47	26347	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/log.yml ok
+2024-01-02 08:56:47	26347	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/server.yml ok
+2024-01-02 08:56:47	26347	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/worker.yml ok
+2024-01-02 08:56:47	26347	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/sqlite3.yml ok
+2024-01-02 08:56:47	26347	UNKOWN	0	[INFO]	[system]	src/config.cpp:87	LoadConfFile file=/home/wwt/radar_system/conf/system.yml ok
+2024-01-02 08:56:47	26347	main	3	[INFO]	[system]	radar/my_module.cpp:32	onLoad
+2024-01-02 08:56:47	26347	main	3	[ERROR]	[system]	src/socket.cpp:122	setsockopt sockfd=16 level=6 optname=1 errno=95 errstr=Operation not supported
+2024-01-02 08:56:47	26347	main	3	[INFO]	[system]	src/tcp_server.cpp:78	tcp server bind success, Socket information [sock=14, family=2, type=1, protocol=0, isConnected=0, m_locolAddress=0.0.0.0:8091]
+2024-01-02 08:56:47	26347	main	3	[INFO]	[system]	src/tcp_server.cpp:78	tcp server bind success, Socket information [sock=15, family=2, type=1, protocol=0, isConnected=0, m_locolAddress=127.0.0.1:37871]
+2024-01-02 08:56:47	26347	main	3	[INFO]	[system]	src/tcp_server.cpp:78	tcp server bind success, Socket information [sock=16, family=1, type=1, protocol=0, isConnected=0, m_locolAddress=/tmp/test_radar.sock]
+2024-01-02 08:56:47	26347	main	3	[INFO]	[system]	src/tcp_server.cpp:78	tcp server bind success, Socket information [sock=17, family=2, type=1, protocol=0, isConnected=0, m_locolAddress=0.0.0.0:8073]
+2024-01-02 08:56:47	26347	main	3	[INFO]	[system]	src/tcp_server.cpp:78	tcp server bind success, Socket information [sock=18, family=2, type=1, protocol=0, isConnected=0, m_locolAddress=127.0.0.1:8071]
+2024-01-02 08:56:47	26347	main	3	[INFO]	[system]	radar/my_module.cpp:42	onServerReady
+2024-01-02 08:56:47	26347	main	3	[INFO]	[system]	radar/my_module.cpp:114	addServlet
+2024-01-02 08:56:47	26347	main	3	[INFO]	[system]	radar/my_module.cpp:139	onServerUp
+2024-01-02 08:57:45	26354	io_4	48	[INFO]	[system]	src/http/http_server.cpp:18	handleClient: Socket information [sock=28, family=2, type=1, protocol=0, isConnected=1, m_locolAddress=172.18.25.130:8091, m_remoteAddress=172.18.25.64:61645]
+2024-01-02 08:57:45	26354	io_4	48	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/local.html
+2024-01-02 08:57:45	26352	io_2	49	[INFO]	[system]	src/http/http_server.cpp:18	handleClient: Socket information [sock=30, family=2, type=1, protocol=0, isConnected=1, m_locolAddress=172.18.25.130:8091, m_remoteAddress=172.18.25.64:61646]
+2024-01-02 08:57:45	26354	io_4	48	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///css/map.css
+2024-01-02 08:57:45	26354	io_4	48	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///image/ren.png
+2024-01-02 08:57:45	26354	io_4	50	[INFO]	[system]	src/http/ws_server.cpp:16	handleClient: Socket information [sock=31, family=2, type=1, protocol=0, isConnected=1, m_locolAddress=172.18.25.130:8073, m_remoteAddress=172.18.25.64:61647]
+2024-01-02 08:57:45	26354	io_4	50	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:33	onConnect 0x7f283c024ae8
+2024-01-02 08:57:45	26354	io_4	50	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:66	handle 0x7f283c024ae8 opcode=1 data={"type":"start_request"}
+2024-01-02 08:57:45	26354	io_4	50	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"71","x":"50","y":"77"}
+ - 0x7f283c024ae8
+2024-01-02 08:57:46	26354	io_4	50	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"92","x":"1","y":"19"}
+ - 0x7f283c024ae8
+2024-01-02 08:57:47	26357	io_7	50	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"69","x":"41","y":"69"}
+ - 0x7f283c024ae8
+2024-01-02 08:57:48	26356	io_6	50	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"50","x":"32","y":"22"}
+ - 0x7f283c024ae8
+2024-01-02 08:57:49	26352	io_2	50	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"0","x":"98","y":"7"}
+ - 0x7f283c024ae8
+2024-01-02 08:57:50	26358	io_8	50	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"36","x":"17","y":"7"}
+ - 0x7f283c024ae8
+2024-01-02 08:57:51	26350	io_0	50	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"70","x":"9","y":"4"}
+ - 0x7f283c024ae8
+2024-01-02 08:57:52	26356	io_6	50	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"49","x":"23","y":"8"}
+ - 0x7f283c024ae8
+2024-01-02 08:57:53	26356	io_6	50	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"3","x":"67","y":"22"}
+ - 0x7f283c024ae8
+2024-01-02 08:57:54	26357	io_7	50	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"24","x":"17","y":"21"}
+ - 0x7f283c024ae8
+2024-01-02 08:57:55	26350	io_0	50	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"1","x":"67","y":"71"}
+ - 0x7f283c024ae8
+2024-01-02 08:57:56	26351	io_1	50	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"87","x":"3","y":"72"}
+ - 0x7f283c024ae8
+2024-01-02 08:57:57	26354	io_4	50	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"55","x":"95","y":"79"}
+ - 0x7f283c024ae8
+2024-01-02 08:57:58	26356	io_6	50	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"44","x":"29","y":"10"}
+ - 0x7f283c024ae8
+2024-01-02 08:57:59	26355	io_5	50	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"51","x":"79","y":"7"}
+ - 0x7f283c024ae8
+2024-01-02 08:58:00	26350	io_0	50	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"59","x":"45","y":"92"}
+ - 0x7f283c024ae8
+2024-01-02 08:58:01	26358	io_8	50	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"29","x":"81","y":"67"}
+ - 0x7f283c024ae8
+2024-01-02 08:58:02	26358	io_8	48	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///html/trace.html
+2024-01-02 08:58:02	26358	io_8	48	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///css/map.css
+2024-01-02 08:58:02	26358	io_8	48	[INFO]	[system]	radar/resource_servlet.cpp:21	/home/wwt/radar_system/bin///image/ren.png
+2024-01-02 08:58:02	26358	io_8	75	[INFO]	[system]	src/http/ws_server.cpp:16	handleClient: Socket information [sock=32, family=2, type=1, protocol=0, isConnected=1, m_locolAddress=172.18.25.130:8073, m_remoteAddress=172.18.25.64:61667]
+2024-01-02 08:58:02	26358	io_8	75	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:33	onConnect 0x7f2830001f98
+2024-01-02 08:58:02	26358	io_8	75	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:66	handle 0x7f2830001f98 opcode=1 data={"type":"start_request"}
+2024-01-02 08:58:02	26358	io_8	75	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"71","x":"92","y":"27"}
+ - 0x7f2830001f98
+2024-01-02 08:58:02	26356	io_6	50	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"11","x":"8","y":"2"}
+ - 0x7f283c024ae8
+2024-01-02 08:58:03	26358	io_8	75	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"84","x":"40","y":"57"}
+ - 0x7f2830001f98
+2024-01-02 08:58:03	26359	io_9	50	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"13","x":"77","y":"27"}
+ - 0x7f283c024ae8
+2024-01-02 08:58:04	26356	io_6	75	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"7","x":"55","y":"93"}
+ - 0x7f2830001f98
+2024-01-02 08:58:04	26356	io_6	50	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"9","x":"4","y":"5"}
+ - 0x7f283c024ae8
+2024-01-02 08:58:05	26358	io_8	75	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"25","x":"10","y":"59"}
+ - 0x7f2830001f98
+2024-01-02 08:58:05	26352	io_2	50	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"59","x":"26","y":"43"}
+ - 0x7f283c024ae8
+2024-01-02 08:58:06	26351	io_1	75	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"73","x":"80","y":"48"}
+ - 0x7f2830001f98
+2024-01-02 08:58:06	26357	io_7	50	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"83","x":"40","y":"32"}
+ - 0x7f283c024ae8
+2024-01-02 08:58:07	26352	io_2	75	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"9","x":"99","y":"90"}
+ - 0x7f2830001f98
+2024-01-02 08:58:07	26351	io_1	50	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"78","x":"70","y":"98"}
+ - 0x7f283c024ae8
+2024-01-02 08:58:08	26351	io_1	75	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"0","x":"47","y":"38"}
+ - 0x7f2830001f98
+2024-01-02 08:58:08	26354	io_4	50	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"94","x":"30","y":"81"}
+ - 0x7f283c024ae8
+2024-01-02 08:58:09	26353	io_3	75	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"86","x":"10","y":"1"}
+ - 0x7f2830001f98
+2024-01-02 08:58:09	26352	io_2	50	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"58","x":"17","y":"5"}
+ - 0x7f283c024ae8
+2024-01-02 08:58:10	26357	io_7	75	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"83","x":"93","y":"82"}
+ - 0x7f2830001f98
+2024-01-02 08:58:10	26353	io_3	50	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"25","x":"84","y":"75"}
+ - 0x7f283c024ae8
+2024-01-02 08:58:11	26354	io_4	75	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"39","x":"43","y":"54"}
+ - 0x7f2830001f98
+2024-01-02 08:58:11	26353	io_3	50	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"37","x":"15","y":"60"}
+ - 0x7f283c024ae8
+2024-01-02 08:58:12	26352	io_2	75	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"27","x":"64","y":"59"}
+ - 0x7f2830001f98
+2024-01-02 08:58:12	26351	io_1	50	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"24","x":"73","y":"95"}
+ - 0x7f283c024ae8
+2024-01-02 08:58:13	26351	io_1	75	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"28","x":"16","y":"41"}
+ - 0x7f2830001f98
+2024-01-02 08:58:13	26355	io_5	50	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"75","x":"17","y":"38"}
+ - 0x7f283c024ae8
+2024-01-02 08:58:14	26356	io_6	75	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"77","x":"10","y":"48"}
+ - 0x7f2830001f98
+2024-01-02 08:58:14	26351	io_1	50	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"48","x":"97","y":"31"}
+ - 0x7f283c024ae8
+2024-01-02 08:58:15	26352	io_2	75	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"97","x":"20","y":"90"}
+ - 0x7f2830001f98
+2024-01-02 08:58:15	26351	io_1	50	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"71","x":"2","y":"74"}
+ - 0x7f283c024ae8
+2024-01-02 08:58:16	26353	io_3	75	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"91","x":"94","y":"16"}
+ - 0x7f2830001f98
+2024-01-02 08:58:16	26351	io_1	50	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"50","x":"99","y":"98"}
+ - 0x7f283c024ae8
+2024-01-02 08:58:17	26359	io_9	75	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"75","x":"35","y":"62"}
+ - 0x7f2830001f98
+2024-01-02 08:58:17	26351	io_1	50	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"35","x":"62","y":"0"}
+ - 0x7f283c024ae8
+2024-01-02 08:58:18	26351	io_1	75	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"43","x":"53","y":"17"}
+ - 0x7f2830001f98
+2024-01-02 08:58:18	26351	io_1	50	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"81","x":"47","y":"34"}
+ - 0x7f283c024ae8
+2024-01-02 08:58:19	26352	io_2	75	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"95","x":"22","y":"10"}
+ - 0x7f2830001f98
+2024-01-02 08:58:19	26352	io_2	50	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"92","x":"65","y":"6"}
+ - 0x7f283c024ae8
+2024-01-02 08:58:20	26359	io_9	75	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"81","x":"12","y":"93"}
+ - 0x7f2830001f98
+2024-01-02 08:58:20	26356	io_6	50	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"54","x":"75","y":"61"}
+ - 0x7f283c024ae8
+2024-01-02 08:58:21	26351	io_1	75	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"36","x":"45","y":"54"}
+ - 0x7f2830001f98
+2024-01-02 08:58:21	26354	io_4	50	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"34","x":"1","y":"52"}
+ - 0x7f283c024ae8
+2024-01-02 08:58:22	26357	io_7	75	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"96","x":"52","y":"54"}
+ - 0x7f2830001f98
+2024-01-02 08:58:22	26353	io_3	50	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"62","x":"93","y":"15"}
+ - 0x7f283c024ae8
+2024-01-02 08:58:23	26358	io_8	75	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"79","x":"95","y":"34"}
+ - 0x7f2830001f98
+2024-01-02 08:58:23	26353	io_3	50	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"79","x":"37","y":"82"}
+ - 0x7f283c024ae8
+2024-01-02 08:58:24	26352	io_2	75	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"90","x":"17","y":"70"}
+ - 0x7f2830001f98
+2024-01-02 08:58:24	26359	io_9	50	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"62","x":"78","y":"34"}
+ - 0x7f283c024ae8
+2024-01-02 08:58:25	26353	io_3	75	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"55","x":"35","y":"12"}
+ - 0x7f2830001f98
+2024-01-02 08:58:25	26355	io_5	50	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"15","x":"15","y":"88"}
+ - 0x7f283c024ae8
+2024-01-02 08:58:26	26354	io_4	75	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"36","x":"36","y":"32"}
+ - 0x7f2830001f98
+2024-01-02 08:58:26	26350	io_0	50	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"54","x":"72","y":"0"}
+ - 0x7f283c024ae8
+2024-01-02 08:58:27	26350	io_0	75	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"7","x":"72","y":"18"}
+ - 0x7f2830001f98
+2024-01-02 08:58:27	26353	io_3	50	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"90","x":"33","y":"10"}
+ - 0x7f283c024ae8
+2024-01-02 08:58:28	26354	io_4	75	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"23","x":"96","y":"4"}
+ - 0x7f2830001f98
+2024-01-02 08:58:28	26350	io_0	50	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"71","x":"40","y":"7"}
+ - 0x7f283c024ae8
+2024-01-02 08:58:29	26351	io_1	75	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"40","x":"19","y":"91"}
+ - 0x7f2830001f98
+2024-01-02 08:58:29	26351	io_1	50	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"40","x":"8","y":"68"}
+ - 0x7f283c024ae8
+2024-01-02 08:58:30	26351	io_1	75	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"53","x":"36","y":"2"}
+ - 0x7f2830001f98
+2024-01-02 08:58:30	26352	io_2	50	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"40","x":"91","y":"85"}
+ - 0x7f283c024ae8
+2024-01-02 08:58:31	26359	io_9	75	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"38","x":"73","y":"20"}
+ - 0x7f2830001f98
+2024-01-02 08:58:31	26350	io_0	50	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"38","x":"75","y":"58"}
+ - 0x7f283c024ae8
+2024-01-02 08:58:34	26350	io_0	50	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"36","x":"28","y":"56"}
+ - 0x7f283c024ae8
+2024-01-02 08:58:34	26357	io_7	75	[INFO]	[system]	radar/servlets/radar_data_trans_servlet.cpp:14	{"id":"1","type":"radar_data","v":"33","x":"97","y":"29"}
+ - 0x7f2830001f98

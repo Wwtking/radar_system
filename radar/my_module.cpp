@@ -15,6 +15,7 @@
 #include "user_forget_passwd_servlet.h"
 #include "user_change_passwd_servlet.h"
 #include "user_clear_servlet.h"
+#include "radar_data_trans_servlet.h"
 
 namespace radar {
 
@@ -127,8 +128,8 @@ bool MyModule::onServerReady() {
         }
         sylar::http::ServletDispatch::ptr sltDisp = ws_server->getDispatch();
 
-        // ChatWSServlet::ptr slt = std::make_shared<ChatWSServlet>();
-        // sltDisp->addServlet("/wwt/chat", slt);
+        RadarDataWSServlet::ptr slt = std::make_shared<RadarDataWSServlet>();
+        sltDisp->addServlet("/radar/data", slt);
     }
 
     return true;
